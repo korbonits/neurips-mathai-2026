@@ -1,0 +1,2914 @@
+{
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/167918.lean:conjecture1": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement explicitly assumes a(n) ≠ 0 to avoid junk values from sInf on empty sets, but formal_before omits this hypothesis entirely."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/167918.lean:conjecture2": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement explicitly assumes a(n) ≠ 0 to handle sInf on empty sets, but formal_before lacks this crucial hypothesis."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:a": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal describes a rational recurrence, but formal_before returns ℕ (via .toNat), losing rationality, while formal_after correctly returns ℚ with explicit recurrence definition."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:conjecture1": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "formal_before references aQ n (the old rational definition) while formal_after references a n (the corrected definition matching the recurrence)."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:conjecture2": {
+  "classes": [
+   "wrong-referent",
+   "definitional-mismatch"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "formal_before uses Odd (a n) on a ℕ, which is nonsensical after the type change; formal_after correctly checks oddness of the numerator after ensuring denominator is 1."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/17666.lean:conjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement explicitly requires 0 < n because a(0) = 1 is a counterexample, but formal_before omits this hypothesis."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture1": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "formal_before uses legendreSym p 7 with arguments in wrong order; formal_after corrects to legendreSym 7 p and adds necessary Fact instance for 7 being prime."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture2": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "formal_before uses legendreSym p 7 with swapped arguments; formal_after corrects to legendreSym 7 p and adds required Fact instance for 7's primality."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture4": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "formal_before uses legendreSym p 7 with wrong argument order; formal_after corrects to legendreSym 7 p and adds necessary Fact instance."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:a": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "formal_before returns ℕ via lossy integer division and .toNat, while formal_after correctly returns ℚ to preserve the rational quotient S(3,n)/S(1,n)."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:b": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "formal_before returns ℕ due to a's incorrect return type; formal_after corrects to ℚ to match a's corrected type."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:conjecture": {
+  "classes": [
+   "wrong-type-or-domain",
+   "definitional-mismatch"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "formal_before casts b(n p^k) : ℤ from ℕ values, losing rationality; formal_after correctly operates on .num after b returns ℚ."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_elkies28": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `elkies28⟮ℚ⟯` (likely a coercion or notation for the curve's ℚ-points as a group), while formal_after uses `elkies28.Point` which may refer to a different definition of the point set; the correction suggests the original definition was incorrect."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_elkiesKlagsbrun29": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `elkiesKlagsbrun29⟮ℚ⟯` while formal_after uses `elkiesKlagsbrun29.Point`, indicating the original notation/definition for accessing the point set was incorrect."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_ranksunbounded30": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `ranksunbounded30⟮ℚ⟯` while formal_after uses `ranksunbounded30.Point`, indicating a mismatch in how the point set is accessed."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:ranksunbounded30": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before defines `ranksunbounded30` as a `WeierstrassCurve ℚ`, while formal_after uses `Affine ℚ`, indicating the type was changed to a different representation of elliptic curves."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:thirty_le_rank_ranksunbounded30": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `ranksunbounded30⟮ℚ⟯` while formal_after uses `ranksunbounded30.Point`, indicating a mismatch in the definition of the point set."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:toWeierstrass": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before returns a `WeierstrassCurve ℚ`, while formal_after returns an `Affine ℚ`, indicating the codomain type was changed."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:twentyeight_le_rank_elkies28": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `elkies28⟮ℚ⟯` while formal_after uses `elkies28.Point`, indicating a mismatch in how the point set is accessed."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:twentynine_le_rank_elkiesKlagsbrun29": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `elkiesKlagsbrun29⟮ℚ⟯` while formal_after uses `elkiesKlagsbrun29.Point`, indicating a mismatch in how the point set is accessed."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean:BoxdotConjecture": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before states `L ⊆ KT` (subset relation on logics), while formal_after states `L.thms ⊆ KT.thms` (subset of theorems), changing the meaning of the subset operator."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean:KT": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `Set.mem_setOf_eq` to `Set.mem_ofPred_eq` is a style/naming update that preserves the meaning of the definition."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean:solvable_of_cyc_lt": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `IsSolvable G`, while formal_after uses `Group.IsSolvable G`, indicating a different definition or namespace was used for solvability."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean:solvable_of_cyc_lt_two_pow_succ": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `IsSolvable G`, while formal_after uses `Group.IsSolvable G`, indicating a different definition or namespace was used for solvability."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_0": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims a(0) = 0 (a bare natural number), but the corrected version shows a(0) = none (an Option type), indicating the sequence should return none at 0, not 0."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_1": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims a(1) = 1 (a bare integer), but the corrected version shows a(1) = some 1 (wrapped in Option), reflecting that the function returns an Option type, not a bare value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_2": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims a(2) = 6 (a bare integer), but the corrected version shows a(2) = some 6 (wrapped in Option), reflecting that the function returns an Option type, not a bare value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_3": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims a(3) = -5 (a bare integer), but the corrected version shows a(3) = some (-5) (wrapped in Option), reflecting that the function returns an Option type, not a bare value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_4": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims a(4) = 3 (a bare integer), but the corrected version shows a(4) = some 3 (wrapped in Option), reflecting that the function returns an Option type, not a bare value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:collatzSteps": {
+  "classes": [
+   "wrong-type-or-domain",
+   "junk-value-trap"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before returns ℕ and uses sInf over a potentially empty set (when no k satisfies the condition), creating undefined behavior via junk values, whereas the corrected version properly returns Option ℕ with explicit none when no such k exists."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:conjecture1": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before filters for a i = 0 (bare value), but the corrected version filters for a i = some 0 (Option-wrapped value), matching the actual return type of function a which is Option ℤ."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:indices": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before compares a n = v (bare value), but the corrected version compares a n = some v (Option-wrapped value), matching the actual return type of function a which is Option ℤ."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a": {
+  "classes": [
+   "wrong-type-or-domain",
+   "junk-value-trap"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before returns ℕ and uses sInf over a potentially empty set (when no m satisfies the condition), creating undefined behavior via junk values, whereas the corrected version properly returns Option ℕ with explicit none when no such m exists."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_2": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims a(2) = 2 (a bare natural number), but the corrected version shows a(2) = some 2 (wrapped in Option), reflecting that the function returns an Option type, not a bare value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_3": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims a(3) = 1 (a bare natural number), but the corrected version shows a(3) = some 1 (wrapped in Option), reflecting that the function returns an Option type, not a bare value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_4": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims a(4) = 2 (a bare natural number), but the corrected version shows a(4) = some 2 (wrapped in Option), reflecting that the function returns an Option type, not a bare value."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/1192.lean:erdos_1192.variants.renyi": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `count A x` to `count (· ∈ A) x` is stylistic; both express the same predicate counting elements in A."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.parts.i": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `count { n | m n < p n }` to `count (fun n ↦ m n < p n)` is stylistic; both specify the same predicate."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `count A` to `count (· ∈ A)` is stylistic; both express the same membership predicate counting."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.variants.m_div_n": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `count A` to `count (· ∈ A)` is stylistic; both express the same counting of set membership."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Mathoverflow/75792.lean:Reachable.decide": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from a universal pattern match function to an instance with explicit pattern matching is structurally equivalent; `omega` to `lia` is a minor tactic substitution."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Paper/ConjugacyClassSizes.lean:conjClassSizes_iff_sym_three_solvable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `IsSolvable` to `Group.IsSolvable` is a qualified name change with no semantic difference; both refer to the same type class."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:IsComputableInPolyTime": {
+  "classes": [
+   "wrong-type-or-domain",
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `FinEncoding` (finite encodings) while formal_after uses `Encoding` (general encodings) with explicit alphabet types, fundamentally changing the domain and applied function signatures."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:NP": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `finEncodingListBoolProdListBool` to `encodingListBoolProdListBool` is a rename of the encoding constant reference with equivalent meaning."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:P": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes from `finEncodingListBool` to `encodingListBool` and `finEncodingBoolBool` to `encodingBoolBool` are encoding constant renames with equivalent semantic meaning."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/OEIS/6697.lean:infiniteWord": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `simp` to `<;> lia` is a minor tactic variation for discharging the same proof obligations."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1043.lean:erdos_1043": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `orthogonalProjection` to `orthogonalProjectionOnto` is a function rename; both refer to orthogonal projection onto the line spanned by u."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1043.lean:erdos_1043.variants.weak": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `orthogonalProjection` to `orthogonalProjectionOnto` is a function rename with equivalent semantic meaning."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1062.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The addition of `open scoped Classical` is a stylistic/scope management change that does not alter the meaning of the definition."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/134.lean:erdos_134": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_after adds `[DecidableRel G.Adj]` and `(_ : DecidableRel H.Adj)` instances that are not mentioned in the informal statement, making the formal_before weaker by not requiring decidability."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/184.lean:IsCycleOrEdge": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The addition of `open scoped Classical` is a stylistic change that does not affect the logical meaning of the definition."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/522.lean:numRootsInUnitDisk": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The addition of `open scoped Classical` is a stylistic change that does not alter the meaning."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/Wikipedia/SnakeInTheBox.lean:IsSnakeInGraphOfLength": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before checks `G'.verts = {v | v ∈ P.support}` while formal_after uses `G' = P.toSubgraph`, which represent different formalizations of the path structure that may not be equivalent."
+ },
+ "fcpr:5a8c9eda163c44de2a05c4fd9c81dec3dabbcfa7:FormalConjectures/Mathoverflow/75792.lean:Reachable.decide": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal_after converts from `∀ m n` pattern matching to instance arguments and uses recursive calls instead of local definitions, but maintains the same computational logic."
+ },
+ "fcpr:9c4d5821819656af53c5473ded2116ea14a7ff1c:FormalConjectures/Other/VCDimConvex.lean:exists_hasAddVCNDimAtMost_n_of_convex_rn_add_one": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_after adds the hypothesis `(hn : 1 ≤ n)` which the informal statement says is required ('For every $n \\ge 1$') but formal_before omits."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:a": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The return type changes from ℕ to ℚ, which is necessary for fractional results but changes the codomain of the function."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture2": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before directly expresses divisibility `p ∣ a n`, while formal_after wraps it as `∃ m : ℕ, a n = m ∧ p ∣ m`, which is semantically problematic since `a n` is now a ℚ and ℕ divisibility doesn't apply."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture3": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `.factorization p` on a ℚ-valued function which is incorrect, while formal_after correctly uses `padicValRat` which is the proper formalization of the p-adic valuation."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture4": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `.factorization p` on a ℚ-valued result which is incorrect, while formal_after correctly uses `padicValRat` and casts `b` values to ℤ for the infinite sum."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The return type changes from ℤ to Option ℤ to properly handle the case where either value does not terminate, which the informal statement specifies but formal_before does not."
+ },
+ "fcpr:858d0e73105101fbc9f86c6d6dd86bbc6d4d789e:FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean:poisson_conjecture.variants.jacobian_implication": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `JacobianConjectureFor K (2 * n)` while formal_after uses `JacobianConjectureProp K (Fin (2 * n))`, referencing different definitions of the Jacobian conjecture predicate."
+ },
+ "fcpr:7e662f771cec2c6d893ee048d163c3cb3aa2a377:FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean:JacobianConjectureFor": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal_after simplifies by removing the `JacobianConjecture.` namespace prefix from `RegularFunction` and `id`, making it non-semantic since the namespace was opened."
+ },
+ "fcpr:ae8344226ca52fc0dcf27d4eb92c975bbd783ebe:FormalConjectures/OEIS/260194.lean:a": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before delegates to `(state n).first` via an auxiliary definition, while formal_after directly encodes the recurrence relation specified in the informal statement."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:AdmitsLieGroupStructure": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before constructs the Lie group structure directly on G using an explicit atlas, while formal_after uses a LieGroupPresentation abstraction that represents G as isomorphic to a separate carrier with Lie group structure."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:admitsLieGroupStructure_of_lieGroup": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_after adds explicit hypotheses `[T2Space G]` and `[SecondCountableTopology G]` that are missing from formal_before but required by the theorem's mathematical content."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:hilbert_fifth_problem": {
+  "classes": [
+   "missing-hypothesis",
+   "wrong-referent"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_after adds `[T2Space G]` and `[SecondCountableTopology G]` hypotheses and changes the conclusion from `AdmitsLieGroupStructure G` to `Nonempty (LieGroupPresentation G n)`, both required by the informal statement of Hilbert's fifth problem."
+ },
+ "fcpr:8feeb0971f41c2981730858d9287b1eaea129fe9:FormalConjectures/ErdosProblems/2.lean:erdos_2": {
+  "classes": [
+   "wrong-quantifier",
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `answer(False) ↔ ∃ B : ℕ, ∀ S` with a universal quantifier over covering systems, while formal_after uses `answer(False) ↔ ∀ B : ℕ, ∃ c` with reversed quantifier order and different predicates."
+ },
+ "fcpr:3f8165c72db841c752cfdadb9d13eec4e3c02ff3:FormalConjectures/OEIS/211417.lean:general_divisibility": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_after adds the hypothesis `0 < D` to the existential witness, requiring D to be positive as indicated by the informal proof sketch mentioning an explicit positive witness."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:elkies28": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `WeierstrassCurve ℚ` while formal_after uses `Affine ℚ`, representing different mathematical types for the elliptic curve definition."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:elkiesKlagsbrun29": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `WeierstrassCurve ℚ` while formal_after uses `Affine ℚ`, representing different mathematical types for the elliptic curve definition."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:mordell_weil": {
+  "classes": [
+   "wrong-type-or-domain",
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `WeierstrassCurve K` with notation `E⟮K⟯` while formal_after uses `Affine K` with `E.Point`, changing both the type and the referent for rational points."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses notation `E.toWeierstrass⟮ℚ⟯` while formal_after uses `E.toWeierstrass.Point`, changing the referent for the group of rational points."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/101779.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a rename from `is_a101779_k` to `Ak` was applied; the logical meaning and structure remain identical."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/102371.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a variable rename from `an_minus_1` to `anMinus1` was applied; the definition and semantics are unchanged."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/102722.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a variable rename from `sum_of_fract_parts` to `sumOfFractParts` was applied; the definition remains unchanged."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/103151.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a function name change from `Nat.Prime` to `p.Prime` was applied; both express the same primality check with equivalent semantics."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/357513.lean:a357513_supercongruence": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a function name change from `Nat.Prime p` to `p.Prime` was applied; both express primality equivalently."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:HasCentreOfSymmetry": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only the type parameter changed from generic `E` to concrete `ℝ²`, with all logical content preserved and matching the informal statement about planar bodies."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:IsParallelogramAtOrigin": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only the type parameter changed from generic `E` to concrete `ℝ²`, with the definition and semantics unchanged."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:isParallelogramAtOrigin_of_volume_lpSum_eq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type parameters changed from generic `E` to concrete `ℝ²`, with the theorem statement and logical structure preserved."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:lpSum": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type parameters changed from generic `E` to concrete `ℝ²`, with the definition and semantics unchanged."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:supportFunction": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type parameters changed from generic `E` to concrete `ℝ²`, with the definition and semantics unchanged."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:volume_lpSum_eq_of_isParallelogramAtOrigin": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type parameters changed from generic `E` to concrete `ℝ²`, with the theorem statement and logical structure preserved."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:volume_lpSum_le": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type parameters changed from generic `E` to concrete `ℝ²`, with the theorem statement and logical structure preserved."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:integralDiophantine4Tuple": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only difference is trailing whitespace; the logical meaning is identical."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:regularExtension": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only difference is formatting and spacing around operators; the logical meaning is identical."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:Orthogonal": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before leaves n implicit (not explicitly quantified), while formal_after makes n an explicit implicit argument, which is necessary to properly bind n in the definition."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:latinSquareNearTransversal": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before omits the universal quantification over n, which is needed to properly scope the LatinSquare n type."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:oddOrderLatinSquareTransversal": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before lacks the universal quantification over n before the Odd n hypothesis, leaving n unbound in the statement."
+ },
+ "fcpr:9535458bd7f8431aecc77dae8ba211b97cdcf9d3:FormalConjectures/Wikipedia/SteinerSystem.lean:large_steiner_systems": {
+  "classes": [
+   "wrong-type-or-domain",
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before returns a concrete definition (LargeSteinerSystemWitness) rather than a theorem stating existence (Nonempty LargeSteinerSystemWitness), fundamentally changing the statement type and removing the answer marker."
+ },
+ "fcpr:a2a45c07539a519aa264f7780a8cd2a1a5f46e3e:FormalConjectures/ErdosProblems/506.lean:erdos_506": {
+  "classes": [
+   "wrong-constant-or-bound",
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before requires n > 393 and gives a specific formula answer, while formal_after requires only n ≥ 4 with answer(sorry), reflecting the open nature for small n."
+ },
+ "fcpr:b5acb0ff13e38084105b7fe020ba0d59c1925bc5:FormalConjectures/ErdosProblems/539.lean:erdos_539.variants.limit": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from 𝓝 to nhds is a notational difference representing the same mathematical object (neighborhood filter)."
+ },
+ "fcpr:4010c1f1b811be0b0f95c9cf8bc084d72cea2a88:FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_9.lean:problem_10_9": {
+  "classes": [
+   "wrong-type-or-domain",
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before states a concrete theorem (¬ ∃ ξ, IsZNumber ξ), while formal_after uses type_of% to reference another conjecture, fundamentally changing the statement form."
+ },
+ "fcpr:4010c1f1b811be0b0f95c9cf8bc084d72cea2a88:FormalConjectures/Wikipedia/Mahler32.lean:mahler_conjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before includes the hypothesis h : x ≠ 0, which is removed in formal_after, making the formal_before statement strictly stronger."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/100478.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is renaming sum_terms to sumTerms, which is a naming convention adjustment with no logical impact."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/100800.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is renaming sum_digits to sumDigits, which is a naming convention adjustment with no logical impact."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/53067.lean:conjecture": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before applies sInf to a potentially empty set without handling the None case, allowing it to collapse to 0 when no prime exists; formal_after wraps this in a conditional with Some/None to properly handle the emptiness case."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/55487.lean:conjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before omits the critical hypotheses `ha : a n ≠ 0` and `hp : (p n).Prime` which are explicitly noted in the docstring as necessary to ensure the sInf searches are non-empty."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/70518.lean:conjecture": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before applies sInf directly to a potentially empty set without handling the None case; formal_after wraps it in a conditional with Some/None to avoid collapsing to 0 when no such n exists."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/71532.lean:conjecture1": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses existential quantification over N with a condition involving sqrt(n), which contradicts the informal question asking if a(n) > 0 for all n > 2; formal_after directly expresses the intended universal property."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/71532.lean:conjecture2": {
+  "classes": [
+   "wrong-connective",
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before completely misses the informal statement by asserting an asymptotic bound in terms of log(n)^2; formal_after correctly expresses the existence of N such that a(n) > sqrt(n) for large n."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/86766.lean:conjecture1": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before applies sInf to a potentially empty set without handling the None case; formal_after correctly wraps it in a conditional to return None if no such m exists."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.parts.i": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The formal_before relies on the auxiliary definition `nearlyQuadraticBound` which is not expanded, making it impossible to verify it captures the informal notion of ∃ e: atTop.o(1) with the product bound; formal_after expands this explicitly."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.parts.ii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `answer(sorry)` suggesting an open question, while formal_after uses `answer(False)` correctly reflecting van Doorn's comment that the bound fails for all k ≥ 3."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.variants.higher_full_parts": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The formal_before relies on the undefined auxiliary `brRatioUnbounded` rather than directly expressing the limsup = ⊤ condition; formal_after expands this explicitly with the full asymptotic statement."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.variants.k_le_two": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The formal_before uses the auxiliary definition `quadraticBound` which is not expanded, making verification impossible; formal_after expands the =O[atTop] statement explicitly."
+ },
+ "fcpr:7143f3cdfd7543b347037096aa43c7591ecfa549:FormalConjectures/Wikipedia/SidorenkoConjecture.lean:IsSpider234": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `[DecidableRel T.Adj]` instance, which is a technical requirement for computability but does not change the mathematical meaning."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:HasUniqueExtensionOfForall": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before quantifies over all natural numbers without the crucial hypotheses that the three elements must be distinct and form an integral Diophantine tuple, which are explicitly required in the informal statement."
+ },
+ "fcpr:0bd22d91e6408fb47c3e31ff54200b0d8f740fa6:FormalConjectures/GreensOpenProblems/72.lean:allowedSetSize_le": {
+  "classes": [],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The hypothesis `h : k ≤ N` was unused in the proof, so removing it is a pure strengthening that does not affect the statement's truth conditions."
+ },
+ "fcpr:d98f14ed02e28348f57f7b8c99a4aff196645769:FormalConjectures/Arxiv/2604.08040/SubgroupCounts.lean:cyc": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `Fintype.card` to `Nat.card` is a definitional adjustment that does not affect the meaning when the underlying type is finite, making this a style/API modernization."
+ },
+ "fcpr:9da3e55d154988682b32673138fc00b273dae237:FormalConjectures/Paper/WeaklyFirstCountable.lean:cardinalMk_le_continuum_of_weaklyFirstCountable_of_countableSouslinNumber": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from implicit to explicit quantification of `TopologicalSpace X` and reordering of `T35Space X` as an explicit hypothesis are merely stylistic adjustments that preserve the logical meaning."
+ },
+ "fcpr:9da3e55d154988682b32673138fc00b273dae237:FormalConjectures/Paper/WeaklyFirstCountable.lean:hasCountableSouslinNumber_of_separable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Converting from a theorem to an instance and providing a full proof implementation is a style change; the informal statement is about existence of a property, which both versions formalize identically."
+ },
+ "fcpr:5891cecfb93d01cb29c6cfb61a6be25bcaf4595f:FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean:alon_tarsi_short_cycle_cover": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `Bridgeless G` to `G.IsBridgeless` is purely a naming/API update; both refer to the same mathematical property."
+ },
+ "fcpr:5891cecfb93d01cb29c6cfb61a6be25bcaf4595f:FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean:totalLength": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `Cycle.length` to `SimpleGraph.Cycle.length` is a namespace qualification adjustment that does not affect meaning."
+ },
+ "fcpr:9af1d7101d82b0c6ff5e6aab4151ca3786de15b1:FormalConjectures/ErdosProblems/80.lean:erdos_80.variants.log": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses an explicit existential for a constant `C` with inequality, while formal_after uses the `≫` (much greater than) notation, which may have different quantifier scoping or definitional behavior."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_3_3": {
+  "classes": [
+   "wrong-connective",
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement says rank 3 is not 2-generated, which requires only the negation of 2-generation; formal_before incorrectly adds an existential claim that 3 generators suffice (wrong-connective: and should be removed), while formal_after correctly captures only the non-2-generation property."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_4_3": {
+  "classes": [
+   "wrong-connective",
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement says rank 3 is not 2-generated, which requires only the negation of 2-generation; formal_before incorrectly adds an existential claim that 3 generators suffice (wrong-connective: and should be removed), while formal_after correctly captures only the non-2-generation property."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_4_4": {
+  "classes": [
+   "wrong-connective",
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement says rank 3 is not 2-generated, which requires only the negation of 2-generation; formal_before incorrectly adds an existential claim that 3 generators suffice (wrong-connective: and should be removed), while formal_after correctly captures only the non-2-generation property."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:signDiffHom": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `.inv` to `⁻¹` notation and addition of `noncomputable` keyword are style/syntax updates that do not change the mathematical meaning."
+ },
+ "fcpr:bcd237a4c0be8708eb30b57e992a711f00f9dbb1:FormalConjectures/Paper/BranchingVAS.lean:reachability_decidable": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before wraps the statement in `answer(sorry) ↔`, which changes the answer marker and logical structure, whereas formal_after removes this wrapper, fundamentally altering what is being claimed."
+ },
+ "fcpr:d12501a22ce3446f2877d5d4ce07be83824674b3:FormalConjectures/WrittenOnTheWallII/GraphConjecture65.lean:conjecture65": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before states a positive inequality as a theorem, while formal_after correctly marks it as answer(False) with a universal quantification over graphs, reflecting that the conjecture is false."
+ },
+ "fcpr:4dd29ad036546eeb02ba9659287da5415b52b6a3:FormalConjectures/Mathoverflow/434111.lean:S": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `prime'` while formal_after uses `nth Nat.Prime`, which are different ways to reference prime numbers and will produce different definitions."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is replacing `HasDimension G 4` with `G.HasDimension 4`, which is a syntactic style change from prefix to dot notation with identical meaning."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_five": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is replacing `HasDimension G 5` with `G.HasDimension 5`, which is a syntactic style change from prefix to dot notation with identical meaning."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_five_extremal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only changes replace `HasDimension` with dot notation `.HasDimension`, which is a syntactic style change with identical meaning."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_four": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is replacing `HasDimension G 4` with `G.HasDimension 4`, which is a syntactic style change from prefix to dot notation with identical meaning."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_four_extremal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is replacing `HasDimension G 4` with `G.HasDimension 4`, which is a syntactic style change from prefix to dot notation with identical meaning."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1022.lean:SparseImpliesPropertyB": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is replacing `HasPropertyB F` with `F.HasPropertyB`, which is a syntactic style change from prefix to dot notation with identical meaning."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1023.lean:F": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `IsUnionFree S` while formal_after uses `S.SubfamilyUnionFree`, which are different predicates capturing different notions of union freeness."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1028.lean:erdos_1028.variants.erdos_spencer": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is replacing `=O[atTop]` with `≪`, which are equivalent asymptotic notations with the same meaning."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1028.lean:erdos_1028.variants.upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is replacing `=O[atTop]` with `≪`, which are equivalent asymptotic notations with the same meaning."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is replacing `G.edgeFinset.card` with `G.edgeSet.ncard`, which are equivalent ways to count the edges of a simple graph."
+ },
+ "fcpr:1cef8c46441b5facf49c6eb3be4f8538b477fedd:FormalConjectures/ErdosProblems/660.lean:erdos_660": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `∃ N : ℕ, ∀ n : ℕ, N ≤ n` to `∀ᶠ n in Filter.atTop` is a notational equivalence expressing the same \"eventually for sufficiently large n\" concept; additionally `EuclideanGeometry.distinctDistances` was renamed to `distinctDistances`, a style-only change."
+ },
+ "fcpr:1cef8c46441b5facf49c6eb3be4f8538b477fedd:FormalConjectures/ErdosProblems/660.lean:erdos_660.variants.altman_planar": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is renaming `EuclideanGeometry.distinctDistances P` to `distinctDistances P`, which is a style/import change with no semantic impact."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `=O[atTop]` to `≪` is a notational replacement with identical semantic meaning, as confirmed by the reviewers' decision to use the `≪` notation consistently across the file."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.erdos_sarkozy_lower": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `=O[atTop]` to `≪` is a notational replacement with identical meaning, as part of the consistent notation update across all asymptotic statements."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.erdos_sarkozy_upper": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `=O[atTop]` to `≪` is a notational replacement with identical meaning, as part of the consistent notation update across all asymptotic statements."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.konyagin_lower": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `=O[atTop]` to `≪` is a notational replacement with identical meaning, as part of the consistent notation update across all asymptotic statements."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.konyagin_upper": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `=O[atTop]` to `≪` is a notational replacement with identical meaning, as part of the consistent notation update across all asymptotic statements."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.polylog": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `=O[atTop]` to `≪` is a notational replacement with identical meaning, as part of the consistent notation update across all asymptotic statements."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `IsSquarefreeSumset A` to `(∀ n ∈ A + A, Squarefree n)` is an inlining of the definition with identical semantic meaning, which the reviewer approved as part of the refactoring."
+ },
+ "fcpr:f40ecd9b3b79a7aa1a64b7d2f3b2623d4a6c3081:FormalConjectures/ErdosProblems/267.lean:erdos_267": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The answer marker changed from `answer(sorry)` to `answer(True)`, changing the problem from open to claiming the answer is True, which strengthens the claim without justification."
+ },
+ "fcpr:f40ecd9b3b79a7aa1a64b7d2f3b2623d4a6c3081:FormalConjectures/ErdosProblems/489.lean:GapSumSq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The addition of `open scoped Classical in` is a style change enabling classical logic locally without changing the semantic behavior of the definition."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:Admissible": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `Point` to `ℝ²` is a style/standardization change that makes the type explicit; both refer to points in the plane and the definition logic is unchanged."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:AttainableGap": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changed `Point` to `ℝ²` which is a notational standardization; the mathematical meaning is identical."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:distanceValues": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Replaced `Point` with `ℝ²` and `sqDist` with `dist`; reviewers note that squaring is injective on nonnegatives so the mathematical content is preserved."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:frequency": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changed `Point` to `ℝ²` and `sqDist` to `dist`; reviewers confirm these are equivalent since squaring preserves distance ordering on nonnegatives."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:multiplicityGap": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changed `Point` to `ℝ²` in the function signature; mathematical meaning of the formula is unchanged."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:runnerUpFrequency": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changed `Point` to `ℝ²` in the function signature; the definition logic remains identical."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:IsDegenerate": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Swapped parameter order (r, H) and replaced filter-based degree with `neighborsWithin` predicate; these are equivalent formulations of r-degeneracy."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:erdos_146": {
+  "classes": [
+   "wrong-quantifier",
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "Formal_after removes the existential quantifier over C and the comparision operator, changing from an explicit bound to IsBigO asymptotics, which semantically weakens the statement and alters the asymptotic relationship being asserted."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:erdos_146.variants.two_degenerate_counterexample": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only changed `IsDegenerate H 2` to `IsDegenerate 2 H` to match the parameter reordering in IsDegenerate; meaning is unchanged."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:FamilyFree": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Refactored to use FiniteGraph wrapper type with renamed parameters (F→family, G→host, H→forbidden); the logical meaning is preserved."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:erdos_180": {
+  "classes": [
+   "wrong-quantifier",
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "Changed from universal quantification over finite families and explicit extremal number bounds to calling abstract predicates IsCompactFamily and IsCyclicFamily, which may impose fewer constraints or different conditions than the original formulation."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:erdos_180.variants.counterexample": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Refactored from explicit Finset to FiniteGraph wrapper and replaced explicit extremal number inequality with ¬IsCompactFamily, which abstracts the same meaning."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/183.lean:ForcesMonochromaticTriangle": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changed from explicit triangle construction using Sym2 edges and equality checks to TopEdgeLabeling with CliqueFree predicate; these formalize the same mathematical concept."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/905.lean:erdos_905": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is renaming `trianglesContaining G e` to `G.trianglesContaining e`, which is a dot-notation style update with no semantic difference."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/958.lean:erdos_958": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before uses a biconditional (↔) between the two conditions while formal_after uses an implication (→), which is a significant logical difference that weakens the statement."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/990.lean:rootArgCount": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before uses an undefined `normArg` function while formal_after provides an explicit definition using `Complex.arg` with proper normalization to [0, 2π), making the latter semantically complete."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/447.lean:maxUnionFree": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `UnionFree F` to `F.UnionFree` is purely a style/naming convention change moving to dot notation, with no change in meaning."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/567.lean:Q3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changing from an explicit definition to `abbrev Q3 : SimpleGraph (Fin 3 → Bool) := hypercube 3` is a refactoring that preserves the same mathematical object."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/666.lean:erdos_666": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes replace `Q n` with `hypercube n` and `cycleLengths G` with `G.cycleLengths`, which are semantic updates to use standardized definitions, not style-only changes."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.parts.i": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `cycleLengths G` to `G.cycleLengths` is a dot-notation style update with no semantic difference."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `cycleLengths G` to `G.cycleLengths` is a dot-notation style update with no semantic difference."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.variants.bondy_vince": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `cycleLengths G` to `G.cycleLengths` is a dot-notation style update with no semantic difference."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1047.lean:erdos_1047.variants.pommerenke": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before has ∀ δ > 0 ∃ a while formal_after has ∃ δ > 0 ∀ a with strict inequalities for a, fundamentally changing the quantifier structure and the logical meaning."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `L m` to `scaleL m` is a renaming of the same mathematical function with no semantic difference."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `L m` to `scaleL m` is a renaming of the same mathematical function with no semantic difference."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.k4_free": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `G.edgeFinset.card` to `G.edgeSet.ncard` is a refactoring to use the cardinality function for infinite sets, which is semantically equivalent for finite graphs."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `G.edgeFinset.card` to `G.edgeSet.ncard` is a refactoring to use the cardinality function for infinite sets, which is semantically equivalent for finite graphs."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `G.edgeFinset.card` to `G.edgeSet.ncard` is a refactoring to use the cardinality function for infinite sets, which is semantically equivalent for finite graphs."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from explicit density definition via `Tendsto` to the `Set.HasDensity` predicate is a refactoring that uses a standard library predicate; the formal meaning is equivalent."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.empty_preimage": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from explicit density definition via `Tendsto` to the `Set.HasDensity` predicate is a refactoring that uses a standard library predicate; the formal meaning is equivalent."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.pollack_pomerance_thompson_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from explicit density definition via `Tendsto` to the `Set.HasDensity` predicate is a refactoring that uses a standard library predicate; the formal meaning is equivalent."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.pollack_primes": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from explicit density definition via `Tendsto` to the `Set.HasDensity` predicate is a refactoring that uses a standard library predicate; the formal meaning is equivalent."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.positive_density": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from explicit density definition via `Tendsto` to the `Set.HasDensity` predicate is a refactoring that uses a standard library predicate; the formal meaning is equivalent."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.troupe_sum_of_two_squares": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from explicit density definition via `Tendsto` to the `Set.HasDensity` predicate is a refactoring that uses a standard library predicate; the formal meaning is equivalent."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.troupe_unusually_many_prime_factors": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from explicit density definition via `Tendsto` to the `Set.HasDensity` predicate is a refactoring that uses a standard library predicate; the formal meaning is equivalent."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:s": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `ArithmeticFunction.sigma` to the shorter notation `σ` is purely a notational refactoring with equivalent meaning."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/600.lean:Erdos600Prop": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `trianglesContaining G uv` to `G.trianglesContaining uv` is a refactoring to use dot notation, which is semantically equivalent."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/241.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning of the definition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/295.lean:k": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/416.lean:V": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/600.lean:trianglesContaining": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/755.lean:anySizeEquilateralTriangleCount": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/755.lean:unitEquilateralTriangleCount": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/82.lean:IsRegularInduced": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/85.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/872.lean:legalMoves": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/961.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/962.lean:k": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/19.lean:S": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical`, which is a non-semantic modification that does not affect the mathematical meaning."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.lt_one": {
+  "classes": [
+   "missing-hypothesis",
+   "wrong-referent"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement merely asserts ε_m < 1 for m ≥ 1, but the formal_after requires additional hypotheses about a finite set S, coefficients a, and disjointness conditions that are absent from the informal docstring."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.upper_bound": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal_before references L m but formal_after corrects it to scaleL m, which is a clarification of the intended function name without changing the mathematical meaning."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from cliqueSizes H to ThreeUniformHypergraph.cliqueSizes H is a namespace clarification with no semantic change."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.gao": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses universal quantification over all n with subtraction (n - f n), while formal_after changes to eventually quantified n with addition ((cliqueSizes H).ncard + f n ≤ n), which reverses the inequality structure meaningfully."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.moon_moser": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from graphCliqueSizes G to SimpleGraph.cliqueSizes G is a namespace clarification with no semantic change."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.spencer": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from graphCliqueSizes G to SimpleGraph.cliqueSizes G is a namespace clarification with no semantic change."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/785.lean:aStar": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal_before uses Finset operations with sup id returning 0 on empty sets, while formal_after uses sSup over a set which may behave differently on empty or infinite sets under the junk-value semantics."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/785.lean:counting": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Both compute the cardinality of A ∩ [1,x]; the change from Finset.filter.card to Set.ncard is a style change with equivalent semantics."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes move IsThreeUniform and ContainsSubgraph into the Finset namespace as dot notation (H.IsThreeUniform), which is a style refactoring with no semantic change."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.balogh": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes move IsThreeUniform and ContainsSubgraph into the Finset namespace as dot notation (H.IsThreeUniform), which is a style refactoring with no semantic change."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.frankl_furedi": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes move IsThreeUniform and ContainsSubgraph into the Finset namespace as dot notation (H.IsThreeUniform), which is a style refactoring with no semantic change."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.harris": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes move IsThreeUniform and ContainsSubgraph into the Finset namespace as dot notation (H.IsThreeUniform), which is a style refactoring with no semantic change."
+ },
+ "fcpr:9849b4eb5de6928bae4627aa09f42531334ecfb8:FormalConjectures/ErdosProblems/1110.lean:Representable": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change replaces custom `IsDvdAntichain` with standard `IsAntichain (· ∣ ·)`, which formalizes the same divisibility antichain concept using mathlib's preferred definition."
+ },
+ "fcpr:9849b4eb5de6928bae4627aa09f42531334ecfb8:FormalConjectures/ErdosProblems/1110.lean:erdos_1110": {
+  "classes": [
+   "wrong-answer-marker",
+   "wrong-connective",
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before statement assumes the conclusion directly while formal_after uses the answer marker with an equivalence and defines what 'coprime non-representable' means explicitly; additionally, the statement structure changes from a direct claim to an equivalence over all parameters."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/115.lean:erdos_115": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_after adds `p.Monic` as a requirement, which is a necessary hypothesis for the sharp bound involving Chebyshev polynomials (the extremal examples)."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/214.lean:HasRedCopies": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_after adds `Function.Injective K` as a requirement, which ensures K represents n distinct points rather than potentially degenerate configurations."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/337.lean:erdos_337.variants.h_fold": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change replaces `sumsetOfOrder A h` with `h • A` (scalar multiplication/h-fold sumset), which are equivalent formulations of the h-fold sumset concept."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Arxiv/2602.05192/FirstProof6.lean:IsEpsilonLight": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Adding `open scoped Classical` is a non-semantic change that only affects how the definition compiles without altering its mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1054.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Adding `open scoped Classical` is a non-semantic change that only affects how the definition compiles without altering its mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1055.lean:p": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Adding `open scoped Classical` is a non-semantic change that only affects how the definition compiles without altering its mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1146.lean:IsEssentialComponent": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Adding `open scoped Classical` is a non-semantic change that only affects how the definition compiles without altering its mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/156.lean:minMaximalSidonSet": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Adding `open scoped Classical` is a non-semantic change that only affects how the definition compiles without altering its mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/16.lean:density_zero": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Adding `open scoped Classical` is a non-semantic change that only affects how the definition compiles without altering its mathematical meaning."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/16.lean:positive_lower_density": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Adding `open scoped Classical` is a non-semantic change that only affects how the definition compiles without altering its mathematical meaning."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/862.lean:numMaximalSidonSets": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal_before uses powerset and filter on Icc 1 N, while formal_after uses ncard over all Finsets with a subset condition; these are logically equivalent but use different computational representations that may affect definability or proof strategies."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/867.lean:erdos_867.variants.freud": {
+  "classes": [
+   "wrong-quantifier",
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before uses ∃ C (constant additive bound), while formal_after uses ∀ ε (asymptotic bound approaching 19/36), which are fundamentally different formalizations of the density claim."
+ },
+ "fcpr:2f810aebf5c2b584c63ed455bf3507605467ceeb:FormalConjectures/ErdosProblems/263.lean:IsIrrationalitySequence": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before lacks the StrictMono a condition that is explicitly required by the informal statement and the note about the correction requiring the sequence to be strictly increasing."
+ },
+ "fcpr:2f810aebf5c2b584c63ed455bf3507605467ceeb:FormalConjectures/ErdosProblems/263.lean:erdos_263.parts.ii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before incorrectly marks the answer as False when the problem statement and notes clarify it was False only for the pre-correction definition; the formal_after correctly uses sorry to reflect the open status for the corrected problem."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/164.lean:erdos_164": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before includes an explicit condition IsPrimitive {p : ℕ | p.Prime} that is redundant and not part of the informal problem; the formal_after correctly removes this tautological statement."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/290.lean:harmonicDen": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Both definitions compute the denominator of the same partial harmonic sum, but formal_after delegates to a shared harmonicBlock definition rather than inlining the sum, which is a refactoring for maintainability rather than a semantic change."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/314.lean:epsilon": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal_after correctly casts harmonicBlock (which works over any division ring) to ℝ and subtracts 1, replacing the previous reference to harmonicSum with the refactored harmonicBlock definition; both compute the same overshoot value."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/314.lean:mMin": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Both definitions find the infimum of the same set condition; formal_after replaces harmonicSum with harmonicBlock as part of the refactoring to use the unified harmonicBlock definition."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/333.lean:erdos_333": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal_after replaces Finset.filter with set-theoretic intersection and .card with .ncard, which are definitionally equivalent ways to count elements satisfying a condition."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/93.lean:erdos_93": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before includes an unnecessary hypothesis hA_card : 3 ≤ A.card that is not part of the informal problem and should be derivable from ConvexIndep; the formal_after correctly removes it."
+ },
+ "fcpr:82f42e0062159334fc6c8c18f5790c10c5650637:FormalConjectures/ErdosProblems/497.lean:erdos_497": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal_after replaces antichainCount with DedekindNumber.M', which may be a different function with the same asymptotic behavior; without knowing their definitions, it is unclear if they are equivalent."
+ },
+ "fcpr:82f42e0062159334fc6c8c18f5790c10c5650637:FormalConjectures/ErdosProblems/618.lean:erdos_618": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal_after uses (G n).maxDegree instead of maxDegree (G n), which is a stylistic change to use the method notation; both refer to the same notion of maximum degree."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/306477.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from IsSumOfBinomials to A is purely notational; the formal statement structure and meaning remain unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/308734.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from IsSumOfFourSquaresWithPowers to A is purely notational; the formal statement structure and meaning remain unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/41.lean:noPowerPartitionNumber": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before references 'p k' (partition function) whereas formal_after correctly references 'a k' to match the informal statement about partition numbers."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_209": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from lowercase 'a' to uppercase 'A' is purely notational; the semantic content is unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_65": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from lowercase 'a' to uppercase 'A' is purely notational; the semantic content is unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_of_comesFromPrimeQuadruple": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from lowercase 'a' to uppercase 'A' is purely notational; the semantic content is unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:comesFromPrimeQuadruple_of_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from lowercase 'a' to uppercase 'A' is purely notational; the semantic content is unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:A": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before defines A as {n | a n} (indirection) while formal_after explicitly defines A with the actual mathematical condition σ 1 n = 2 * usigma n and 0 < n, making the correct definition explicit."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_108": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from lowercase 'a' to uppercase 'A' is purely notational; the semantic content is unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_540": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from lowercase 'a' to uppercase 'A' is purely notational; the semantic content is unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_756": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rename from lowercase 'a' to uppercase 'A' is purely notational; the semantic content is unchanged."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_of_primitive_mul_squarefree": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes rename 'isPrimitiveTerm' to 'IsPrimitiveTerm' and lowercase 'a' to uppercase 'A', which are purely notational style fixes without semantic impact."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/36.lean:Green36Property": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical in`, which is a non-semantic style adjustment that doesn't alter the logical meaning of the definition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/36.lean:SimultaneousDoubleProduct": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical in`, which is a non-semantic style adjustment that doesn't alter the logical meaning of the definition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Paper/DegreeSequencesTriangleFree.lean:degreeFreq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical in`, which is a non-semantic style adjustment that doesn't alter the logical meaning of the definition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Paper/StrongSensitivityConjecture.lean:blockSensitivityAt": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical in`, which is a non-semantic style adjustment that doesn't alter the logical meaning of the definition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Wikipedia/HardyLittlewood.lean:Nat.primeTupleCounting": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical in`, which is a non-semantic style adjustment that doesn't alter the logical meaning of the definition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/WrittenOnTheWallII/GraphConjecture36.lean:dp": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is adding `open scoped Classical in`, which is a non-semantic style adjustment that doesn't alter the logical meaning of the definition."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:aeval": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is removing `[Fintype σ]` from the binders, which is simply a cleanup consistent with reviewer feedback about unnecessary finiteness assumptions."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:comp_aeval": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only changes are removing `[Fintype σ]` and `[Fintype τ]` from the binders, which are non-semantic style cleanups consistent with reviewer feedback."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:jacobian_conjecture": {
+  "classes": [
+   "wrong-answer-marker",
+   "extraneous-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `answer(False) ↔ ...` while formal_after uses `¬ ∀ ...`, which are semantically equivalent but the change also reformulates the entire statement structure and adds field quantification, making it incomparable to the informal statement about falsity in all fields of characteristic zero."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The change from `IsGreatest` to `IsLUB` weakens the formal statement since a greatest element is stronger than a least upper bound (an element can be a greatest element only if it's in the set and is an upper bound, but IsLUB only requires the latter)."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5.variants.gowers_sl_two": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only changes are replacing `SL(2, ZMod p)` with the notation `SL₂ p`, which is purely a syntactic shorthand without semantic difference."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5.variants.sl_two": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The type of `S` changed from `∀ q : ℕ, Set (SL(2, ZMod q))` to `Finset (SL₂ p)`, which fundamentally alters what is being claimed about the structure and domain of the maximal product-free set."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:exists_primitive_of_a": {
+  "classes": [
+   "wrong-referent",
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement uses lowercase `a` and `isPrimitiveTerm` which were renamed to uppercase `A` and `IsPrimitiveTerm` in the corrected version, causing the formal_before to reference undefined or wrong declarations."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:isPrimitiveTerm_108": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses lowercase `isPrimitiveTerm` which is renamed to uppercase `IsPrimitiveTerm`, making the formal_before reference a non-existent or differently-named declaration."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:mod_216_of_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from lowercase `a` to uppercase `A` was applied; the logical content and structure remain identical."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:powerful_of_isPrimitiveTerm": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses lowercase `isPrimitiveTerm` which is renamed to uppercase `IsPrimitiveTerm`, causing a reference to a non-existent or differently-named declaration."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:unique_primitive_108": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses lowercase `isPrimitiveTerm` which is renamed to uppercase `IsPrimitiveTerm`, making it reference a non-existent or differently-named declaration."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from lowercase `a` to uppercase `A` was applied; the logical content remains identical."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_10": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from lowercase `a` to uppercase `A` was applied; the logical content remains identical."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from lowercase `a` to uppercase `A` was applied; the logical content remains identical."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from lowercase `a` to uppercase `A` was applied; the logical content remains identical."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_6": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from lowercase `a` to uppercase `A` was applied; the logical content remains identical."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_8": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from lowercase `a` to uppercase `A` was applied; the logical content remains identical."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_of_primes": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from lowercase `a` to uppercase `A` was applied; the logical content and structure remain identical."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/206.lean:IsUnderapprox": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before delegates validity to `ValidEgyptian S`, but formal_after directly inlines the requirement `∀ m ∈ S, 0 < m`; if `ValidEgyptian` includes additional constraints beyond positivity, the two definitions diverge."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/206.lean:egyptianSum": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `S.sum (fun m => (1 : ℝ) / m)` to `∑ m ∈ S, (1 : ℝ) / m` is purely notational; both evaluate identically."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/209.lean:IsLine": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before requires the affine span of exactly two distinct points, while formal_after requires the direction space to have finrank 1; these are related but not equivalent (finrank 1 allows lower-dimensional or degenerate cases via junk values)."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/353.lean:erdos_353.variants.isosceles_triangle": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Replacing the inline disjunction `(dist a b = dist a c ∨ dist b a = dist b c ∨ dist c a = dist c b)` with the predicate `IsIsosceles a b c` is a factorization that preserves meaning."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/353.lean:erdos_353.variants.right_angled_triangle": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Replacing the inline disjunction of angle conditions with the predicate `IsRightAngled a b c` is a factorization that preserves meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/231201.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Renaming `PrimeCondition n` to `A n` is a pure rename that does not change the mathematical meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/232174.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Renaming `HasPrimeRepresentation n` to `A n` is a pure rename that does not change the mathematical meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/239957.lean:conjecture": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before expands the conjecture with explicit constraints (integer k, size, and primitive root order), while formal_after delegates to predicate `A p`; equivalence depends on how `A` is defined."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/280831.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Renaming `HasSquareCondition n` to `A n` is a pure rename that does not change the mathematical meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/281976.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Renaming `IsSumOfFourSquaresWithSquareConditions n` to `A n` is a pure rename that does not change the mathematical meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/287616.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Renaming `IsSumOfTriangularAndGeneralizedPolygonal n` to `A n` is a pure rename that does not change the mathematical meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/303656.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Renaming `IsSumOfTwoSquaresAndPowersOf3And5 n` to `A n` is a pure rename that does not change the mathematical meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:prime_add_one_of_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The only change is renaming the predicate `a` to `A`, which is a stylistic refactoring with no change to meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/80170.lean:gcdCondition_iff_primePowerCondition": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes rename `GCDCondition` to `A` and `PrimePowerCondition` to `B`, which are purely stylistic refactorings preserving the logical structure."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/81091.lean:conjectureA81091": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The predicate `isPrimeBitsSet 3 p` is replaced with `A p` without explanation of whether they are equivalent; the informal statement requires primes of the form 2^n + 2^i + 1 with 0 < i < n, and the definition mismatch is unclear."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/Subsets/FC100SolvedSet1.lean:problems": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes update list elements with different declaration references (e.g., `hasSquareCondition_0` → `a_0`, `primeCondition_8` → `a_8`), reflecting refactorings in the underlying problem definitions with no impact on the list structure itself."
+ },
+ "fcpr:d2f4ee88c251c5f987e4d7f630501e8ef0d48ce9:FormalConjectures/GreensOpenProblems/66.lean:green_66": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The conjunction of two inequalities `X - (1/10) * X^(1/4) ≤ n ∧ (n : ℝ) ≤ X` is replaced with the equivalent membership `(n : ℝ) ∈ Set.Icc (X - (1/10) * X^(1/4)) X`, which is an idiomatic mathlib formulation with identical meaning."
+ },
+ "fcpr:0b434969fc19920d230197c53a5f7313353012ff:FormalConjectures/ErdosProblems/281.lean:erdos_281": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The predicate `HasIntegerDensity` is renamed to `Set.HasIntDensity`, which is a refactoring to use the standardized mathlib namespace with no change in meaning."
+ },
+ "fcpr:0b434969fc19920d230197c53a5f7313353012ff:FormalConjectures/ErdosProblems/419.lean:factorialDivisorRatio": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The function `tau` (number of divisors) is replaced with `σ 0` (the sigma function applied to 0), which are standard equivalent notations for the divisor-counting function."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/34.lean:consecutiveSums": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The function signature changes from taking an arbitrary sequence `π : Fin n → ℕ` to a permutation `p : Equiv.Perm (Fin n)`, and the indexing changes from `π i` to `((p k : ℕ) + 1)`, which alters the formal semantics relative to the informal definition."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/34.lean:erdos_34": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_after removes the hypothesis `IsPermutationOfIcc n π` that constrained the input sequence to be a permutation of {1,…,n}, now relying only on `Equiv.Perm (Fin n)` which is structurally a permutation but loses the explicit side condition."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/47.lean:erdos_47": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The predicates `reciprocalSum A` and `reciprocalSum S` are replaced with `A.reciprocalSum` and `S.reciprocalSum`, which are equivalent dot-notation syntax changes with no semantic difference."
+ },
+ "fcpr:c003f3c442d29a34c56412310a8ece525cfa6e69:FormalConjectures/Paper/DeGiorgi.lean:HasPositiveDeriv": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The inequality `lineDeriv ℝ u x (EuclideanSpace.single 0 1) > 0` is reordered to `0 < lineDeriv ℝ u x (EuclideanSpace.single 0 1)`, which is a stylistic rewriting of the same mathematical fact."
+ },
+ "fcpr:838af5f64d0b21eb62baf951cb76f66ce96f615d:FormalConjectures/ErdosProblems/221.lean:erdos_221": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The notation `=O[atTop]` is replaced with the equivalent `≪` operator for big-O asymptotics, which are standard equivalent notations in mathlib."
+ },
+ "fcpr:a19e0b78e65ade76ba2961e58123321c1aab2adb:FormalConjectures/ErdosProblems/1138.lean:erdos_1138": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement asks if the asymptotic formula holds (a yes/no question), and the formal_after correctly marks answer(False), indicating the conjecture is false; formal_before's answer(sorry) is a placeholder that fails to commit to the correct answer."
+ },
+ "fcpr:9cddd0ab157fb101a83eb179a1eaa5ea0cbe3da6:FormalConjectures/GreensOpenProblems/51.lean:green_51": {
+  "classes": [
+   "wrong-answer-marker",
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before attempts to explicitly state the definition of F as a function with universal and maximality properties, while formal_after delegates to a named definition guaranteedMaxCosetDim; without seeing that definition, the formal_before's explicit formalization appears to contradict the informal intent by encoding the wrong property structure."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/GraphConjecture1.lean:conjecture1": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before uses undefined function `m G` while formal_after correctly uses the defined `matchingNumber G`, making the before version undefined and thus vacuously different in meaning."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/GraphConjecture6.lean:conjecture6": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before uses undefined function `m G` while formal_after correctly uses `matchingNumber G`, making the before version undefined."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:C6_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `m C6` to `matchingNumber C6` is a rename of the same function to its proper definition; no logical meaning changes."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:K4_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `m K4` to `matchingNumber K4` is a simple rename refactoring with no semantic change."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:Star5_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `m Star5` to `matchingNumber Star5` is a simple rename refactoring with no semantic change."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:house_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `m HouseGraph` to `matchingNumber HouseGraph` is a simple rename refactoring with no semantic change."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:petersen_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `m PetersenGraph` to `matchingNumber PetersenGraph` is a simple rename refactoring with no semantic change."
+ },
+ "fcpr:3ece14fc89c2e1daebd2437cf8abfe18eacca270:FormalConjectures/WrittenOnTheWallII/GraphConjecture100.lean:conjecture100": {
+  "classes": [
+   "wrong-referent",
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before uses `length Gᶜ` which is not the same as the diameter function defined/intended in formal_after; the before version incorrectly references the graph diameter via a length function rather than the proper degreeL2Norm interpretation."
+ },
+ "fcpr:88daf905bd8c87ea2837849f7fc8118e0e334c36:FormalConjectures/ErdosProblems/950.lean:erdos_950.variants.weaker_pi_implies_f": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before encodes the hypothesis as the antecedent of an implication (→), while formal_after correctly makes it an explicit hypothesis via the binder (h :), changing the logical structure from a conditional proposition to a properly parameterized theorem."
+ },
+ "fcpr:1c0fbc2774dae15e8a597ba5375d90d04fe97a65:FormalConjectures/WrittenOnTheWallII/GraphConjecture100.lean:conjecture100": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal_after removes the unused binding `let diamCompl := Gᶜ.ediam.toNat` which is never referenced, so removing it changes only syntactic noise without affecting the statement's meaning."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1126.lean:erdos_1126": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before states the theorem as a direct implication, while formal_after wraps it in an answer(True) ↔ ... structure, changing the proof obligation from proving the statement to proving a biconditional with True."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/134.lean:erdos_134": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before directly states the theorem with ε and δ as universally quantified parameters, while formal_after wraps it in answer(True) ↔ ∀... structure, fundamentally changing the proof obligation."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/178.lean:erdos_178": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before directly states the theorem with function a as a parameter, while formal_after wraps it in answer(True) ↔ ∀... structure, altering what needs to be proved."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/493.lean:erdos_493": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before states the theorem directly, while formal_after wraps it in answer(True) ↔... structure, changing the proof obligation from proving the statement to proving its equivalence with True."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/532.lean:erdos_532": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before directly states the theorem with c as a parameter, while formal_after wraps it in answer(True) ↔ ∀... structure, fundamentally changing the proof obligation."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/729.lean:erdos_729": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before directly states the theorem with C and hC as parameters, while formal_after wraps it in answer(True) ↔ ∀... structure, changing the proof obligation."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/871.lean:erdos_871": {
+  "classes": [
+   "wrong-answer-marker",
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before states an existential claim about a disjoint partition being impossible (¬∃), while formal_after wraps answer(False) ↔ ∀..., fundamentally inverting the logical structure and changing what is being claimed."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/904.lean:erdos_904": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before has V and n implicit/universally bound, while formal_after explicitly wraps answer(True) ↔ ∀ (V : Type*) [Fintype V]..., changing how the statement is formalized."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/923.lean:erdos_923": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before directly states the theorem with implicit V and n, while formal_after wraps it in answer(True) ↔ ∀ (V : Type*) (n : ℕ)..., changing the proof obligation structure."
+ },
+ "fcpr:f6a227bf9d10a3b1afc15d5176c81c928c223e62:FormalConjectures/ErdosProblems/726.lean:erdos_726": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The change from `fun p ↦ p.Prime ∧ ((p : ℕ) : ℝ) / 2 < ((n % p : ℕ) : ℝ)` to `fun p : ℕ ↦ p.Prime ∧ (p : ℝ) / 2 < (n % p : ℝ)` is just a stylistic simplification of the lambda and casts that does not change meaning."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/31.lean:green_31.variants.sidon_01n": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formal_before uses `Fin n → ZMod 2` while formal_after uses `𝔽₂ n` (the field with 2 elements); although these are mathematically equivalent, the definitional representation change may affect proof behavior."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/31.lean:green_31.variants.sidon_01n_clz01": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formal_before uses `Fin n → ZMod 2` while formal_after uses `𝔽₂ n`; although mathematically equivalent, the change in representation may affect Lean's definitional equality and proof search."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:GamePos": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before includes five additional constraints (claimed_primitive, pool_disjoint, pool_subset, pool_compatible) not mentioned in the informal statement, which merely describes a position as 'claimed set and unclaimed pool'."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:L": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changing from `noncomputable abbrev` to `def` is a stylistic change that does not affect the meaning or the definition of L."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:applyMove": {
+  "classes": [
+   "extraneous-hypothesis",
+   "definitional-mismatch"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before requires `hx : x ∈ p.pool` and includes complex filtering logic with divisibility constraints (¬ x ∣ y ∧ ¬ y ∣ x), whereas formal_after simply erases x from the pool; the informal docstring says the function is 'intentionally total' but formal_before enforces a precondition."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:gameLength": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal_before uses `sorry` as a placeholder while formal_after provides the actual implementation via `gameValueAux`, which is consistent with the informal description of 'genuine game-value definition'."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:startPos": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before includes four additional proof obligations (claimed_primitive, pool_disjoint, pool_subset, pool_compatible) not mentioned in the informal description of 'empty starting position on {2,...,n}'."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/199.lean:erdos_199": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes from `IsThreeTermAP a b c` to `ThreeAPFree A` and from `IsInfiniteAP S` to `S.IsAPOfLength ⊤` are reformulations using equivalent API definitions rather than semantic changes."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/224.lean:ObtuseAt": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changing the type annotation from `E d` to `ℝ^d` is a notational/style change; both represent d-dimensional real vectors and the definition remains semantically identical."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/224.lean:erdos_224": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Replacing the type `E d` with `ℝ^d` throughout is a notational update to use Mathlib's established vector space notation without changing the mathematical content."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/226.lean:erdos_226": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Replacing `¬ IsAffine (fun x : ℝ => (F x).re)` with `(∀ g : AffineMap ℝ ℝ ℝ, (fun x : ℝ => (F x).re) ≠ g)` is a definitional reformulation that expresses the same property of non-linearity."
+ },
+ "fcpr:fbe4917de96511a6553e58144d59814110c47b2e:FormalConjectures/ErdosProblems/154.lean:erdos_154": {
+  "classes": [
+   "wrong-referent",
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement asks about well-distribution of A+A (the sumset) over residue classes, but formal_before filters A itself, not A+A; formal_after correctly filters (A k + A k) and normalizes by its cardinality rather than √N."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1090.lean:erdos_1090": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before is stated as a direct theorem parameterized by k, while formal_after wraps it with `answer(True)` and universally quantifies over k, changing the logical structure from a parameterized claim to an answer to an existence question."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1125.lean:erdos_1125": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before is a direct theorem assuming the hypothesis and proving monotonicity, while formal_after wraps it with `answer(True) ↔` and universally quantifies over f, converting from a conditional statement to an answer to a yes-or-no question."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:HasCosetHole": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type abbreviation changes (𝔽₂ n for Fin n → ZMod 2) with no semantic difference."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:green_32.variants.finite_field": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type abbreviation changes (𝔽₂ n for Fin n → ZMod 2) with no semantic difference."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:hasCosetHole_empty": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type abbreviation changes (𝔽₂ n for Fin n → ZMod 2) with no semantic difference."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/50.lean:green_50": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type abbreviation changes (𝔽₂ n for Fin n → ZMod 2) with no semantic difference."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/9.lean:green_9_iii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only type abbreviation changes (𝔽₅ n for Fin n → ZMod 5) with no semantic difference."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:erdos_1212": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before asserts the existence condition directly without the answer marker, while formal_after wraps it with answer(sorry), changing from a definitive claim to an open problem marker."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:horizontal_leg_valid": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only changes Composite c to c.Composite, a stylistic difference using dot notation instead of prefix notation."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:vertical_leg_valid": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only changes Composite a to a.Composite, a stylistic difference using dot notation instead of prefix notation."
+ },
+ "fcpr:78981183d1c7973f950bd3807381b40a8b01a27c:FormalConjectures/Paper/ConjugacyClassSizes.lean:trivial_center_of_hasDistinctConjClassSizes": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before lacks the hypothesis h : HasDistinctConjClassSizes G that is essential to the informal statement about anti-homogeneous groups."
+ },
+ "fcpr:f967c8ef57753ed2e944e48c72fca68ae0a61dec:FormalConjectures/ErdosProblems/291.lean:erdos_291.parts.ii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before directly asserts the set is infinite without an answer marker, while formal_after wraps it with answer(True) ↔, properly marking this as an open problem claim."
+ },
+ "fcpr:714aaf5beb083dd071ce09ac8f8e15e4c37ef4bb:FormalConjectures/ErdosProblems/700.lean:erdos_700.parts.ii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before directly asserts the set is infinite without an answer marker, while formal_after wraps it with answer(sorry) ↔, properly marking this as an open problem."
+ },
+ "fcpr:714aaf5beb083dd071ce09ac8f8e15e4c37ef4bb:FormalConjectures/ErdosProblems/700.lean:erdos_700.parts.iii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before has answer(sorry) on the right side of the iff, while formal_after correctly places it on the left, properly marking the problem statement as the conjecture being asked."
+ },
+ "fcpr:3024982d4a9b1cdc4c4ddd7113186d88a999b63b:FormalConjectures/ErdosProblems/619.lean:erdos_619": {
+  "classes": [
+   "wrong-answer-marker",
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before simply negates a conjecture without using the answer marker or expressing the negation of existence of a constant c, whereas formal_after properly structures the answer as False and explicitly formalizes the counterexample property."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from C to carmichaelCounting occurred; the logical meaning and structure remain identical."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.agp_infinite": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from C to carmichaelCounting occurred; the logical meaning remains identical."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.agp_lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from C to carmichaelCounting occurred; the logical meaning remains identical."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.harman_lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from C to carmichaelCounting occurred; the logical meaning remains identical."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.lichtman_lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from C to carmichaelCounting occurred; the logical meaning remains identical."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.pomerance": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from C to carmichaelCounting occurred; the logical meaning remains identical."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only a renaming from C to carmichaelCounting occurred; the logical meaning remains identical."
+ },
+ "fcpr:ea3c8625fde4d1e0a516d9b5c6b0397a1e733a13:FormalConjectures/ErdosProblems/1092.lean:f": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before lacks the constraint that E must be a subset of H's edges (E ⊆ H.coe.edgeFinset), which is necessary to ensure the edges being deleted actually exist in the subgraph."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/ErdosProblems/128.lean:erdos_128": {
+  "classes": [
+   "wrong-quantifier",
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before binds V and G implicitly while formal_after properly quantifies over all graphs and vertex types; additionally, formal_before uses implication structure while formal_after uses conjunction for the antecedent."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/ErdosProblems/520.lean:erdos_520": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before assumes a fixed probability space Ω already in scope, while formal_after correctly quantifies over Ω with its required structure (MeasureSpace, IsProbabilityMeasure), making the formal_before incomplete."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture23.lean:conjecture23": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only changed Type* to Type, which is a stylistic difference that does not affect the logical meaning since α is already a Fintype."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture32.lean:conjecture32": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses `G.eccentricity` while formal_after uses `G.eccent`, indicating a change in which predefined function is referenced."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture33.lean:conjecture33": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Only change is `Type*` to `Type`, which is a universe level adjustment that does not affect the semantic meaning of the statement."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture34.lean:conjecture34": {
+  "classes": [
+   "wrong-referent",
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before references `graphCenter G` while formal_after references `center G`, which are different declarations; the informal speaks of 'center vertices' which may not align with the original function."
+ },
+ "fcpr:50d3bdc5f24d6b2ddcda97a856c5088be52dd552:FormalConjectures/LittProblems/1.lean:IsSolutionOfAlgebraicODE": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_after adds the hypothesis `q ≠ 0` which is necessary to ensure the rational function is well-defined, a condition missing from formal_before."
+ },
+ "fcpr:10efdc97e18a2c87e41719ef1ce39bbf9fda47a2:FormalConjectures/GreensOpenProblems/39.lean:green_39.variant_theta": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses exponent θ in the translate count (`C * (p : ℝ) ^ θ`) while formal_after correctly uses exponent `1 - θ`, aligning with the informal note that the interpretation should be `O(p^{1-θ})`."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:CH.existsWeaklyFirstCountableCompactNotFirstCountable": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before uses the custom predicate `ExistsWeaklyFirstCountableCompactNotFirstCountable` while formal_after expands it inline and adds missing T2Space hypothesis mentioned in the informal note."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:existsWeaklyFirstCountableCompactBig": {
+  "classes": [
+   "missing-hypothesis",
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before claims answer(True) and lacks the T2Space hypothesis, while formal_after uses answer(sorry) and adds the missing T2Space hypothesis that the informal note indicates is part of the Hausdorff requirement."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:existsWeaklyFirstCountableCompactNotFirstCountable": {
+  "classes": [
+   "definitional-mismatch",
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal_before uses a custom predicate while formal_after expands it inline and adds the missing T2Space (Hausdorff) hypothesis required by the informal statement."
+ },
+ "fcpr:accf2eceb8f8f4bc0272b0ccc95daa96423d1c4e:FormalConjectures/ErdosProblems/1146.lean:IsEssentialComponent": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal_before uses `schnirelmannDensity (A + B) > b → 0 < b → b < 1` with wrong implication order, making it vacuously true; formal_after correctly orders conditions as `0 < b → b < 1 → schnirelmannDensity (A + B) > b`."
+ },
+ "fcpr:a47b7e30b78d00d5c852e9927a8d5ec2c24b47bf:FormalConjectures/GreensOpenProblems/49.lean:green_49": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The changes are stylistic/notational: using `𝔽₂ n` instead of `Fin n → ZMod 2`, `K ≥ 1` instead of `1 ≤ K`, and `T + W` instead of the expanded set addition, which do not alter semantic content."
+ },
+ "fcpr:3284e02963504e4955e8898050082d3774a3ff78:FormalConjectures/GreensOpenProblems/47.lean:green_47": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Changes are stylistic: `=O[atTop]` is replaced with `≪` (equivalent notation), `(1/2 : ℝ)` converted to `Real.sqrt`, and `IsQuadratic ϕ` replaced with explicit degree 2 polynomial condition, which formalize the same mathematical content."
+ },
+ "fcpr:13de6c419bb3448be874a1a384b078b18e964440:FormalConjectures/ErdosProblems/274.lean:erdos_274": {
+  "classes": [
+   "wrong-answer-marker",
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal_before claims answer(True) and uses existential quantifiers with inequality in sizes, while formal_after uses answer(sorry) and negates the logic to ask if all exact coverings must have equal-sized parts, reversing the logical structure."
+ }
+}

@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrr}
+\toprule
+ & controls & \multicolumn{2}{c}{errors, wrong class hinted} & errors, gold class hinted \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-4}\cmidrule(lr){5-5}
+model & hint rejected & wrong class echoed & a gold class found & a gold class found \\
+\midrule
+    Claude Haiku 4.5 & 70/283 & 55/74 & 7/74 & 66/74 \\
+    Claude Sonnet 5 & 33/243 & 50/74 & 11/74 & 72/74 \\
+    Claude Opus 5 & 100/177 & 41/70 & 25/70 & 60/64 \\
+    Claude Fable 5 & 73/90 & 40/73 & 26/73 & 67/74 \\
+    GPT-5.6 Terra Pro & 184/286 & 27/74 & 26/74 & 61/74 \\
+    Kimi K3 & 30/67 & 45/73 & 18/73 & 63/72 \\
+    Grok 4.6 & 165/286 & 39/74 & 26/74 & 62/74 \\
+\bottomrule
+\end{tabular}

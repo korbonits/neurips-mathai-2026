@@ -1,0 +1,2882 @@
+{
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_elkies28": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement \"rank of the Elkies curve is exactly 28\" should use rank as the dimension of the group of rational points, but `finrank ℤ` measures the finrank as a ℤ-module which may not capture the standard elliptic curve rank definition."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_elkiesKlagsbrun29": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly references `elkiesKlagsbrun29` and formalizes the claim that its rank equals 29; no semantic error detected despite the hint."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_ranksunbounded30": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "Stating exactly rank 30 is vacuous if the curve only has rank at least 30 proven under assumptions; the theorem claims more certainty than the informal statement warrants."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:ranksunbounded30": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "low",
+  "rationale": "Without external verification, the numerical constants in the Weierstrass curve coefficients cannot be confirmed to match the referenced curve from 2026."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:thirty_le_rank_ranksunbounded30": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement concerns rank (standard group-theoretic notion) while the formal statement uses `finrank ℤ`, which may not align with the intended definition of elliptic curve rank."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:toWeierstrass": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The conversion sets a₁=0, a₂=0, a₃=0 uniformly, which may not correctly represent the standard Weierstrass form of a general RatEllipticCurve if those coefficients should vary."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:twentyeight_le_rank_elkies28": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly states that the rank of elkies28 is at least 28; the hint may be misleading as the referent is correct."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:twentynine_le_rank_elkiesKlagsbrun29": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The formal statement lacks the qualification that this result holds \"assuming the generalized Riemann hypothesis and Birch and Swinnerton-Dyer conjecture\" as stated informally."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean:BoxdotConjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The formal hypothesis `∀ φ, L ⊢ ■ φ ↔ KT ⊢ φ` only captures faithful interpretation but may miss the requirement that this should be a specific boxdot translation semantics."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean:KT": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition correctly formalizes KT as the normal modal logic with theorems exactly those provable in KTProof from the empty context, matching the informal description."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean:solvable_of_cyc_lt": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The use of `answer(sorry) ↔` creates a biconditional where the left side is undefined, which does not faithfully represent the conjecture statement itself."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean:solvable_of_cyc_lt_two_pow_succ": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "low",
+  "rationale": "The `numPrimeFactors` function may return 0 for the trivial group, causing arithmetic issues; context on how this handles edge cases is missing."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/1192.lean:erdos_1192.variants.renyi": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement uses 'and' to conjoin two conditions (∑f_r(n)² ≪ x AND |A∩[1,x]| ≫ x^(1/r)), but the formal statement has the second condition reversed (x^(1/r) =O[atTop] count A x instead of count A x ≫ x^(1/r)), making the asymptotic relationship backwards."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.parts.i": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal question asks if m_n < p_n for 'almost all n', but the formal statement requires the ratio to tend to exactly 1, which is a stricter condition than mere density (could require the ratio to approach some other value close to 1)."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.parts.ii": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement quantifies 'for almost all n', but the formal statement existentially quantifies over set A with density 1 and then restricts to that set, which changes the logical scope of what we're asserting about 'almost all n'."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.variants.m_div_n": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The statement references a derivation of m_div_n from Erdős, but the hint suggests it may reference the wrong declaration or the wrong source result entirely."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Mathoverflow/75792.lean:Reachable.decide": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "No docstring provided to evaluate; the hint suggests wrong-connective but without context of the informal intent, the implementation appears technically sound for decidability."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Paper/ConjugacyClassSizes.lean:conjClassSizes_iff_sym_three_solvable": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement specifies the result holds for solvable groups (an additional constraint), but the formal statement includes [IsSolvable G] as a hypothesis, making it correctly capture the hypothesis; however, the hint indicates a potential off-by-one or wrong constant issue in the core claim."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:IsComputableInPolyTime": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition correctly abstracts poly-time computation as a nonempty existential of the underlying Turing machine definition, which is a standard formalization pattern without semantic error."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:NP": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal definition requires the polynomial p to have a property (its degree or bounds), but the formal statement simply existentially quantifies over any polynomial without constraining it to be meaningful for the problem."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:P": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal definition specifies decision problems decidable in polynomial time, but the formal statement encodes inputs as List Bool and outputs as Bool, which may not correctly represent the domain/codomain structure intended by 'decision problems'."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/OEIS/6697.lean:infiniteWord": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement describes w as a fixed point and emphasizes the stabilization property, but the formal definition directly indexes into finiteWord without verifying or stating that the value actually stabilizes at position i."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1043.lean:erdos_1043": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement says Pommerenke proved the answer is no, but the formal answer(False) marker combined with the quantified statement creates a logical contradiction about what is being asserted."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1043.lean:erdos_1043.variants.weak": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement specifies this is Pommerenke's result for a monic polynomial with degree ≥ 1, but the formal statement lacks the nonzero-degree hypothesis, making it potentially trivial for constant polynomials."
+ },
+ "fcpr:858d0e73105101fbc9f86c6d6dd86bbc6d4d789e:FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean:poisson_conjecture.variants.jacobian_implication": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly captures that Jacobian conjecture in dimension 2n implies Poisson conjecture in dimension n, with correct quantification and hypothesis structure."
+ },
+ "fcpr:7e662f771cec2c6d893ee048d163c3cb3aa2a377:FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean:JacobianConjectureFor": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal definition correctly captures the Jacobian conjecture: polynomial endomorphisms with unit Jacobian determinant have polynomial inverses, with all logical structure matching the informal description."
+ },
+ "fcpr:ae8344226ca52fc0cd92c975bbd783ebe:FormalConjectures/OEIS/260194.lean:a": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The definition merely projects the first component of a state without actually specifying the recurrence relation or initial conditions mentioned in the informal statement."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:AdmitsLieGroupStructure": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The definition does not require the topological group structure (Group G with TopologicalSpace G compatibility) or second-countability/Hausdorff properties mentioned in the Hilbert problem context."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:admitsLieGroupStructure_of_lieGroup": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The theorem correctly states that a finite-dimensional real-analytic Lie group admits the Lie group structure property, with all quantifiers and hypotheses properly formalized."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:hilbert_fifth_problem": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement assumes IsTopologicalGroup G but the informal statement specifies Hausdorff and second-countable conditions, which are logically stronger/different requirements than just a topological group."
+ },
+ "fcpr:8feeb0971f41c2981730858d9287b1eaea129fe9:FormalConjectures/ErdosProblems/2.lean:erdos_2": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The answer marker formalizes that False (no arbitrarily large bound exists) implies existence of a universal bound, but the informal statement says this negative answer has already been proven true."
+ },
+ "fcpr:3f8165c72db841c752cfdadb9d13eec4e3c02ff3:FormalConjectures/OEIS/211417.lean:general_divisibility": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement quantifies D before n (existential D, then universal n), but the informal conjecture structure suggests D depends on r as a function D(r), requiring the witness D to be explicit/computable, not just existentially quantified."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:elkies28": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The definition merely provides the curve coefficients without stating or proving the rank property (rank at least 28) mentioned in the informal docstring."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:elkiesKlagsbrun29": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The definition correctly specifies the Weierstrass curve coefficients for the Elkies-Klagsbrun curve with rank at least 29; the hint about wrong-answer-marker is not substantiated by comparing informal to formal."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:mordell_weil": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement proves only Module.Finite (finite Z-module structure) but the informal docstring discusses rank (finrank, which measures dimension) as the true mathematical content, these are related but definitionally different notions."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition correctly formalizes the rank of an elliptic curve over ℚ as the finrank of the rational points as a Z-module, which is the standard mathematical definition."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1062.lean:f": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition restricts to subsets A ⊆ Set.Icc 1 n (a closed interval constraint), but the informal statement only specifies 'a subset of {1,...,n}', which doesn't necessarily impose a closedness requirement in the mathematical sense intended."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/134.lean:erdos_134": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The theorem is stated as an iff with answer(True), but the informal description presents this as a proven result by Alon (a fact), not a conjecture requiring proof verification, making the answer marker questionable."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/184.lean:IsCycleOrEdge": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "A 2-regular connected graph on fintype U is automatically non-trivial, but the definition allows empty graphs (which satisfy neither condition trivially), potentially making the definition not capture the intent that a cycle or edge must have at least some structure."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/522.lean:numRootsInUnitDisk": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition uses closedBall 0 1, which counts roots at distance ≤ 1 (including the boundary), but 'in the unit disk' typically means the open disk of radius < 1."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/Wikipedia/SnakeInTheBox.lean:IsSnakeInGraphOfLength": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The definition quantifies existentially over vertices u, v, and a walk P, but does not explicitly constrain that this path structure uniquely corresponds to the subgraph G', which may lead to the answer marker being misplaced or the definition being imprecise."
+ },
+ "fcpr:5a8c9eda163c44de2a05c4fd9c81dec3dabbcfa7:FormalConjectures/Mathoverflow/75792.lean:Reachable.decide": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "no docstring"
+ },
+ "fcpr:9c4d5821819656af53c5473ded2116ea14a7ff1c:FormalConjectures/Other/VCDimConvex.lean:exists_hasAddVCNDimAtMost_n_of_convex_rn_add_one": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formal statement uses HasAddVCNDimAtMost with parameter n, but the informal statement discusses 'VC_n dimension', which may be defined differently in the codebase and could refer to a distinct or related but distinct notion."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:a": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formula uses division (num / den) without asserting that den divides num, which is implicitly required for the OEIS formula to yield the correct integer sequence."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture2": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "When n < 3, n/3 = 0 in natural number division, making the condition p ≤ 0 impossible for any prime p, so the theorem becomes vacuously true for small n contrary to the conjecture's intent."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture3": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement uses 'for each...0 ≤ k < p' (universal quantification), but the formal statement as written is a theorem with k as a free variable without explicit universal quantification, changing the logical structure."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture4": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement uses an infinite sum ∑' (over all i : ℕ), but the informal statement specifies the sum is 'for i ≥ 0' conditional on the floor operation, and more critically, the infinite sum may not converge if b is nonzero for all arguments."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition returns ℤ (an integer) in all cases, but the informal statement specifies the result should be 'none' if either n or n+1 does not terminate under Collatz, requiring an Option type rather than always producing an integer."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_0": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly expresses the informal statement that the sequence value at 0 is 0, with no discrepancies."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly expresses the informal statement that the sequence value at 1 is 1, with no discrepancies."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly expresses the informal statement that the sequence value at 2 is 6, with no discrepancies."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly expresses the informal statement that the sequence value at 3 is -5, with no discrepancies."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly expresses the informal statement that the sequence value at 4 is 3, with no discrepancies."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:collatzSteps": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The function returns ℕ instead of Option ℕ and uses sInf which returns 0 on empty sets, diverging from the informal requirement to return 'none' when the Collatz process does not terminate."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:conjecture1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly formalizes the informal statement about density of zeros in the sequence using liminf over the range [1,n]."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:indices": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures the set of positive indices n where a(n) equals v, matching the informal specification."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The function returns ℕ instead of Option ℕ and uses sInf which returns 0 on empty sets, diverging from the informal requirement to return 'none' when no suitable m exists."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly expresses the informal statement that the sequence value at 2 is 2, with no discrepancies."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly expresses the informal statement that the sequence value at 3 is 1, with no discrepancies."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly expresses the informal statement that the sequence value at 4 is 2, with no discrepancies."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/167918.lean:conjecture1": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement explicitly requires 'a(n) ≠ 0' to avoid sInf evaluating to 0 on an empty set, but this hypothesis is missing from the formal statement."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/167918.lean:conjecture2": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement explicitly requires 'a(n) ≠ 0' to avoid sInf evaluating to 0 on an empty set, but this hypothesis is missing from the formal statement."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:a": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The definition extracts the numerator of a rational sequence via toNat conversion, which could silently produce junk values when the denominator is not positive, but no non-negativity constraint on the rationals is enforced."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:conjecture1": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The hypothesis requires 1 ≤ n but the informal statement claims the result holds for all positive integers, and the formal version starting at n=1 may exclude n=0 unnecessarily or miss the intended domain."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:conjecture2": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement requires m ≥ 1, producing powers 2^1, 2^2, 2^3, …, but the informal statement specifies 'n = 2, 2^2, 2^3, …' which should be indexed as 2^1, 2^2, 2^3, … or equivalently exclude m=0; the hypothesis 1 ≤ m correctly matches this."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/17666.lean:conjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement explicitly requires 0 < n to avoid a counterexample where a(0) = 1 is in A005153 but 0 is not, but this hypothesis is absent from the formal statement."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Despite the hint, the formal statement faithfully captures the informal one: it correctly references the Legendre symbol and modular congruence condition with all required hypotheses about the prime p and the representation as a sum of squares."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Despite the hint, the formal statement faithfully captures the informal one: it correctly expresses the modular congruence for primes with Legendre symbol -1 and includes the necessary hypothesis p ≠ 7."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Despite the hint, the formal statement correctly expresses the congruence for all primes p ≠ 7 using the Legendre symbol, matching the informal statement's mathematical intent."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:a": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal definition uses a specific binomial difference formula that may not correctly capture the general binomial summation S(3,n)/S(1,n) referenced in the informal statement without further context on what S denotes."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:b": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The definition b(n) = a(2n-1) requires 2n-1 ≥ 0, which for natural numbers means n ≥ 1, but no explicit hypothesis n ≥ 1 guards against undefined behavior at n=0 with natural number subtraction."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Despite the hint, the formal statement faithfully captures the informal supercongruence statement with all required hypotheses on n, k, and p in the correct form."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/53067.lean:conjecture": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The sInf returns the infimum of a set of naturals (or 0 if empty), but the informal question asks about the next prime term, which should be extracted as an element of type ℕ rather than computed via infimum over a set."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/55487.lean:conjecture": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement references `p n` and `q n` as auxiliary definitions, but the informal statement defines p and q in terms of specific conditions involving prime divisors and factorials that are not evident in the function signatures."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/70518.lean:conjecture": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The sInf returns 0 if the set is empty (junk value trap), but the informal question expects the next natural number with the property, which requires the set to be non-empty and its infimum to be a valid answer."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/71532.lean:conjecture1": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement asserts existence of an N with a property involving sqrt, but the informal question simply asks if a(n) > 0 for all n > 2, which is a different claim entirely."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/71532.lean:conjecture2": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses asymptotic equivalence (~) to a logarithmic function, but the informal question asks whether a(n) > sqrt(n) for large n, which is a different comparison entirely."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/86766.lean:conjecture1": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The sInf can return 0 if the set is empty, causing the junk value trap where the answer would be meaningless, but the informal question assumes there exists such an m > 1."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.parts.i": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement defines answer(sorry) ↔ ... making it vacuously true since answer(sorry) is just a placeholder, rather than asserting the mathematical conjecture itself."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.parts.ii": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement references quadraticBound but also mentions that the conjecture fails for k ≥ 3, which suggests the definition of quadraticBound may not properly exclude such counterexamples."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.variants.higher_full_parts": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses answer(sorry) ↔ ... with k ≥ 2, but the informal statement specifies r ≥ 3 and r,k ≥ 2, introducing an asymmetry in the quantifier constraints."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.variants.k_le_two": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement asserts a trivial fact for k ≤ 2, but the formal statement omits the hypothesis that this is about the B_2 full part (not general r), which is needed for the triviality to hold."
+ },
+ "fcpr:7143f3cdfd7543b347037096aa43c7609ecfa549:FormalConjectures/Wikipedia/SidorenkoConjecture.lean:IsSpider234": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition uses T.degree and T.dist to characterize a spider tree, but this approach may not correctly capture the informal notion of three paths of lengths 2, 3, 4 joined at a central vertex."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:HasUniqueExtensionOfForall": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement quantifies over all a, b, c : ℕ without requiring them to be distinct, but the informal statement specifies 'three distinct elements'."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:integralDiophantine4Tuple": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures the set of integral Diophantine 4-tuples as those satisfying both the tuple property and having cardinality 4, faithfully formalizing the informal statement."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:regularExtension": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly implements the regularExtension function with the specified formula, matching the informal mathematical description."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:Orthogonal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures orthogonality of latin squares using injectivity of the pair-mapping function, which is the standard mathematical formalization of the informal condition."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:latinSquareNearTransversal": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The theorem statement universally quantifies over all n, but the informal statement refers to a general near-transversal property without explicit quantification over all possible sizes; the type domain is overly broad."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:oddOrderLatinSquareTransversal": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement uses `Odd n → ...` as a hypothesis within the biconditional, but the informal statement asserts that each Latin square of odd order has a transversal, requiring the odd order condition to apply to the entire claim, not just as a hypothesis."
+ },
+ "fcpr:9535458bd7f8431aecc77dae8ba211b97cdcf9d3:FormalConjectures/Wikipedia/SteinerSystem.lean:large_steiner_systems": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The answer marker should wrap a concrete witness of type LargeSteinerSystemWitness satisfying the constraints, but the definition body is just `sorry` with no actual construction provided."
+ },
+ "fcpr:a2a45c07539a519aa264f7780a8cd2a1a5f46e3e:FormalConjectures/ErdosProblems/506.lean:erdos_506": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses `IsLeast` to claim a unique minimum number of circles exists, but the informal question asks 'what is the minimum', which may be asking for a characterization rather than asserting a least element exists uniquely for all configurations."
+ },
+ "fcpr:b5acb0ff13e38084105b7fe020ba0d59c1925bc5:FormalConjectures/ErdosProblems/539.lean:erdos_539.variants.limit": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The answer marker wraps a specific limit value (1/2), which is a complete specification rather than leaving the limit as a variable to be determined, making the formal statement trivially true once the specific value is provided."
+ },
+ "fcpr:4010c1f1b811be0b0f95c9cf8bc084d72cea2a88:FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_9.lean:problem_10_9": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly formalizes the non-existence of Z-numbers as a negated existential quantifier, which faithfully captures the informal statement."
+ },
+ "fcpr:4010c1f1b811be0b0f95c9cf8bc084d72cea2a88:FormalConjectures/Wikipedia/Mahler32.lean:mahler_conjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal theorem assumes x ≠ 0 as a hypothesis, but the informal statement makes no such restriction; the Mahler Conjecture states there are no Z-numbers without excluding zero."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/100478.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal recursive definition correctly implements the Pentanacci sequence as specified in the informal description, with proper base cases and recursive formula."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/100800.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition directly captures the function as the sum of n and its digit sum, faithfully formalizing the informal mathematical description."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/101779.lean:a": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The use of sInf on a potentially empty set will return 0 by Lean convention, but the informal statement explicitly says '0 if no such k is found', suggesting that 0 should be returned only when no k exists; however, sInf of any finite/empty set of naturals defaults to 0, which may not correctly distinguish between 'no k found' and 'k=0 found'."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/102371.lean:a": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal definition specifies a(1)=1, but the formal definition has a(0)=0 and a(1)=1, introducing an additional base case that is not mentioned in the mathematical statement."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/102722.lean:a": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition uses Icc 1 n (closed interval), but the mathematical notation with k=1,...,n typically expects the summation to include both endpoints correctly; however Icc is correct here, so the issue may be that the hint indicates a boundary condition problem rather than the formal statement itself being wrong."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/103151.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal definition correctly counts decompositions of 2n+1 into 2p+q where p and q are odd primes; the hint 'wrong-answer-marker' likely refers to formatting or presentation rather than a semantic error in the mathematical definition."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/357513.lean:a357513_supercongruence": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "For p=2, p-1=1, but for p=3, p-1=2; when p is a prime ≥3, p-1 is well-defined, but the use of natural number subtraction could cause issues if the hypothesis structure doesn't properly ensure p≥3 before subtraction, or if coercion (p:ℤ)^4 doesn't handle small primes correctly."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:HasCentreOfSymmetry": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition with the biconditional x ∈ K ↔ (2 • c - x) ∈ K correctly captures invariance under reflection in c, equivalent to the informal statement about centre of symmetry."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:IsParallelogramAtOrigin": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly specifies a parallelogram as the convex hull of {0, a, b, a+b} with linearly independent a and b, matching the informal definition."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:isParallelogramAtOrigin_of_volume_lpSum_eq": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The use of answer(sorry) with junk values could cause evaluation issues; additionally, the implication direction with many nested quantifiers may not correctly capture the conjecture's intent regarding sufficiency vs necessity."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:lpSum": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The definition uses supportFunction which may return ⨆ (supremum) that could be infinite or 0 in edge cases; the expression (supportFunction K u ^ p + supportFunction L u ^ p) ^ (1 / p) involves real exponents that may not be well-defined for all K, L, requiring implicit assumptions about domain."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:supportFunction": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition with ⨆ x : K correctly represents the supremum over x ∈ K of inner ℝ x u, matching the support function definition."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:volume_lpSum_eq_of_isParallelogramAtOrigin": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The theorem states that parallelograms attain equality in the volume bound, which correctly formalizes the informal statement about sharpness."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:volume_lpSum_le": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly expresses the inequality from Corollary 29 with all required hypotheses about K being convex, compact, containing origin, and having centre of symmetry."
+ },
+ "fcpr:0bd22d91e6408fb47c3e31ff54200b0d8f740fa6:FormalConjectures/GreensOpenProblems/72.lean:allowedSetSize_le": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The hint suggests wrong-connective but the formal statement correctly captures the pigeon-hole bound as an inequality without logical connective issues; the hypothesis k ≤ N is appropriately present."
+ },
+ "fcpr:d98f14ed02e28348f57f7b8c99a4aff196645769:FormalConjectures/Arxiv/2604.08040/SubgroupCounts.lean:cyc": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement refers to cyclic subgroups of a specific group `G`, but the formal definition uses a free type variable without requiring `G` to be a group instance in scope."
+ },
+ "fcpr:9da3e55d154988682b32673138fc00b273dae237:FormalConjectures/Paper/WeaklyFirstCountable.lean:cardinalMk_le_continuum_of_weaklyFirstCountable_of_countableSouslinNumber": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The theorem uses `answer(sorry)` as a left side of a biconditional, but the informal statement poses a question without suggesting the answer should be wrapped in a logical equivalence."
+ },
+ "fcpr:9da3e55d154988682b32673138fc00b273dae237:FormalConjectures/Paper/WeaklyFirstCountable.lean:hasCountableSouslinNumber_of_separable": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The hint indicates wrong-answer-marker, but this theorem statement does not use answer(...) at all; the hint appears to be misaligned with this particular record."
+ },
+ "fcpr:5891cecfb93d01cb29c6cfb61a6be25bcaf4595f:FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean:alon_tarsi_short_cycle_cover": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses `answer(sorry) ↔ (∀...)` but should directly assert the existential property without the answer-marker wrapper and biconditional."
+ },
+ "fcpr:5891cecfb93d01cb29c6cfb61a6be25bcaf4595f:FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean:totalLength": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The definition returns ℕ (natural number sum) but the informal statement and usage context require a more general numeric type to properly represent fractional coefficients like 7/5 in comparisons."
+ },
+ "fcpr:9af1d7101d82b0c6ff5e6aab4151ca3786de15b1:FormalConjectures/ErdosProblems/80.lean:erdos_80.variants.log": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement includes an unnecessary hypothesis `0 < c` that is not present in the informal question, which simply asks whether f_c(n) ≫ log n."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_3_3": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The statement asserts the existence of three generators that close to the top group and no two generators close to the top, but this is vacuously satisfied when the group is trivial or when junk values appear; it fails to properly exclude the case where exactly two generators suffice."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_4_3": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The hint indicates wrong-type-or-domain; the statement uses gammaSubgroup 4 3 which may not correctly represent Γ_{4⊕3} as intended in the informal statement."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_4_4": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "Similar to rank_3_3, this statement can be vacuously satisfied by junk values and does not properly enforce that the group has rank exactly 3 (not 2, not 4)."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:signDiffHom": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition uses multiplication and inversion of homomorphisms to construct the sign difference, but this algebraic composition may not properly represent the intended element-wise operation (σ₁, σ₂) ↦ sgn(σ₁) · sgn(σ₂)⁻¹."
+ },
+ "fcpr:bcd237a4c0be8708eb30b57e992a711f00f9dbb1:FormalConjectures/Paper/BranchingVAS.lean:reachability_decidable": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement quantifies over dimension `d` with a universal quantifier inside answer(...), but the informal statement does not suggest the decidability claim should be parametrized by arbitrary dimension; the quantifier scope appears incorrect."
+ },
+ "fcpr:1cef8c46441b5facf49c6eb3be4f8538b477fedd:FormalConjectures/ErdosProblems/660.lean:erdos_660": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement uses a non-strict inequality `(1 - ε) * (n / 2) ≤` rather than the strict `<`, and the quantifier order places ε before N, making the bound dependent on ε being chosen first, which weakens the statement."
+ },
+ "fcpr:1cef8c46441b5facf49c6eb3be4f8538b477fedd:FormalConjectures/ErdosProblems/660.lean:erdos_660.variants.altman_planar": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement adds the hypothesis `haff : affineSpan ℝ (P : Set ℝ²) = ⊤` which is not mentioned in the informal statement about planar polyhedra, making the formal version more restrictive."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The cast `(f N : ℝ)` involves converting the natural number result to reals, and with the big-O asymptotic involving `atTop`, behavior at zero values of N or issues with the cast could cause divergence from the intended mathematical meaning."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.erdos_sarkozy_lower": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The statement `Real.log N` for N : ℕ involves logarithm of natural numbers (implicitly cast to reals), which can produce negative values for N = 0 or 1, diverging from the informal intent where log N is only meaningful for large N."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.erdos_sarkozy_upper": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly encodes the asymptotic upper bound f(N) = O(N^(3/4) log N) and the hint is incorrect."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.konyagin_lower": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement uses `(Real.log N) ^ 2` but the informal statement requires `(log N)^2` to multiply with `log log N`, and the placement suggests the bound is log(log N) · (log N)^2, which needs clearer grouping or the bound is misrepresented."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.konyagin_upper": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The bound N^(11/15 + ε) for arbitrary ε > 0 makes the exponent arbitrarily large and thus vacuous, whereas the informal statement N^(11/15 + o(1)) means ε must vanish as N → ∞."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.polylog": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses existential quantification `∃ C > 0` to express `(log N)^{O(1)}`, but the informal question asks whether this bound is true, and the logical structure should relate the question to the answer via `answer(sorry) ↔` with appropriate quantification."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:f": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition uses `A ⊆ Finset.Icc 1 N`, which excludes 0 and requires membership in the closed interval [1, N], but the informal statement only requires A ⊆ {1, ..., N}, and the extra constraint on the lower bound is extraneous."
+ },
+ "fcpr:f40ecd9b3b79a7aa1a64b7d2f3b2623d4a6c3081:FormalConjectures/ErdosProblems/267.lean:erdos_267": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses `∀ᵉ` (which appears to be a non-standard quantifier) and divides by `(Nat.fib (n k))` as a natural number, whereas the informal statement requires division by Fibonacci numbers treated as reals, causing a type/meaning mismatch."
+ },
+ "fcpr:f40ecd9b3b79a7aa1a64b7d2f3b2623d4a6c3081:FormalConjectures/ErdosProblems/489.lean:GapSumSq": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The definition uses `sievedSet A` but the informal statement describes a direct enumeration of integers not divisible by elements of A; the reference to `sievedSet` may not correspond to the intended notion of the complement defined implicitly in the informal statement."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:Admissible": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The definition relies on `distanceValues P` whose cardinality could be undefined or incorrect for degenerate cases (e.g., when all points coincide), making the formal definition vulnerable to junk values that diverge from the informal intent of having 'at least two distinct distances'."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:AttainableGap": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures that a gap g is attainable if there exists an admissible n-point configuration with that multiplicityGap; the hint about wrong-constant-or-bound does not apply here."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:distanceValues": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition uses sqDist (squared distance) instead of the actual geometric distance, which are different quantities and would yield different sets of distance values."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:frequency": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The definition counts pairs with squared distance equal to d, but doesn't require d to actually be a realized distance value in the configuration, making it applicable to distances that don't occur."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:multiplicityGap": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal description emphasizes this is the gap between largest and second-largest (handling ties via truncated subtraction), but the formal definition uses sup over all distances which changes the semantic meaning compared to the explicit two-largest structure described."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:runnerUpFrequency": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "When distanceValues P has only one element (or becomes empty after erasing d), Finset.sup returns 0, which correctly handles the case but depends on this junk value behavior being the intended semantics."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:IsDegenerate": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The definition uses card on a filtered finset which could yield 0 when no neighbors exist, and the ≤ r condition is satisfied trivially; this relies on the junk behavior of cardinality on empty sets."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:erdos_146": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement is specifically about whether the implication holds for all r, but the formal statement existentially quantifies over the constant C after fixing r, changing the quantifier scope and logical structure."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:erdos_146.variants.two_degenerate_counterexample": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement specifies H : SimpleGraph (Fin q) for a particular q, but the informal statement refers to a more general connected bipartite 2-degenerate graph; the formalization restricts to finite labeled graphs in a specific way."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:FamilyFree": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The definition states every H in family is free in G, but when F is empty the condition is trivially true, which may not capture the intended meaning of being free from a meaningful family of graphs."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:erdos_180": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The existential quantifier over C allows it to be arbitrarily large, and familyExtremalNumber could be 0 in degenerate cases, making the implication vacuously true through junk values."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:erdos_180.variants.counterexample": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement restricts to SimpleGraph (Fin q) for a specific q, but the informal statement describes a family of connected bipartite non-acyclic graphs without this restriction to finite labeled graphs."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/183.lean:ForcesMonochromaticTriangle": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition requires x ≠ y, x ≠ z, and y ≠ z as explicit constraints, but these are implicit in the statement 'triangle' (three distinct vertices); the extra distinctness hypotheses strengthen the condition."
+ },
+ "fcpr:d12501a22ce3446f2877d5d4ce07be83824674b3:FormalConjectures/WrittenOnTheWallII/GraphConjecture65.lean:conjecture65": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement asks whether the inequality holds for every simple connected graph, but the formal statement claims it as a theorem to be proven true, whereas the problem description indicates a counterexample exists showing the conjecture is false."
+ },
+ "fcpr:4dd29ad036546eeb02ba9659287da5415b52b6a3:FormalConjectures/Mathoverflow/434111.lean:S": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures the sum of the first n primes using a summation, with no semantic error despite the hint suggestion."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal definition of dimension involves unit distance embedding in ℝⁿ, but the formal definition uses HasDimension which may not be properly defined to match this geometric characterization."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_five": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement specifies that K₆ and K₁,₃,₃ achieve the minimum, but the formal statement only asserts that 15 is the minimum without requiring that these are the unique extremal graphs."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_five_extremal": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The statement treats K₁,₃,₃ as defined by K133 without establishing whether this is properly defined as a complete bipartite graph over the correct domain (Fin vertices)."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_four": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition uses HasDimension which may not match the informal geometric definition of dimension requiring unit distance embedding."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_four_extremal": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The hypothesis `hdeg : ∀ v : Fin n, ∃ w : Fin n, G.Adj v w` (every vertex has degree ≥ 1) is weaker than the implicit requirement that G has exactly 9 edges and is connected, making the implication vacuously easier to satisfy."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1022.lean:SparseImpliesPropertyB": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement requires the property to hold for 'every finite family F', but the formal definition only quantifies over Finset (Finset ℕ), missing the universal quantification over all possible finite families with the given properties."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1023.lean:F": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The definition uses sSup of a set which could be 0 if no union-free families exist, potentially making the definition vacuous or trapping on junk values."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1028.lean:erdos_1028.variants.erdos_spencer": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement H(n : ℝ) uses real exponentiation which could trap on junk values (e.g., negative bases with non-integer exponents), whereas the informal statement about ≫ is about growth rates of positive integers."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1028.lean:erdos_1028.variants.upper_bound": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement only proves the upper bound H(n) ≪ n^(3/2) but omits the lower bound n/4 ≤ H(n) stated in the informal problem, making it a strictly weaker claim."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The statement answer(False) ↔ ... may trap on junk values, and the equivalence with the existential condition about triangles and adjacent vertices is unclear without proper definition of the involved predicates."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.k4_free": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement uses ≤ with (2 * sqrt(3) - 3 + ε) while the informal statement describes an upper bound as (2√3 - 3 + o(1)), meaning the formal version should have ≤ (2 * sqrt(3) - 3 + ε) for small ε, but the o(1) term suggests a different asymptotic structure than the epsilon parameterization provides."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.lower_bound": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The statement does not use an answer(...) marker despite appearing to be a conjecture-like claim about the threshold h(n), which is inconsistent with the hint that signals an answer marker issue."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.upper_bound": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The statement does not use an answer(...) marker despite appearing to be a conjecture-like claim, and the hint signals an answer marker issue."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses ↔ (if and only if) between answer(sorry) and the conjecture statement, but should use → (implication only) since the answer marker should only assert the conjecture direction, not its equivalence."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.empty_preimage": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The statement claims the set {x | s x ∈ A} equals empty, which trivially satisfies any density condition; the informal intent requires the preimage to be non-empty but still exist (or the statement should demonstrate a non-trivial constraint)."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.pollack_pomerance_thompson_bound": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The formal statement uses count(A n) ≤ n^((1/2) + ε n) as a hard bound condition, whereas the informal text describes |A ∩ [1,x]| ≤ x^(1/2 + o(1)) as an asymptotic constraint, which are different notions."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.pollack_primes": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "The informal statement 'this is true if A is the set of primes' formalizes correctly as a specific instance without existential quantification over A; the hint may be a false positive."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.positive_density": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement requires both that A has density 0 AND that s applied to A has positive density, but the informal statement only claims it is 'possible' without asserting the density zero condition is necessary."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.troupe_sum_of_two_squares": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The set {x | ∃ a b : ℕ, s x = a^2 + b^2} could include junk values from s applied to natural numbers where s may produce unexpected values, and the condition doesn't explicitly constrain the domain properly."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.troupe_unusually_many_prime_factors": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement refers to 'integers with unusually many prime factors' but the formal statement uses ArithmeticFunction.cardDistinctFactors which counts distinct prime factors, not total prime factors with multiplicity."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:s": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition uses ArithmeticFunction.sigma 1 n - n which correctly computes the sum of divisors minus n, matching the informal definition of proper divisors sum; this is semantically correct."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/600.lean:Erdos600Prop": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement requires BOTH that the edge count is ≥ e AND that every edge is in at least one triangle, but the informal definition only specifies the minimal e such that 'every graph with at least e edges' and 'each edge contained in at least one triangle' satisfies the conclusion—the two conditions should be independent constraints on the graph class, not both required simultaneously."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.lt_one": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement asserts a result about ε_m without any condition on m, but the formal statement requires 1 ≤ m, which is an additional assumption not present in the informal text."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.upper_bound": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement uses the asymptotic notation o(1) suggesting the exponent is (-(√3/2) + o(1)), but the formal statement fixes a specific ε : ℝ with 0 < ε, which represents only one particular term in the asymptotic expansion rather than the general o(1) behavior."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement says the answer is 'no' and claims that 'there is NOT a 3-uniform hypergraph with at least n-O(1) different sizes', but the formal statement uses answer(False) ↔ to claim existence of such a hypergraph, which contradicts the negation."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.gao": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement uses 'for any k ≥ 3' and 'for every k-uniform hypergraph', but the formal statement restricts to 3-uniform hypergraphs only without the general k-uniform case, adding the extraneous requirement of 3-uniformity."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.moon_moser": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement claims the result is 'best possible' (an upper bound on clique sizes), but the formal statement uses 'graphCliqueSizes G' which may not properly reference the intended set of clique sizes, or the quantifier structure ∀ G quantifies over all graphs rather than characterizing an optimal construction."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.spencer": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement says Spencer 'constructed a graph which contains cliques of at least n - log₂n + O(1) different sizes', but 'graphCliqueSizes G' may not capture the actual set of distinct clique sizes in the informal sense, making the definitions incommensurable."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/785.lean:aStar": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal definition states a* is the largest element in A ∩ [1,x], but the formal definition uses Finset.Icc 1 x which is the closed interval [1,x] in ℕ; however, the issue is that sup id on an empty finset returns 0 by convention, which matches the informal 'equal to 0 when there is no such element', but the formal definition may not properly handle the boundary."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/785.lean:counting": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures the counting function A(x) = |A ∩ [1,x]| using a filtered finset cardinality over the closed interval [1,x], which precisely matches the informal definition."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement asks if 'every 3-uniform hypergraph must contain either subgraph A or subgraph B', but the formal statement uses answer(False) ↔ ∀...→(A ∨ B), which affirms False means the ∀ statement is true, contradicting the intended negation of the existential claim."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.balogh": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement claims this is an observation about problem misstatement (a non-trivial logical consequence), but the formal statement appears to assert it universally without demonstrating the claimed logical dependence or providing the actual proof structure."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.frankl_furedi": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The expression (2/7 - ε) * (n.choose 3 : ℝ) can become negative for small n when ε is large enough and n.choose 3 is small, leading to vacuous satisfiability that diverges from the intended asymptotic density claim."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.harris": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly encodes Harris's counterexample by asserting the three-uniformity, cardinality of 28 edges, and absence of the two required subgraphs, directly formalizing the informal description."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/905.lean:erdos_905": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "When n=0 or n=1, the division n/6 involves natural number subtraction or produces a junk value, and trianglesContaining may behave unexpectedly, making the statement vacuously true rather than capturing the intended mathematical claim."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/958.lean:erdos_958": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement universally quantifies over all finite sets A, but the informal statement asks a question about specific configurations (equidistant points); the formal version makes a universal claim that is trivially false or true in degenerate cases rather than capturing the intended geometric question."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/990.lean:rootArgCount": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The function uses f.roots, which returns a multiset of roots, but the informal description says 'counted with multiplicity'—the type should ensure that multiplicities are properly accounted for in the counting, and normArg may not be the standard normalization used."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/447.lean:maxUnionFree": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The definition uses sSup of a set of cardinalities, but the informal definition requires a union-free collection; the formal statement takes the supremum over all k for which such a collection exists, which is correct, but the logic should ensure the set is non-empty (missing side condition)."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/567.lean:Q3": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The adjacency condition uses cardinality of the set of differing positions equal to 1, but Fin 3 → Bool produces vertices with 3 bits, and the condition should check that exactly one bit differs (the formalization appears correct, but the hint suggests a potential off-by-one or bound issue)."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/666.lean:erdos_666": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement says the answer is no and describes a counterexample, but the formal statement uses answer(False) directly in the theorem, which reverses the logical intent—it should be answer(True) to correctly state that the conjecture is false."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.parts.i": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement specifies that cycles must have distinct, ordered lengths m₁ < m₂ < ⋯, but the formal version only requires m < m' without ensuring that consecutive cycle lengths in the sequence differ by exactly the value being quantified over."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.parts.ii": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement references cycleLengths and girth, but it should properly reference the ordered sequence of cycle lengths m₁ < m₂ < ⋯ mentioned in the informal statement, and the girth condition should be checked against the actual minimum cycle length."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.variants.bondy_vince": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The theorem requires minimum degree at least 3, but the informal statement refers to 'minimum degree at least 3', and the formal bound m' ≤ m + 2 should be m' - m ≤ 2; the difference-of-at-most-2 condition is correctly stated, but the minimum degree constant should be verified."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1047.lean:erdos_1047.variants.pommerenke": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement uses polynomial notation X^k * (X - C(a)) which may not correctly represent the function f(z)=z^k(z-a) in the complex analysis context, and the sublevelSet and connectivity definitions may produce vacuously true or false results depending on their exact formalization."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal definition of ε_m requires sequences m < n₁ < ⋯ < n_k with specific congruence properties, but the formal statement omits the definition of eps(m) and does not formalize the constraint about mutually incompatible congruences."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.lower_bound": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement presents both a lower and upper bound with ∀ε, but the formal theorem states only the lower bound; additionally, the quantifier order and the inclusion of ε in the exponent should match the o(1) asymptotic notation from the informal statement."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/862.lean:numMaximalSidonSets": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly counts maximal Sidon subsets of {1,...,N} without using the answer(...) marker; the informal statement is a straightforward definition with no answer claim."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/867.lean:erdos_867.variants.freud": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement asserts a specific historical fact about Freud's construction achieving density ≥ 19/36, but the formal statement only existentially claims some constant C and density bound exist without requiring the constant to be zero or the density to be exactly 19/36."
+ },
+ "fcpr:2f810aebf5c2b584c63ed455bf3507605467ceeb:FormalConjectures/ErdosProblems/263.lean:IsIrrationalitySequence": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition lacks the required 'strictly increasing' condition for the sequence a_n explicitly stated in the informal docstring and emphasized in the note."
+ },
+ "fcpr:2f810aebf5c2b584c63ed455bf3507605467ceeb:FormalConjectures/ErdosProblems/263.lean:erdos_263.parts.ii": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement has answer(False) and uses atTop.Tendsto with codomain atTop (a Filter on ℝ), but the informal statement discusses whether a_n^(1/n) → ∞ as a property that should be true; the direction of the equivalence appears reversed or the filter type misaligned."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/164.lean:erdos_164": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses Real.log which is the natural logarithm, but the informal problem statement uses log n which in number-theoretic contexts typically means log base 2 or generic logarithm; this changes the mathematical content."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/290.lean:harmonicDen": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition restricts to a ≤ b via Finset.Icc but the informal statement makes no such restriction, defining the sum for arbitrary a and b which may be empty or satisfy a > b."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/314.lean:epsilon": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal definition uses a bound 'n ≤ k ≤ m' establishing a specific quantified range, but the formal definition references mMin n which computes an m value without expressing the lower bound n in epsilon's definition."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/314.lean:mMin": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The sInf of the empty set returns 0 in Lean's order, but the informal definition states 'm exists for n ≥ 1'; when the set is empty, sInf produces a junk value rather than witnessing nonexistence."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/333.lean:erdos_333": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly formalizes the negated existence claim with answer(False), asserting no such B exists, matching the informal statement's conclusion."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/93.lean:erdos_93": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement uses ≤ (non-strict inequality) instead of ≥ or strict inequality, and the lower bound A.card / 2 using real division will be smaller than ⌊n/2⌋, making the inequality trivially weaker than the informal claim."
+ },
+ "fcpr:82f42e0062159334fc6c8c18f5790c10c5650637:FormalConjectures/ErdosProblems/497.lean:erdos_497": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement references an undefined antichainCount function rather than actually defining or properly referencing the count of antichains in the Boolean lattice [n]."
+ },
+ "fcpr:82f42e0062159334fc6c8c18f5790c10c5650637:FormalConjectures/ErdosProblems/618.lean:erdos_618": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement quantifies over all graphs with the given properties universally, but the informal problem only requires the result to hold for some classes of graphs and may not intend a universal claim over all such constructions."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/241.lean:f": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement specifies sums for r=3 (a+b+c), but the formal definition allows r to be arbitrary without requiring distinctness of the r-element multisets from distinct elements of A."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/295.lean:k": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition delegates to exists_k which encodes the constraint that n_1, ..., n_k are distinct integers with the reciprocal sum equal to 1; the hint appears incorrect upon review."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/416.lean:V": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition restricts to Finset.Icc 1 ⌊x⌋₊ (integers from 1 to ⌊x⌋), but the informal statement only requires counting n≤x without the lower bound restriction to integers ≥1."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/600.lean:trianglesContaining": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition returns triangles (3-cliques) containing a given edge, but the informal statement defines e(n,r) as a minimal edge count satisfying a graph property, not a function returning triangles."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/755.lean:anySizeEquilateralTriangleCount": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition restricts to EuclideanSpace ℝ (Fin d), requiring a specific dimension parameter, whereas the informal statement refers to an arbitrary finite point set without specifying it must be in Euclidean space of fixed dimension d."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/755.lean:unitEquilateralTriangleCount": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The definition counts triangles satisfying IsUnitEquilateralTriangle, but without explicit constraints on the definition of 'unit' side length (typically 1), it may not faithfully capture the informal intent."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/82.lean:IsRegularInduced": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition requires both S.IsInduced and regularity of the induced subgraph, but the informal statement only defines what it means for S to be a regular induced subgraph without additional constraints."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/85.lean:f": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The sInf requires minDegree ≥ k, but the informal statement specifies minimal degree ≥ f(n), suggesting the infimum should be strict or the quantification over graphs should ensure all contain C_4 when the condition holds."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/872.lean:legalMoves": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The definition filters pool for elements x where inserting x preserves primitiveness, but without clarification of what 'unclaimed elements' means formally versus the quantification in the filter, the scope may be mismatched."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/961.lean:f": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition returns 0 when k=0, but the informal statement specifies f(k) for positive k and does not define f(0); the if-then-else changes the logical structure."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/962.lean:k": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement requires m ≤ n with k consecutive integers divisible by primes >k, but Nat.findGreatest searches over all k up to n without ensuring the existential quantifier over m is properly encoded in Erdos962Prop."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/19.lean:S": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal definition uses univ.filter to check IsCorner, but the informal definition explicitly requires all three pairs (x,y), (x+d,y), (x,y+d) to be in A; the IsCorner predicate may not capture all three conditions."
+ },
+ "fcpr:9849b4eb5de6928bae4627aa09f42531334ecfb8:FormalConjectures/ErdosProblems/1110.lean:Representable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures 'sum' with s.sum id, 'finite divisibility antichain' with IsDvdAntichain s, and 'terms of the form p^k q^l' with the subset constraint to Gamma p q; no connective error is present."
+ },
+ "fcpr:9849b4eb5de6928bae4627aa09f42531334ecfb8:FormalConjectures/ErdosProblems/1110.lean:erdos_1110": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement uses IsCoprimeNonrepresentable which is an auxiliary definition that may not properly capture the informal definition of 'representable' (which was defined with potential issues in the previous item), making it unclear whether the actual notion of non-representable is correctly formalized."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/115.lean:erdos_115": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement adds quantification over all polynomials of degree n and imposes IsConnected as a universal condition on the set, whereas the informal statement only asks about polynomials where the set happens to be connected; the formal version requires additional hypotheses."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/214.lean:HasRedCopies": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition uses ∀ p : Fin n → ℝ² requiring points in the complement Sᶜ, but the informal statement says 'any unit-distance-avoiding colouring contains a congruent red copy', which suggests points should be in S (the red coloring), not Sᶜ."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/337.lean:erdos_337.variants.h_fold": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement uses ¬ Tendsto ... atTop atTop which negates that the ratio tends to infinity, but typically one would expect to show a property about the growth rate being bounded or having a specific asymptotic behavior; the negation makes the claim potentially vacuous."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Arxiv/2602.05192/FirstProof6.lean:IsEpsilonLight": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures the informal definition: G_S is the induced subgraph on S, L and L_S are the respective Laplacian matrices, and ε*L - L_S being positive semidefinite matches the informal statement's condition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1054.lean:f": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition uses ∃ᵉ (ephemeral exists) with k ≥ 1 as an explicit hypothesis in the condition, whereas the informal definition only requires k ≥ 1 as a constraint on valid k values, not as part of the existence condition structure."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1055.lean:p": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal definition simply applies Nat.find to exists_p r, but the informal statement defines p_r as 'the least prime in class r', which requires the find operation to be applied to a predicate checking both primality and membership in class r; the scope and order of quantification over these properties is unclear in the formal version."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1146.lean:IsEssentialComponent": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition uses (A ∪ {0}) + (B ∪ {0}) with the plus operator on sets, but Schnirelmann density requires the sumset to be defined as {a + b | a ∈ A ∪ {0}, b ∈ B ∪ {0}}, which may have different meaning depending on how the plus operator is defined in this context."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/156.lean:minMaximalSidonSet": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition uses sInf which returns 0 for an empty set, but if no maximal Sidon set exists in the range, the set is empty and sInf should require a non-emptiness hypothesis; the informal statement's 'smallest' presupposes existence."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/16.lean:density_zero": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly defines density zero as the limit of the count ratio approaching 0, which is the standard definition; no answer marker is needed for a definition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/16.lean:positive_lower_density": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly defines positive lower density as the liminf of the density being positive; no answer marker is needed for a definition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/36.lean:Green36Property": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The informal description references [Gr24, Problem 36] as a specific variant of the double product property, but the formal definition lacks context about what variant it claims to be or any reference constraints that would distinguish it from other formulations."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/36.lean:SimultaneousDoubleProduct": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition has the condition `j ≠ k` in the disjointness constraint, but the informal description and standard formulations of the simultaneous double product property typically require the constraint to be `i ≠ j` or involve different index pairs."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Paper/DegreeSequencesTriangleFree.lean:degreeFreq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures the count of vertices with a specific degree using set cardinality, which directly matches the informal notion of 'the number of vertices having degree d'."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Paper/StrongSensitivityConjecture.lean:blockSensitivityAt": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly computes the supremum cardinality of valid block configurations, which matches the informal notion of the 'maximum size of a collection of sensitive, disjoint blocks'."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Wikipedia/HardyLittlewood.lean:Nat.primeTupleCounting": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition counts up to `n.succ` (i.e., p ≤ n+1) rather than up to `n`, and `Nat.count` appears to count all admissible constellations rather than filtering by a specific tuple m."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/WrittenOnTheWallII/GraphConjecture36.lean:dp": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition uses a conjunction (∧) in the lift predicate requiring both distance equality AND inequality, but the informal notion of diametrical pairs typically counts unordered pairs at the maximum distance without an additional distinctness requirement that could interact unexpectedly."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:aeval": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal definition evaluates a regular function by applying multivariate polynomial evaluation, which directly captures the informal notion of evaluating a regular function at a point."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:comp_aeval": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The lemma requires `a : σ → k` (evaluation point in the base field), but the aeval definition accepts arbitrary algebras over k, creating a type mismatch between the composition compatibility statement and the general aeval definition."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:jacobian_conjecture": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The theorem states the conjecture is false and marks this with `answer(False)`, but the informal description presents it as an open conjecture, not a proven falsehood, making the answer marker semantically incorrect."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The formal statement uses `IsGreatest` with `answer(sorry)`, but the informal description asks which finite groups have the smallest biggest product-free sets—an optimization problem that doesn't directly correspond to proving an upper bound greatest value claim."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5.variants.gowers_sl_two": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement omits the qualifier 'largest' or 'maximal' for product-free subsets; it quantifies over arbitrary product-free sets S rather than restricting to the largest ones as the informal description specifies."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5.variants.sl_two": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement defines and uses `S p` within the theorem, but the informal description refers to determining the largest product-free subsets as a model problem, not proving maximality for a specific answer-marked function S."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/206.lean:IsUnderapprox": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly captures the informal statement: valid Egyptian fractions with sum strictly less than x."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/206.lean:egyptianSum": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal definition correctly computes the sum of reciprocals 1/m for all m in the finset S."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/209.lean:IsLine": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal definition requires the two points to be distinct (p ≠ q), but the informal definition of a line as a one-dimensional affine subspace does not need this explicit distinctness condition."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/353.lean:erdos_353.variants.isosceles_triangle": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses nested existentials for a, b, c with membership in A, but the quantifier structure and the disjunction of equalities for isosceles conditions may not correctly capture the intended meaning of which pairs of sides must be equal."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/353.lean:erdos_353.variants.right_angled_triangle": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formal statement includes angle notation (∠) that may not be properly defined or may trivialize to a constant value in the absence of supporting definitions, making the disjunction vacuously true or false."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/231201.lean:conjecture": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formal statement delegates to an undefined predicate PrimeCondition without expanding the actual condition, making it impossible to verify whether it captures the informal statement about existence of x, y."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/232174.lean:conjecture": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement specifies 'any integer n > 1' but the formal statement restricts to natural numbers (ℕ), changing the domain."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/239957.lean:conjecture": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement requires 0 < g < p where g is the primitive root, but the formal statement uses k : ℤ and k² + 1 < p, which compares an integer squared to a natural number without proper type casting."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/280831.lean:conjecture": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formal statement delegates to HasSquareCondition without showing the full quantifier structure for x, y, z, w and the condition x⁴ + 1680y³z is a square."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/281976.lean:conjecture": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "low",
+  "rationale": "The formal statement is marked as a theorem with no proof, and the delegate to an auxiliary predicate IsSumOfFourSquaresWithSquareConditions obscures whether the conditions (z ≤ w, x and x + 24y are squares) are properly encoded."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/287616.lean:conjecture": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formal statement uses IsSumOfTriangularAndGeneralizedPolygonal which may not correctly reference the intended definitions of triangular, generalized pentagonal, and generalized heptagonal numbers."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/303656.lean:conjecture": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formal statement delegates to IsSumOfTwoSquaresAndPowersOf3And5 without expanding the definition, making it unclear whether this correctly encodes the condition of a power of 3 and a power of 5."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:exists_primitive_of_a": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement requires hypothesis `h : a n` but the informal statement makes a definition about non-primitive terms in general without restricting to members of sequence a."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:isPrimitiveTerm_108": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly formalizes that 108 is a primitive term; no error is substantiated despite the hint."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:mod_216_of_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly expresses the modular congruence condition using Lean's modular arithmetic notation; no substantive error detected."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:powerful_of_isPrimitiveTerm": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly captures that primitive terms are powerful numbers; the definitional mismatch hint does not identify a substantive error in the formalization."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:unique_primitive_108": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly formalizes uniqueness: for all n that are primitive terms, n equals 108; no quantifier error is present."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly asserts that 1 is in sequence A067720; no missing hypothesis is substantiated."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_10": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly asserts that 10 is in sequence A067720; no extraneous hypothesis error is substantiated."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly asserts that 2 is in sequence A067720; no extraneous hypothesis error is substantiated."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly asserts that 4 is in sequence A067720; no vacuity is substantiated."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_6": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly asserts that 6 is in sequence A067720; no missing hypothesis is substantiated."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_8": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly asserts that 8 is in sequence A067720; no junk-value trap is substantiated."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_of_primes": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly formalizes the condition that if k+1 and k²+1 are both prime, then k is in the sequence; no constant or bound error is substantiated."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/306477.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement correctly expresses that any positive integer n can be written as the specified sum of binomial coefficients through the predicate IsSumOfBinomials, which should faithfully capture the informal definition."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/308734.lean:conjecture": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement specifies 'integer n > 1' while the formal statement uses 'ℕ' with hypothesis '1 < n', which is equivalent but the hint correctly identifies that the formal version may have additional assumptions beyond the informal intent."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/41.lean:noPowerPartitionNumber": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The statement incorrectly uses answer(sorry) which is a placeholder marker that doesn't represent actual mathematical content, making the logical structure invalid for a proper theorem."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_209": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The hint indicates a wrong-constant-or-bound error, suggesting that 209 may not be the correct member of A56777 or there is an off-by-one/constant error in the sequence membership claim."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_65": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The hint indicates wrong-referent, suggesting the formal statement references the wrong sequence or wrong membership criterion for whether 65 belongs to A56777."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_of_comesFromPrimeQuadruple": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "The hint 'wrong-answer-marker' may refer to style issues, but the formal statement correctly expresses that numbers coming from prime quadruples are in sequence A56777; without seeing the actual definition issues, this appears semantically correct."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:comesFromPrimeQuadruple_of_a": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement says 'all members' come from prime quadruples, but the formal statement as given lacks necessary conditions or constraints that the informal statement likely assumes."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:A": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The definition A uses 'a n' as shorthand but the informal statement specifies the explicit condition σ(n) = 2·usigma(n), creating a mismatch between the defined predicate and its mathematical meaning."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_108": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The statement claims 108 is in A063880 via predicate 'a', but without the explicit definition of 'a' matching σ(n) = 2·usigma(n), the formal meaning diverges from the informal specification."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_540": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The hint vacuous-or-trivial suggests the claim that 540 is in A063880 may be trivially true or false contrary to intent, possibly due to incorrect definitions upstream."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_756": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The statement that 756 is in A063880 may lack necessary hypotheses or side conditions required for the membership to hold under the proper definition of the sequence."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_of_primitive_mul_squarefree": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "low",
+  "rationale": "The hint indicates a wrong-constant-or-bound error, suggesting the characterization of primitive terms or the squarefree condition may involve an incorrect constant or boundary condition in the membership criterion."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:GamePos": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The structure correctly formalizes a game position with claimed and unclaimed sets; the extra constraints ensure valid positions, which align with the informal description."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:L": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "Using `gameLength` which is defined as `sorry` produces junk values rather than the actual minimax game value needed for the Erdős problem definition."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:applyMove": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The function body uses `sorry` for all proof obligations, leaving the actual position transformation undefined rather than properly computing the new game state."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:gameLength": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The definition is entirely `sorry` rather than implementing the minimax algorithm that alternates between Prolonger maximizing and Shortener minimizing, which is essential to capture the game-theoretic logic described informally."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:startPos": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition correctly formalizes the empty starting position with claimed set empty and pool as {2,...,n}, matching the informal description."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/199.lean:erdos_199": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement asks about subsets of ℝ while the formal statement quantifies over all A ∈ Set ℝ without restricting to proper subsets, and the answer marker seems misaligned with the negation structure."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/224.lean:ObtuseAt": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "An angle is obtuse when the inner product is negative, which is correctly formalized by the inner product condition."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/224.lean:erdos_224": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement is about arbitrary sets A ⊆ ℝ^d while the formal statement restricts to finsets, fundamentally changing the quantification domain."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/226.lean:erdos_226": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formalization requires F to be complex-differentiable with zero imaginary part and to preserve rationality, but only checks real-valued behavior; the composition of differentiability constraints may be vacuously true or produce junk values in edge cases."
+ },
+ "fcpr:fbe4917de96511a6553e58144d59814110c47b2e:FormalConjectures/ErdosProblems/154.lean:erdos_154": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement quantifies over all moduli m ≥ 2 and all residues i < m with universal quantification over the limiting behavior, whereas the informal statement asks whether this property must hold, requiring existential or conditional phrasing."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1090.lean:erdos_1090": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement requires all points on the line to have the same colour, but the formal statement uses a conjunction with affineSpan condition that does not properly enforce the monochromatic requirement for all points on the line."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1125.lean:erdos_1125": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement quantifies h > 0 as a condition on every pair (x, h), but the formal statement's universal quantification over all h ∈ ℝ with a separate positivity check changes the logical structure of the constraint."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:prime_add_one_of_a": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement references predicate `a k` which is undefined in the provided context, making it impossible to verify whether the statement correctly formalizes the informal claim about members of a sequence."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/80170.lean:gcdCondition_iff_primePowerCondition": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement uses undefined predicates `GCDCondition` and `PrimePowerCondition` which may not capture the intended mathematical meaning without seeing their definitions."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/81091.lean:conjectureA81091": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses `answer(sorry)` which is a junk value that makes the equivalence vacuously true or false rather than expressing the actual conjecture about infinite primes of the form 2^n + 2^i + 1."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/Subsets/FC100SolvedSet1.lean:problems": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "No docstring provided, so judgment is based on the formal definition alone; it appears to be a straightforward list definition with no identifiable error."
+ },
+ "fcpr:d2f4ee88c251c5f987e4d7f630501e8ef0d48ce9:FormalConjectures/GreensOpenProblems/66.lean:green_66": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement requires n to satisfy X - (1/10)X^(1/4) ≤ n ≤ X with strict inequality, but the informal statement asks if there is always a sum of two squares in the interval (X - X^(1/4)/10, X], indicating a potential strictness or boundary mismatch."
+ },
+ "fcpr:0b434969fc19920d230197c53a5f7313353012ff:FormalConjectures/ErdosProblems/281.lean:erdos_281": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses `answer(True)` as a junk value, which trivializes the equivalence and does not properly formalize whether the conjecture is true or false independent of the answer marker."
+ },
+ "fcpr:0b434969fc19920d230197c53a5f7313353012ff:FormalConjectures/ErdosProblems/419.lean:factorialDivisorRatio": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition correctly captures the ratio of divisor-counting functions applied to (n+1)! and n!, using `tau` which is the standard notation for the divisor-counting function; no meaningful error detected."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/34.lean:consecutiveSums": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal definition uses a filter with `p.1 ≤ p.2` to select pairs, but the informal statement refers to consecutive sums indexed by a range condition; the use of filtering on the product may not correctly capture consecutive intervals."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/34.lean:erdos_34": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement claims `answer(False)` equivalently means the conjecture is false, but the informal statement says Hegyvári gave a counterexample (proving it false); using `answer(False)` is contradictory to asserting a negative answer to the conjecture."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/47.lean:erdos_47": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement quantifies 'for sufficiently large N in terms of δ', but the formal statement uses `∀ᶠ N in atTop` after universally quantifying δ, reversing the dependency order between δ and the sufficiently-large condition."
+ },
+ "fcpr:c003f3c442d29a34c56412310a8ece525cfa6e69:FormalConjectures/Paper/DeGiorgi.lean:HasPositiveDeriv": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The definition computes a directional derivative in the direction of (1,0,...,0) rather than all partial derivatives, so it formalizes positivity of only one specific partial derivative, not the general first partial derivative."
+ },
+ "fcpr:838af5f64d0b21eb62baf951cb76f66ce96f615d:FormalConjectures/ErdosProblems/221.lean:erdos_221": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The formal statement requires `0 ≤ k` in the existential, but the informal statement says 'for some k ≥ 0', which is equivalent; however the added constraint that `N = 2^k + a` for all large N is more restrictive than the informal question which asks whether every large integer can be written this way."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1126.lean:erdos_1126": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement requires both Cauchy additivity and almost-everywhere equality (joint conditions with 'and'), but the formal statement uses conjunction (∧) where the conclusion should express both properties as requirements, not as separate alternatives."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/134.lean:erdos_134": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement requires adding 'at most δn² edges' with high probability (Alon's strong form), but the formal statement uses a fixed δ with a stricter bound, missing the probabilistic or asymptotic nature of the edge addition requirement."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/178.lean:erdos_178": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement requires ∀ m, summing up to exactly m in the range, but the informal statement asks only about max sums over any m ≤ length of sequence, making the formal version impose stricter quantification than intended."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/493.lean:erdos_493": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement notes that Schinzel's original problem likely had additional constraints, but the formal statement provides no such constraint, making it vacuously solvable (as shown by the simple k=2 example in the problem description)."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/532.lean:erdos_532": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal sum ∑ n ∈ S, n for empty S yields 0 by Lean convention, but the informal statement explicitly requires S to be non-empty, so the formal ↑S ⊆ A condition does not properly enforce the non-empty subset requirement for all sums."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/729.lean:erdos_729": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses K ≥ 3 and checks primes p > K, but the informal statement asks for primes ≪_C 1 (bounded by a constant depending only on C), conflating two different notions of 'bounded primes'."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/871.lean:erdos_871": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement includes an explicit count of pairs (∃ pairs : Finset (ℕ × ℕ), pairs.card ≥ t) which is an extraneous formalization detail not present in the informal definition of '1_A ∗ 1_A(n) → ∞'."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/904.lean:erdos_904": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal inequality has ≤ (non-strict) while the informal statement requires ≥ (strict inequality), reversing the direction of the degree sum bound."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/923.lean:erdos_923": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement omits the requirement that H is triangle-free (CliqueFree 3 for H), which is a central condition in the informal statement about finding triangle-free subgraphs."
+ },
+ "fcpr:f6a227bf9d10a3b1afc15d5176c81c928c223e62:FormalConjectures/ErdosProblems/726.lean:erdos_726": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition checks if n % p > p/2 numerically, but the informal statement specifies n ≡ r (mod p) for p/2 < r < p, which requires r to be a residue class representative in a specific range, not just the numerical remainder."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/31.lean:green_31.variants.sidon_01n": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement universally quantifies over a sequence S n (∀ n, IsSidon ...), whereas the informal statement asks whether there exists a single Sidon subset achieving N^0.51 size, requiring existential quantification instead."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/31.lean:green_31.variants.sidon_01n_clz01": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement claims a single constant C works for all n and all Sidon sets, but the informal statement describes an upper bound of N^0.5753 for Sidon subsets, which typically needs quantification over n or asymptotic statement rather than uniform boundedness."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:HasCosetHole": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal definition uses AND (∧) to conjoin the size condition with the disjointness condition, but the informal statement requires both conditions to hold for the same affine space v + W (implicitly a single conjunction of properties about that space), not separate independent existential statements."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:green_32.variants.finite_field": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement has a filter quantifier (∀ᶠ n in atTop) but the informal statement says 'for sufficiently large n', which when formalized as a conjecture typically means there exists an N such that the property holds for all n ≥ N, not a filter eventually quantification which has different logical properties."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:hasCosetHole_empty": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement claims the empty set has a coset hole of size 0, but a coset hole requires an affine space v + W of size ≥ L that is disjoint from A; for any nonempty W, the coset has positive size, making the result vacuous when L = 0."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/50.lean:green_50": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement uses answer(sorry) ↔ ..., which is vacuously true (both sides are Prop sorrys), whereas the informal statement is asking a genuine open question about the existence of a constant C with specific properties."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/ErdosProblems/9.lean:green_9_iii": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement uses ↔ (if and only if) to connect the open problem to answer(sorry), making it vacuously true, whereas the informal question is simply asking whether r_4 satisfies the asymptotic bound."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:erdos_1212": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement references properties (Adj, Valid) and constructs without defining them, but more critically, the statement structure (existence of path ↔ answer(sorry)) does not formalize the actual open question about paths satisfying the compositeness condition."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:horizontal_leg_valid": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The statement merely asserts that horizontal-leg vertices are valid under the given hypotheses, but without sufficient context about what 'Valid' means, this appears to be a trivial consequence of the anchor being composite rather than expressing the meaningful reduction step described informally."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:vertical_leg_valid": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The hint identifies wrong-answer-marker, suggesting the statement is about a helper lemma rather than the main conjecture and should not be marked as answer(sorry)."
+ },
+ "fcpr:78981183d1c7973f950bd3807381b40a8b01a27c:FormalConjectures/Paper/ConjugacyClassSizes.lean:trivial_center_of_hasDistinctConjClassSizes": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement uses [Subsingleton G], which means G has at most one element, trivializing the group theory; the informal statement about anti-homogeneous groups with distinct conjugacy class sizes requires a non-trivial group structure."
+ },
+ "fcpr:f967c8ef57753ed2e944e48c72fca68ae0a61dec:FormalConjectures/ErdosProblems/291.lean:erdos_291.parts.ii": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement claims a set of natural numbers is infinite, but the informal statement asks whether infinitely many n satisfy the condition; the formal statement lacks the definition of how a and L depend on n."
+ },
+ "fcpr:714aaf5beb083dd071ce09ac8f8e15e4c37ef4bb:FormalConjectures/ErdosProblems/700.lean:erdos_700.parts.ii": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement includes the hypothesis 1 < n, but the informal statement already specifies that n is composite (and the case n=1 would be vacuous anyway), making this an unnecessary extra constraint."
+ },
+ "fcpr:714aaf5beb083dd071ce09ac8f8e15e4c37ef4bb:FormalConjectures/ErdosProblems/700.lean:erdos_700.parts.iii": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement is missing the hypothesis that n is composite in the second conjunct; the informal statement explicitly says 'for every composite n', but the formal only asserts ¬ n.Prime → 1 < n without requiring compositeness."
+ },
+ "fcpr:a19e0b78e65ade76ba2961e58123321c1aab2adb:FormalConjectures/ErdosProblems/1138.lean:erdos_1138": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement requires the constraint x/2 < y < x on the variables, but the formal statement uses only a relation snd_gt_half_fst without explicitly quantifying over x and requiring y < x."
+ },
+ "fcpr:9cddd0ab157fb101a83eb179a1eaa5ea0cbe3da6:FormalConjectures/GreensOpenProblems/51.lean:green_51": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement's definition of F using answer(sorry) makes it trivially true regardless of the mathematical content; the conjecture devolves into asking whether there exists a function satisfying a property that any function can tautologically satisfy."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/GraphConjecture1.lean:conjecture1": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement casts the graph parameters and Ls(G) to reals and uses ≤ for the inequality, whereas the informal statement requires Ls(G) ≥ n(G) + 1 - 2·m(G), reversing the direction due to type mismatch in the domain of quantification."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/GraphConjecture6.lean:conjecture6": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement has type Ls G without a Fintype instance declared for α, making the statement vacuous or underdetermined; the informal property cannot be meaningfully expressed without proper finiteness constraints."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:C6_matching": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "No docstring provided; the hint indicates the definition of matching (m) may not capture the intended notion of maximum matching for the C6 graph."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:K4_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "No docstring provided; the hint suggests wrong-quantifier but the statement is a simple equality that does not involve quantifiers, so the hint may be misclassified."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:Star5_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "No docstring provided; the hint wrong-answer-marker does not apply to this simple equality statement without an answer() marker."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:house_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "No docstring provided; the hint suggests wrong-quantifier but the statement is a simple equality without quantifiers."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:petersen_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "No docstring provided; the hint suggests wrong-connective but the statement is a simple equality without logical connectives."
+ },
+ "fcpr:3ece14fc89c2e1daebd2437cf8abfe18eacca270:FormalConjectures/WrittenOnTheWallII/GraphConjecture100.lean:conjecture100": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement defines diamCompl but never uses it in the inequality, leaving the statement to depend only on length Gᶜ rather than diam(Gᶜ) as the informal statement requires."
+ },
+ "fcpr:88daf905bd8c87ea2837849f7fc8118e0e334c36:FormalConjectures/ErdosProblems/950.lean:erdos_950.variants.weaker_pi_implies_f": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement uses O(·) notation indicating the bound holds up to multiplicative constants, while the formal uses <, which is a stricter quantitative requirement without the flexibility of the asymptotic O-notation."
+ },
+ "fcpr:1c0fbc2774dae15e8a597ba5375d90d04fe97a65:FormalConjectures/WrittenOnTheWallII/GraphConjecture100.lean:conjecture100": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "Although diamCompl is defined in this version, it is still not used in the inequality; the statement remains vacuous with respect to diam(Gᶜ)."
+ },
+ "fcpr:3024982d4a9b1cdc4c4ddd7113186d88a999b63b:FormalConjectures/ErdosProblems/619.lean:erdos_619": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement asserts the negation of Erdős's conjecture (proving the answer is 'no'), but without seeing the definition of `erdos_619_conjecture`, the formalization may incorrectly quantify over the existence or scope of the constant c."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement 'Is it true that C(x)=x^{1-o(1)}?' is a yes/no question, but the formalization expresses only one direction (log ratio tending to 1), missing the complementary quantification structure of the original question."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.agp_infinite": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The theorem uses `C atTop atTop` without clarifying what `C` is or whether it correctly represents the prime gap function defined informally; the informal reference to Alford, Granville, and Pomerance's result suggests a specific definition of C that may not match."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.agp_lower_bound": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "Similar to agp_infinite, the formalization references `C x` without establishing that it correctly represents the prime gap function that Alford, Granville, and Pomerance studied."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.harman_lower_bound": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement claims Harman proved a lower bound, but the formalization statement without context could be asserting or questioning this result in a different logical form than intended."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.lichtman_lower_bound": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement 'this exponent was improved to 0.3389' implies a progression from Harman's bound, but the formalization only states the bare lower bound without capturing the notion of improvement or refinement."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.pomerance": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formalization uses `answer(sorry)` paired with a limit statement, but the informal statement is a heuristic claim about asymptotics not a yes/no question, making the answer marker inappropriate."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.upper_bound": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formalization requires `∀ᶠ x in atTop` (eventually) for all sufficiently large x, which is stronger than the informal statement's assertion that such a bound holds 'for large x' but does not explicitly quantify eventuality."
+ },
+ "fcpr:ea3c8625fde4d1e0a516d9b5c6b0397a1e733a13:FormalConjectures/ErdosProblems/1092.lean:f": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The definition computes sSup over a set of k satisfying a property, but it's unclear whether this correctly implements the 'maximal' value as described informally, since the property quantifies over all G rather than maximizing over subgraph decompositions."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/ErdosProblems/128.lean:erdos_128": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal condition requires `2 * V'.ncard + 1 ≥ Fintype.card V` (i.e., `V'.ncard > n/2`) but also uses strict inequality on edges while the informal statement says '≥ n/2 vertices', creating a subtle boundary condition mismatch."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/ErdosProblems/520.lean:erdos_520": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formalization uses `log (log N)` in the denominator, but the informal statement has `√(N log log N)` in the denominator, which are dimensionally different expressions."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture23.lean:conjecture23": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement uses `≤` in the inequality instead of `≥` as stated informally, completely inverting the sense of the conjecture."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture32.lean:conjecture32": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement has the inequality direction path(G) ≥ dist_avg(A) + 0.5·ecc_avg(M), but the formal statement uses ≤, which is the opposite direction and negates the original claim."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture33.lean:conjecture33": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement has the inequality path(G) ≥ ⌈2·dist_avg(M, V)⌉, but the formal statement reverses it to ≤, which contradicts the original claim."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture34.lean:conjecture34": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement has the inequality path(G) ≥ ⌈dist_avg(C, V) + dist_avg(M, V)⌉, but the formal statement uses ≤, which contradicts the original direction."
+ },
+ "fcpr:50d3bdc5f24d6b2ddcda97a856c5088be52dd552:FormalConjectures/LittProblems/1.lean:IsSolutionOfAlgebraicODE": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal definition uses PowerSeries ℚ for the function f, but the informal statement appears to define solutions over a more general setting where f should be a power series solution that can be evaluated in the rational function field."
+ },
+ "fcpr:10efdc97e18a2c87e41719ef1ce39bbf9fda47a2:FormalConjectures/GreensOpenProblems/39.lean:green_39.variant_theta": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement uses floor functions ⌊(p : ℝ) ^ θ⌋₊ for k and c, which could yield zero values when p^θ < 1, causing division by zero or undefined behavior in proportionCoverable."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:CH.existsWeaklyFirstCountableCompactNotFirstCountable": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement is just an application of ExistsWeaklyFirstCountableCompactNotFirstCountable without the intermediate claim being substantively checked, making it trivially true given the answer marker."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:existsWeaklyFirstCountableCompactBig": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement asks for existence of a space with three properties (weakly first-countable, compact Hausdorff, and 𝔠 < |X|), but the formal statement uses ∧ to combine them, creating a logical conjunction rather than capturing the 'and' quantified requirement structure."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:existsWeaklyFirstCountableCompactNotFirstCountable": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement specifies that spaces must be Tychonoff and compact Hausdorff per the blanket convention, but the formal statement does not impose the Hausdorff or Tychonoff assumptions on the TopologicalSpace X."
+ },
+ "fcpr:accf2eceb8f8f4bc0272b0ccc95daa96423d1c4e:FormalConjectures/ErdosProblems/1146.lean:IsEssentialComponent": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal definition uses 'if' (implication) for the condition on B, but the formal statement chains the conditions with → in a way that treats them as a forward implication chain rather than the conjunction implied by the definition."
+ },
+ "fcpr:a47b7e30b78d00d5c852e9927a8d5ec2c24b47bf:FormalConjectures/GreensOpenProblems/49.lean:green_49": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly encodes the informal claim that there exists a constant C such that any set A with |A+A| ≤ K|A| is covered by K^C translates of a subspace, with all necessary hypotheses and quantifiers properly ordered."
+ },
+ "fcpr:3284e02963504e4955e8898050082d3774a3ff78:FormalConjectures/GreensOpenProblems/47.lean:green_47": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement uses ncard on the image which could be problematic if the image is infinite, and uses big-O notation on functions that may have undefined or problematic values for small X."
+ },
+ "fcpr:13de6c419bb3448be874a1a384b078b18e964440:FormalConjectures/ErdosProblems/274.lean:erdos_274": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement asks for existence of a covering where NOT all subgroups have the same cardinality (i.e., at least two differ), but the formal statement asserts existence of indices where cardinalities are different, effectively strengthening the claim."
+ }
+}

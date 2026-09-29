@@ -1,0 +1,162 @@
+{
+  "protocol": "Fixed current predictions; within-model intersection of answered records; both reference versions.",
+  "workshop_commit": "478ffcc0c9e4dc9492fc55c5749791fc86df4a42",
+  "source_artifact_commit": "8e9dc59b0ad60b8b95c32a076143800386007e29",
+  "repository": "https://github.com/korbonits/neurips-mathai-2026",
+  "models": [
+    {
+      "model": "claude-fable-5",
+      "n": 360,
+      "workshop": {
+        "assisted_f1": 0.8461538461538461,
+        "detection_f1": 0.49101796407185627,
+        "delta_f1": 0.3551358820819899
+      },
+      "final": {
+        "assisted_f1": 0.7909604519774011,
+        "detection_f1": 0.5588235294117647,
+        "delta_f1": 0.23213692256563634
+      }
+    },
+    {
+      "model": "claude-haiku-4-5",
+      "n": 360,
+      "workshop": {
+        "assisted_f1": 0.6617100371747212,
+        "detection_f1": 0.4444444444444444,
+        "delta_f1": 0.2172655927302768
+      },
+      "final": {
+        "assisted_f1": 0.5798319327731093,
+        "detection_f1": 0.3113207547169811,
+        "delta_f1": 0.2685111780561282
+      }
+    },
+    {
+      "model": "claude-opus-5",
+      "n": 360,
+      "workshop": {
+        "assisted_f1": 0.8310502283105023,
+        "detection_f1": 0.39130434782608686,
+        "delta_f1": 0.4397458804844155
+      },
+      "final": {
+        "assisted_f1": 0.7659574468085106,
+        "detection_f1": 0.4112149532710281,
+        "delta_f1": 0.35474249353748255
+      }
+    },
+    {
+      "model": "claude-sonnet-5",
+      "n": 360,
+      "workshop": {
+        "assisted_f1": 0.7521367521367521,
+        "detection_f1": 0.4137931034482759,
+        "delta_f1": 0.3383436486884762
+      },
+      "final": {
+        "assisted_f1": 0.7093596059113302,
+        "detection_f1": 0.4912280701754387,
+        "delta_f1": 0.2181315357358915
+      }
+    },
+    {
+      "model": "deepseek_deepseek-v4-pro",
+      "n": 360,
+      "workshop": {
+        "assisted_f1": 0.6988847583643122,
+        "detection_f1": 0.5110132158590307,
+        "delta_f1": 0.18787154250528149
+      },
+      "final": {
+        "assisted_f1": 0.5798319327731093,
+        "detection_f1": 0.4387755102040816,
+        "delta_f1": 0.14105642256902767
+      }
+    },
+    {
+      "model": "google_gemini-3.1-pro-preview",
+      "n": 335,
+      "workshop": {
+        "assisted_f1": 0.7288888888888888,
+        "detection_f1": 0.5465116279069767,
+        "delta_f1": 0.1823772609819121
+      },
+      "final": {
+        "assisted_f1": 0.6633165829145728,
+        "detection_f1": 0.452054794520548,
+        "delta_f1": 0.21126178839402487
+      }
+    },
+    {
+      "model": "moonshotai_kimi-k3",
+      "n": 360,
+      "workshop": {
+        "assisted_f1": 0.76,
+        "detection_f1": 0.4337349397590361,
+        "delta_f1": 0.3262650602409639
+      },
+      "final": {
+        "assisted_f1": 0.7455621301775148,
+        "detection_f1": 0.48888888888888893,
+        "delta_f1": 0.2566732412886259
+      }
+    },
+    {
+      "model": "openai_gpt-5.6-terra-pro",
+      "n": 360,
+      "workshop": {
+        "assisted_f1": 0.7871485943775101,
+        "detection_f1": 0.4946236559139784,
+        "delta_f1": 0.29252493846353167
+      },
+      "final": {
+        "assisted_f1": 0.6238532110091742,
+        "detection_f1": 0.4645161290322581,
+        "delta_f1": 0.15933708197691615
+      }
+    },
+    {
+      "model": "qwen_qwen3.8-max",
+      "n": 304,
+      "workshop": {
+        "assisted_f1": 0.6995073891625616,
+        "detection_f1": 0.4683544303797468,
+        "delta_f1": 0.23115295878281483
+      },
+      "final": {
+        "assisted_f1": 0.6011560693641619,
+        "detection_f1": 0.453125,
+        "delta_f1": 0.14803106936416188
+      }
+    },
+    {
+      "model": "x-ai_grok-4.6",
+      "n": 360,
+      "workshop": {
+        "assisted_f1": 0.7983193277310925,
+        "detection_f1": 0.5714285714285714,
+        "delta_f1": 0.2268907563025211
+      },
+      "final": {
+        "assisted_f1": 0.6763285024154589,
+        "detection_f1": 0.4692737430167598,
+        "delta_f1": 0.20705475939869916
+      }
+    },
+    {
+      "model": "z-ai_glm-5.3",
+      "n": 292,
+      "workshop": {
+        "assisted_f1": 0.676056338028169,
+        "detection_f1": 0.4740740740740741,
+        "delta_f1": 0.2019822639540949
+      },
+      "final": {
+        "assisted_f1": 0.5578947368421052,
+        "detection_f1": 0.44642857142857145,
+        "delta_f1": 0.11146616541353377
+      }
+    }
+  ]
+}

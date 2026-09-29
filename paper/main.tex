@@ -1,0 +1,416 @@
+\documentclass{article}
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[dblblindworkshop, final]{neurips_2026}
+\workshoptitle{The 6th Workshop on Mathematical Reasoning and AI}
+\usepackage{fontspec}
+\setmainfont{texgyretermes}[Extension=.otf,UprightFont=*-regular,
+ BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setmonofont{Menlo}[Scale=MatchLowercase]
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{rotating}
+\newcommand{\rot}[1]{\begin{sideways}#1\end{sideways}}
+\hypersetup{hidelinks,pdftitle={The Errors Reviewers Catch: Statement-Level Autoformalization Errors and What Frontier Models Miss},pdfauthor={Alexander Korbonits}}
+\title{The Errors Reviewers Catch:\\
+Statement-Level Autoformalization Errors\\
+and What Frontier Models Miss}
+\author{Alexander Korbonits \\
+Independent Researcher \\
+\texttt{alexkorbonits@uchicago.edu}}
+\begin{document}
+\maketitle
+\begin{abstract}
+A formal statement can typecheck and admit a proof while failing to express
+the intended mathematics. We study such errors in the review history of a
+Lean~4 library of formalized open problems. From squash-merged pull requests,
+we recover 74 natural semantic errors among 360 changed statements, labeled
+by one annotator using the reviewer-approved corrections and comments. We
+evaluate twelve frontier models (eleven with scoreable output) with and
+without those corrections. The
+highest agreement with the reference labels is $F_1=0.79$ when corrections
+and comments are supplied, versus $0.56$ for detection from the informal
+statement and candidate formalization alone. Wrong carriers and definitional
+mismatches are particularly difficult. Additional file context helps some
+models but does not close the gap. Among complete-coverage models, the same detection prompt yields
+$F_1=0.74$--$1.00$ on rule-written synthetic errors versus $0.29$--$0.52$
+on natural errors restricted to rule-supported classes. These results distinguish
+agreement given a correction from independent detection, and motivate
+review-derived evaluation alongside synthetic benchmarks. The single-source
+corpus and single-annotator labels limit generalization.
+\end{abstract}
+
+\section{Introduction}
+Autoformalization systems translate informal mathematics into formal
+statements that can be checked and used by proof assistants
+\citep{wu2022autoformalization,azerbayev2023proofnet,ying2024leanworkbook}.
+Typechecking or proving a statement does not establish that it expresses the
+intended mathematics. Audits have found statement defects in formal
+benchmarks \citep{ammanamanchi2026faults}. Faithfulness evaluation therefore
+requires a separate comparison with the informal source: existing approaches
+include reference-based equivalence checks \citep{poiroux2025reliable},
+trained alignment scorers \citep{lu2024formalalign}, and LLM judges
+\citep{zhang2026beyond}. Human-annotated formalization attempts already exist;
+our contribution is to recover errors together with their corrections from
+\emph{library review history}.
+
+Our source is \texttt{formal-conjectures}
+\citep{firsching2026formalconjectures,formalconjectures2025}, a Lean~4
+\citep{moura2021lean} library of formalized open problems. Its review process
+checks the relationship between mathematical docstrings and formal statements.
+We recover initial statements and reviewer-approved versions even when
+squash merging hides intermediate commits. The resulting corpus contains
+5{,}726 documented statement pairs and 74 labeled natural errors.\footnote{Data,
+predictions, and code are included in the supplementary snapshot; repository:
+\url{https://github.com/korbonits/neurips-mathai-2026}.}
+We compare model judgments with reference labels under two conditions:
+\emph{assisted explanation}, which supplies the correction and review
+comments, and \emph{detection}, which supplies only the informal--formal pair.
+Additional context and synthetic-error experiments test specific explanations
+for the performance gap.
+
+Related task distinctions arise in software engineering. CodeReviewer separates change-quality estimation, review
+comment generation, and code refinement \citep{li2022codereviewer};
+Toggle separates bug localization from repair \citep{hossain2024toggle}.
+These task distinctions motivate evaluating detection separately from
+performance when corrective information is supplied. Our experiments concern
+mathematical statement faithfulness; they do not establish that the observed
+gap is unique to Lean or equivalent to results on executable-software bugs.
+
+\section{A corpus of reviewed statement pairs}
+\label{sec:corpus}
+\textbf{Extraction.} We pair top-level declarations with their docstrings,
+strip proof bodies, and retain definition bodies, which specify the objects
+being defined. At the frozen repository commit, 5{,}726 of 6{,}949 declarations
+have docstrings. Records retain file, line, commit, and status information.
+A sampled extraction check compiles 20 of 20 statements; it does not certify
+the semantic faithfulness of the full corpus.
+
+\textbf{Mining corrections.} Our shallow repository snapshot covers 502
+squash-merged pull requests from 29 May to 31 August 2026. We recover the
+first pushed commit after each merge base and compare declaration statements
+with their merged versions, restricted to files touched by the squash commit.
+For 124 force-pushed pull requests, timeline queries recover pre-push commits
+for 18; 101 have garbage-collected commits, and five have no changes beyond
+the merge base. The procedure can therefore miss corrections already included
+in the earliest recoverable version. Proof-only and docstring-only changes
+are not candidates; the docstring at merge supplies the informal reference.
+The merged version and available review comments provide correction evidence,
+not an infallible semantic oracle.
+
+\textbf{Reference labels and revision.} Mining yields 374 candidates, reduced
+to 360 by deduplication and rename detection. The author labeled these using
+a 14-class taxonomy, allowing multiple labels, with reviewer corrections and
+528 inline comments available. The submitted version reported 105 semantic
+errors from a pass with model suggestions visible. For this version, a full
+blind pass over all 360 candidates supersedes those labels: model suggestions
+and prior labels were hidden, and both formalizations were elaborated in Lean
+where their difference was unclear. Forty-five preliminary errors became
+controls and 14 controls became errors, leaving \textbf{74 semantic errors}
+and 286 non-semantic changes. Mere omission of an \texttt{answer()} wrapper
+or reversal of equivalent sides of $\leftrightarrow$ is treated as non-semantic.
+The final set has 93 semantic label assignments across 12 occupied classes
+(Table~\ref{tab:classes}). All reported natural-task scores use this reference.
+Appendix~\ref{sec:labels} documents the transition and its limitations.
+
+\begin{figure}[t]\footnotesize
+Docstring: \emph{Can the smallest modulus of a covering system be
+arbitrarily large?}
+\begin{verbatim}
+theorem erdos_2 : answer(False) ↔                  -- first push
+    ∃ B : ℕ, ∀ S, IsDistinctCoveringSystem S → minModulus S ≤ B
+
+theorem erdos_2 : answer(False) ↔                  -- as merged
+    ∀ B : ℕ, ∃ c : StrictCoveringSystem ℤ, ∀ i, ∃ m : ℕ,
+      c.moduli i = Ideal.span {(m : ℤ)} ∧ B < m
+\end{verbatim}
+\caption{A review-derived error (excerpt). The source docstring states that
+the answer is negative. The first push pairs
+\texttt{answer(False)} with the bounded form, reversing the intended polarity.
+The final reference assigns wrong-answer-marker and wrong-quantifier.}
+\label{fig:example}
+\end{figure}
+
+\begin{table}[t]\centering\footnotesize
+\input{tables/negative_classes}
+\caption{Semantic classes in the final reference (74 records; multi-label).
+Bold labels identify the Lean-semantics group defined in Section~\ref{sec:eval}.}
+\label{tab:classes}
+\end{table}
+
+\section{Detection versus agreement given a correction}
+\label{sec:eval}
+We evaluate twelve models, eleven with scoreable output, using frozen prompts,
+initial chunks of 12 records,
+and a 32k-token output budget; missing-response patches can use smaller batches. \textbf{Assisted}: the model sees the informal
+statement, first formalization, reviewer-approved correction, up to six review comments, machine triage
+bucket, and rename metadata. \textbf{Detection}: it sees only the informal statement and first
+formalization.
+
+Both conditions request labels and explanations, but scoring
+measures binary semantic/non-semantic agreement (precision, recall, $F_1$,
+and Cohen's $\kappa$ \citep{cohen1960kappa}) and class agreement, not the
+correctness of explanations. Detection is a restricted statement-pair task,
+not a simulation of a reviewer with full file context and tools.
+
+\begin{table}[t]\centering\small
+\adjustbox{max width=\textwidth}{\input{tables/model_comparison}}
+\caption{Agreement with the final reference on each condition's scoreable
+records. Columns $n$ give answered counts; $\dagger$ marks models with
+incomplete coverage in either condition. Muse Spark 1.2 produced no scoreable output within the
+output budget. Missing outputs are not counted as correct or incorrect.}
+\label{tab:main}
+\end{table}
+
+\textbf{Overall results.} Every model with scored outputs in both conditions
+has lower detection $F_1$ than assisted $F_1$
+(Table~\ref{tab:main}; Figure~\ref{fig:comparison}).
+Claude Fable~5 leads both conditions, at $0.79$ and $0.56$, respectively.
+The highest detection recall is $0.58$ (DeepSeek V4 Pro), whereas the highest
+precision is $0.70$ (Claude Sonnet~5). The precision--recall tradeoff differs across models. Holding predictions
+fixed and using each model's shared answered records, assisted $F_1$ exceeds
+detection $F_1$ under both the submitted and final reference labels for all
+eleven scoreable models, with gaps of $0.18$--$0.44$ under the submitted
+labels and $0.11$--$0.35$ under the final labels (Appendix~\ref{sec:labels}).
+
+\textbf{Error classes.} We group wrong-type-or-domain, definitional-mismatch,
+junk-value-trap, and wrong-answer-marker as the \emph{Lean-semantics group}:
+57 label assignments across potentially overlapping records. This grouping
+includes the project-specific answer-marker convention. Across models, the largest correct-class counts,
+selected separately for each class, are 5 of 20 wrong-type-or-domain errors,
+4 of 15 definitional mismatches, 7 of 11 junk-value traps, and 6 of 11
+answer-marker errors (Table~\ref{tab:classrecall}). The first two classes
+are particularly difficult. Some smaller classes have much higher recall,
+but counts of one to three examples cannot support a robust class ranking.
+
+
+\begin{figure}[t]\centering
+\includegraphics[width=0.94\linewidth]{figures/collapse.pdf}
+\caption{Per-model $F_1$ with corrective information (assisted), without it
+(detection), and on rule-written synthetic errors. Natural points use each
+condition's answered records from the full 360-candidate set; $\dagger$ marks
+incomplete natural coverage. Synthetic diamonds show only complete 359-record
+runs and use a different population and error prevalence. Muse has no scored
+natural output. Table~\ref{tab:synthetic} gives the rule-supported natural
+comparison and incomplete synthetic runs.}
+\label{fig:comparison}
+\end{figure}
+
+\section{What changes with context and synthetic errors?}
+\label{sec:extensions}
+\textbf{File context.} Seven models were additionally evaluated with imports,
+namespace information, and file-local auxiliary declarations recovered from
+each candidate's \emph{before} commit. Dependencies are followed for two
+hops, excluding the target declaration; the prompt also adds hazard-oriented
+guidance. This is a combined context-and-guidance intervention, not a clean
+ablation of context alone, and it does not supply all core or Mathlib
+definitions. Detection $F_1$ changes from $-0.01$ to $+0.14$ across models;
+no augmented score exceeds the best unaugmented score. Opus benefits most,
+while the overall detection gap remains (Table~\ref{tab:context}; protocol details in Appendix~\ref{sec:context}).
+
+\textbf{Synthetic comparison.} We also test the same detection prompt on
+104 rule-written, typecheck-filtered perturbations of reviewed statements,
+with 255 unperturbed reviewed statements as controls. The source statements
+are outside the natural candidate set. Rules include quantifier and carrier
+changes, omitted hypotheses, and junk-value errors; they do not cover
+wrong referents, definitional mismatches, or the catch-all class. The class
+mix was constructed from preliminary labels, so we compare against a natural
+subset restricted to classes supported by the rules, not a frequency-matched
+or difficulty-matched population. Among models answering the entire synthetic
+set, synthetic $F_1$ exceeds this natural baseline by $0.35$--$0.60$
+(Table~\ref{tab:synthetic}). Different controls and error prevalence limit
+the interpretation of this comparison. Nevertheless, success on these
+injected errors does not predict similarly high performance on the
+review-derived errors tested here.
+
+\input{tables/camera_synthetic}
+
+\textbf{Intermediate assistance.} Removing review comments while retaining
+the correction reduces assisted $F_1$ by $0.04$--$0.08$ for seven models.
+We also test oracle hints that an error exists or that name its class;
+both disclose the binary label and therefore cannot be interpreted as
+independent detection. Class hints yield higher class agreement, but a
+wrong-hint control elicits substantial compliance with incorrect labels
+(Appendix~\ref{sec:hints}).
+
+\begin{table}[t]\centering\small
+\adjustbox{max width=\textwidth}{\input{tables/context_delta}}
+\caption{Detection with file context versus unaugmented detection. All seven
+context runs score 360 records. Pooled Lean-semantics recall counts correct
+assignments in the Lean-semantics group defined in Section~\ref{sec:eval}.}
+\label{tab:context}
+\end{table}
+
+\newpage
+\section{Discussion and limitations}
+Models agree more closely with the reference labels when corrective evidence
+is supplied than when they must detect errors from statement pairs alone. High agreement when a fix is visible
+cannot establish reliable detection, nor does it certify an explanation's
+reasoning. Review-derived examples complement synthetic tests by exposing
+failures on errors encountered in mathematical practice. Potential uses
+include testing statement reviewers and prioritizing human inspection;
+benchmark precision should not be transferred directly to deployment,
+where the prevalence and kinds of errors may differ.
+
+All records come from one repository and one review culture. Only merged
+pull requests with recoverable corrections enter the evaluation. A separate
+mining pass finds 111 declarations changed by 69 fix-marked commits within
+the same time window; these are descriptive post-merge changes, not a second
+labeled evaluation or an estimate of review's miss rate. Public availability
+and commit dates do not establish absence of training-data contamination.
+
+All reference labels come from one annotator. Claude Fable~5, which leads both
+evaluation conditions, also generated the preliminary labeling suggestions.
+The full blind pass removes
+visible model suggestions but does not establish independent annotation
+reliability; greater Lean experience and use of elaboration also changed the
+procedure. Shared reference labels do not make systematic errors harmless
+or equally influential across models. Records cluster within pull requests,
+classes have small samples, and results are single runs. Output omissions,
+provider routing, and chunk composition may affect the scores. The evidence
+supports conclusions about these prompts, records, and reference labels,
+not about all mathematical review. Independent expert annotation and
+interactive Lean-assisted review remain important next steps.
+
+\clearpage
+\setlength{\bibhang}{1.6em}
+\bibliographystyle{plainnat}
+\bibliography{refs}
+\clearpage
+\appendix
+\section{Reference-label revision and reproducibility}
+\label{sec:labels}
+The supplementary package includes the workshop data, predictions, prompts,
+and code, alongside a current results summary. The same release is available at
+\url{https://github.com/korbonits/neurips-mathai-2026}.
+The final reference is stored under \texttt{artifact/data/}; the source records
+file checksums in \texttt{artifact-version.json}, which the build verifies before
+regenerating tables. The submitted 105-error labels are included separately
+for the label-version sensitivity check.
+Model runs were conducted in August--September 2026. Predictions that do not
+depend on reference labels were rescored from disk after the full blind pass;
+label-dependent hint conditions were repatched on changed class sets.
+
+For the label-version sensitivity check, we hold the current assisted and
+detection predictions fixed and restrict each model to the intersection of
+records answered in both conditions. We rescore these same records against
+the submitted reference at artifact commit \texttt{478ffcc} and the final
+reference. All eleven models retain higher assisted than detection $F_1$
+under both references: the gaps range from $0.18$ to $0.44$ under the submitted
+labels and from $0.11$ to $0.35$ under the final labels. The supplementary
+robustness report gives per-model counts and scores; this checks sensitivity
+to the label revision, not annotation correctness.
+
+The preliminary subset check reported 23/40 binary self-agreement (57\%).
+The subsequent full blind pass agrees with the preliminary pass on 301/360
+binary judgments ($\kappa=0.57$), and on 273/360 exact class sets. The 57\% subset agreement and the pass-to-pass $\kappa$ of 0.57 are different
+statistics.
+The full pass used more Lean experience and elaboration of unclear cases,
+so pass-to-pass agreement is not identical-protocol test--retest reliability.
+Neither check supplies an independent second annotator. The revised labeling
+also treats purely conventional answer-wrapper changes as non-semantic.
+The final reference supersedes the preliminary labels rather than averaging
+the two passes. Of the 14 taxonomy options, non-semantic identifies controls,
+informal-changed is unoccupied, and 12 semantic classes are represented.
+
+Natural candidates retain the reviewer-approved version and comment evidence;
+these support auditing the labels but do not prove faithfulness to the
+informal source. The docstring is taken at merge, so matching that version
+may differ from reconstructing the author's original intent. Eight candidates have no docstring (all are controls in the final reference);
+the frozen prompt instructs the model to judge the remaining fields and note
+this absence. They remain in the reported evaluation. Error directions
+are available in the artifact but are not evaluated here. Supplementary files
+include frozen prompts, final examples, and a description of score provenance.
+
+\subsection*{LLM use disclosure}
+LLM assistants were used for tooling, analysis code, and manuscript drafting
+and revision. Claude Fable~5 generated the initial labeling suggestions and
+is also an evaluated model. The final pass hid suggestions and prior labels,
+but previous exposure and use of a single annotator remain limitations.
+The camera-ready revision used an assistant to audit saved results, regenerate
+tables, and revise the text. Model outputs are evaluated against human
+reference labels; no claim of independent expert annotation is made.
+
+\clearpage
+\section{Class-level detection}
+\label{sec:classresults}
+\begin{table}[h]\centering\small
+\adjustbox{max width=\textwidth}{\input{tables/class_recall}}
+\caption{Correct-class detection counts. Row totals count reference examples.
+For incomplete models ($\dagger$), found/answered is shown when the answered
+count is below the row total; a dash denotes no answered examples.
+Bold labels identify the Lean-semantics group. Small classes are descriptive only.}
+\label{tab:classrecall}
+\end{table}
+
+The Lean-semantics group is defined in Section~\ref{sec:eval}. Class recall requires assigning the
+correct class, not merely detecting that a statement contains some error.
+No evaluated detector assigns the catch-all \texttt{other} label to any of
+its six reference examples; this need not mean all six evade binary detection.
+
+\section{Context and correction only conditions}
+\label{sec:context}
+
+The context builder reads each file at its before commit and follows local
+identifiers through two dependency hops. The declaration budget is 6,000
+characters. Imports and namespace headers do not supply the definitions of
+all imported names. The added instruction also points models to possible
+semantic hazards, so effects cannot be attributed solely to extra code.
+
+\begin{table}[h]\centering\small
+\adjustbox{max width=\textwidth}{\input{tables/nocomments_delta}}
+\caption{Keeping the corrected statement but removing review comments.
+The correction only condition retains other assisted metadata; $n$ gives
+answered counts and $\dagger$ marks incomplete coverage. This intervention
+is not a reviewer-comments-only condition.}
+\end{table}
+\clearpage
+\section{Synthetic errors}
+\label{sec:synthetic}
+Each injected statement was typechecked in its original file. Typechecking
+does not independently establish the intended semantic error or its class.
+Rule transformations and their source records are recorded in
+\texttt{scripts/make\_synthetic\_negatives.py} and
+\texttt{data/negatives\_synthetic.jsonl} in the pinned artifact.
+The natural comparison keeps controls and only semantic records whose labels
+all occur in the rule-written set (339 records: 53 errors and 286 controls).
+This matches class support, not frequencies, control construction, or error
+prevalence. Partial-output runs are reported separately from complete ones;
+missing predictions are not scored as successes or failures.
+
+This release includes the rule-written synthetic experiment reported here.
+The paper does not claim that every possible synthetic benchmark is easier
+than natural errors or that specialized alignment systems were evaluated.
+
+\section{Oracle hints and incorrect-hint compliance}
+\label{sec:hints}
+\begin{table}[h]\centering\small
+\adjustbox{max width=\textwidth}{\input{tables/hint_compare}}
+\caption{Blind detection, an error-existence hint, and a class hint, on each
+model's shared answered records ($n$); $\dagger$ marks incomplete coverage.
+Both hints disclose the binary label.
+Class-set agreement includes controls; pooled class recall uses reference
+labels in the Lean-semantics group (Section~\ref{sec:eval}). Different row populations preclude
+interpreting this as a model ranking.}
+\end{table}
+\begin{table}[h]\centering\small
+\adjustbox{max width=\textwidth}{\input{tables/distractor}}
+\caption{Wrong-hint control. Each record receives a class absent from its
+reference label set. Denominators reflect available responses. Correct-hint
+agreement can coexist with acceptance of incorrect labels.}
+\end{table}
+Hint conditions were repatched where the final class set changed. The
+existence-hint condition remains incomplete for several models, so the first
+table compares only shared answered records within each model. Kimi is omitted
+from that comparison because its existence-hint responses have insufficient
+coverage. Wrong-hint responses also have uneven coverage; they measure observed
+compliance, not a population-wide failure rate. Explanations were not
+independently judged for correctness.
+
+\end{document}

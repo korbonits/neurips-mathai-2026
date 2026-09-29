@@ -1,0 +1,2915 @@
+{
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_elkies28": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The Mordell–Weil ℤ-rank of the correctly transcribed Elkies curve is asserted to equal 28, matching the informal statement."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_elkiesKlagsbrun29": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "finrank ℤ of the curve's rational point group equals 29, exactly as the docstring says."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank_ranksunbounded30": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The rank is stated as exactly 30 for the intended curve, matching the informal statement."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:ranksunbounded30": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The definition simply records the Weierstrass coefficients of the described rank-30 curve, with no mathematical claim to misstate."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:thirty_le_rank_ranksunbounded30": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The inequality 30 ≤ finrank faithfully renders \"rank at least 30\"."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:toWeierstrass": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The short Weierstrass form y² = x³ + Ax + B is correctly encoded with a₁=a₂=a₃=0, a₄=A, a₆=B."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:twentyeight_le_rank_elkies28": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "28 ≤ finrank ℤ E(ℚ) faithfully expresses \"rank at least 28\"."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:twentynine_le_rank_elkiesKlagsbrun29": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "29 ≤ finrank ℤ E(ℚ) faithfully expresses \"rank at least 29\"."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean:BoxdotConjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The hypothesis \"L ⊢ boxdot-translation of φ iff KT ⊢ φ\" with conclusion L ⊆ KT matches the informal faithful-interpretation statement."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean:KT": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The logic is defined as the set of formulas with KTProof from the empty context, as described."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean:solvable_of_cyc_lt": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The conjecture is a definite implication but is wrapped as `answer(sorry) ↔ ...`, so the statement is never actually asserted (and could be discharged by taking the answer to be the statement itself)."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean:solvable_of_cyc_lt_two_pow_succ": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The hypothesis cyc G < 2^(t+1) yielding IsSolvable G matches the weakened form of Theorem 4.2 described in the docstring."
+ },
+ "fcpr:858d0e73105101fbc9f86c6d6dd86bbc6d4d789e:FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean:poisson_conjecture.variants.jacobian_implication": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The implication hypothesis is the Jacobian conjecture in dimension 2*n and the conclusion is the Poisson conjecture in dimension n (on the 2n-variable polynomial ring), matching the informal claim."
+ },
+ "fcpr:7e662f771cec2c6d893ee048d163c3cb3aa2a377:FormalConjectures/Arxiv/math.0608009/PoissonConjecture.lean:JacobianConjectureFor": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition quantifies over all polynomial endomorphisms of K^m with unit Jacobian determinant and asserts existence of a two-sided polynomial inverse, exactly the per-dimension Jacobian conjecture."
+ },
+ "fcpr:ae8344226ca52fc0dcf27d4eb92c975bbd783ebe:FormalConjectures/OEIS/260194.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The state triple ⟨a n, a(n+1), a(n+2)⟩ starting at ⟨1,1,1⟩ with next = ⟨second, third, third + gcd(third, first)⟩ exactly reproduces a(n+3) = a(n+2) + gcd(a(n+2), a(n)) with a(0)=a(1)=a(2)=1."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:AdmitsLieGroupStructure": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The definition asserts existence of some finite dimension k and a charted-space structure making G an analytic manifold and Lie group, which is the intended \"admits a Lie group structure in some finite dimension\" (the docstring's `LieGroupPresentation` name is merely stale)."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:admitsLieGroupStructure_of_lieGroup": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Given an n-dimensional analytic manifold Lie group structure on G, the conclusion `AdmitsLieGroupStructure G` is exactly the informal statement."
+ },
+ "fcpr:94769d6a236a9da04b1c83f9a952c3829a2e65fd:FormalConjectures/HilbertProblems/5.lean:hilbert_fifth_problem": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The informal statement's Hausdorff and second-countability assumptions on the topological group are absent from the formal hypotheses, which only assume a topological group with a Euclidean charted-space atlas."
+ },
+ "fcpr:8feeb0971f41c2981730858d9287b1eaea129fe9:FormalConjectures/ErdosProblems/2.lean:erdos_2": {
+  "classes": [
+   "wrong-answer-marker",
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The right-hand side states the (true) boundedness of the least modulus rather than the question \"can it be arbitrarily large\", so equating it with answer(False) makes the formal statement false instead of capturing the negative answer."
+ },
+ "fcpr:3f8165c72db841c752cfdadb9d13eec4e3c02ff3:FormalConjectures/OEIS/211417.lean:general_divisibility": {
+  "classes": [
+   "vacuous-or-trivial",
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "No positivity/nonzero condition on D is imposed, so D = 0 makes the divisibility trivially true and the conjecture vacuous."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:elkies28": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The Weierstrass coefficients (1, -1, 1, a₄, a₆) match the published Elkies 2006 rank-28 curve."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:elkiesKlagsbrun29": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The coefficients (1, 0, 0, a₄, a₆) match the published Elkies–Klagsbrun 2024 rank-29 curve."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:mordell_weil": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "`Module.Finite ℤ E⟮K⟯` states that the group of K-points is finitely generated, which is the Mordell–Weil theorem giving finiteness of the rank."
+ },
+ "fcpr:d5db6fc5bb7f50ca44c45d46cc2350d242bbea5c:FormalConjectures/Wikipedia/EllipticCurveRank.lean:rank": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "`finrank ℤ` of the finitely generated group of rational points equals the rank of the free part, i.e. the rank of the elliptic curve over ℚ."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_0": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "a 0 = 0 holds directly by the definition's zero branch, matching the docstring's value claim."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "a 1 = collatzSteps 2 - collatzSteps 1 = 1 - 0 = 1, so the stated value is the correct term."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "a 2 = 7 - 1 = 6 matches the asserted value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "a 3 = 2 - 7 = -5 matches the asserted value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a_4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "a 4 = 5 - 2 = 3 matches the asserted value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:collatzSteps": {
+  "classes": [
+   "definitional-mismatch",
+   "junk-value-trap",
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The docstring asks for `none` on non-terminating inputs but the definition returns ℕ, where sInf of the empty set silently yields the junk value 0."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:conjecture1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The liminf of the proportion of indices in [1,n] with a i = 0 exceeding 1/2 (in ℝ) faithfully renders \"more than half of the terms are 0\"."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:indices": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The set {n | 0 < n ∧ a n = v} is exactly the described set of positive indices with value v."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a": {
+  "classes": [
+   "definitional-mismatch",
+   "junk-value-trap",
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The docstring specifies `none` when no m exists, but the ℕ-valued sInf returns the junk value 0 for an empty set instead of an Option."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "8+1+1=10 is composite while 8+8+1=17 is prime, so a 2 = 2 as asserted."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "27+1+1=29 is prime, so a 3 = 1 as asserted."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/159829.lean:a_4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "64+1+1=66 is composite while 64+8+1=73 is prime, so a 4 = 2 as asserted."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/1192.lean:erdos_1192.variants.renyi": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Both asymptotic conditions are faithfully rendered (sum over n ≤ x is O(x), and x^{1/r} = O(count A x) expressing |A∩[1,x]| ≫ x^{1/r}), with the existence of A per r ≥ 2 as in the problem."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.parts.i": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "\"m_n < p_n for almost all n\" is correctly rendered as the set {n | m n < p n} having natural density 1, and the finitely many junk values at n = 0 do not affect density."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Convergence p_n/m_n → ∞ \"for almost all n\" is standardly encoded as a density-one set A along which the limit (atTop ⊓ 𝓟 A) is infinite."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/ErdosProblems/456.lean:erdos_456.variants.m_div_n": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Same faithful density-one-subset encoding of \"m_n/n → ∞ for almost all n\", with m as the least k with n ∣ φ(k)."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Mathoverflow/75792.lean:Reachable.decide": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "No docstring; this is merely a Decidable instance for the Reachable predicate built from the provided characterization lemma, carrying no mathematical claim to misstate."
+ },
+ "fcpr:fd5c0ab5d1a77c2dfc6bd1102e40a350e6a02965:FormalConjectures/Paper/ConjugacyClassSizes.lean:conjClassSizes_iff_sym_three_solvable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The hypotheses (finite, solvable, nontrivial, injective conjugacy-class-size map) and conclusion (isomorphic to Perm (Fin 3) ≅ S₃) match the informal claim, the \"iff\" in the name being only a naming artifact."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:IsComputableInPolyTime": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition just asserts nonemptiness of Mathlib's TM2ComputableInPolyTime structure, i.e. existence of a poly-time machine computing f."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:NP": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal set matches the verifier definition: a polynomial p and a poly-time computable R with L x ↔ ∃ w, |w| ≤ p(|x|) ∧ R (x, w)."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/Millenium/PvsNP.lean:P": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "P is defined exactly as the decision problems computable in polynomial time by a (deterministic) TM2 machine."
+ },
+ "fcpr:a3bc3141f97029b1eddc3b5e97a6a49a0544feb8:FormalConjectures/OEIS/6697.lean:infiniteWord": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Since each finiteWord n is a prefix of finiteWord (n+1), taking index i of finiteWord (i+1) (which has length 2^{i+2}−1 > i) indeed gives the stabilized i-th letter of the fixed point."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1043.lean:erdos_1043": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The statement correctly asks for a line ℝ∙u (unit u) whose orthogonal projection of {|f| ≤ 1} has measure ≤ 2, with answer(False) recording Pommerenke's negative resolution; the degree ≥ 1 clause only excludes the degenerate constant monic polynomial."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1043.lean:erdos_1043.variants.weak": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Identical faithful setup with the bound 3.3 as stated informally."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/1062.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "`Nat.findGreatest` over the bound `n` correctly returns the largest cardinality of a fork-free subset of `{1,...,n}`, matching the informal extremal function."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/134.lean:erdos_134": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The quantifier order (ε, δ then sufficiently large n), triangle-freeness, max-degree bound n^{1/2-ε}, diameter-2 condition and ≤ δn² added edges all match the informal question."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/184.lean:IsCycleOrEdge": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The disjunction (connected ∧ 2-regular) ∨ (exactly one edge) is a literal rendering of the informal definition."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/ErdosProblems/522.lean:numRootsInUnitDisk": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "Counting with `Multiset.countP` over the root multiset gives multiplicity-counted roots in the (closed) unit disk as described."
+ },
+ "fcpr:7e540191060300b67372aa2d47601b81c2052651:FormalConjectures/Wikipedia/SnakeInTheBox.lean:IsSnakeInGraphOfLength": {
+  "classes": [
+   "definitional-mismatch",
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The definition only requires G' to be the induced subgraph on the vertices of some path of G, which admits chords and hence need not itself be an induced path."
+ },
+ "fcpr:5a8c9eda163c44de2a05c4fd9c81dec3dabbcfa7:FormalConjectures/Mathoverflow/75792.lean:Reachable.decide": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "No docstring; the declaration is merely a decidability instance for `Reachable` built from the stated recursion lemma, with no mathematical claim to misstate."
+ },
+ "fcpr:9c4d5821819656af53c5473ded2116ea14a7ff1c:FormalConjectures/Other/VCDimConvex.lean:exists_hasAddVCNDimAtMost_n_of_convex_rn_add_one": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The informal restriction n ≥ 1 is absent, so the formal statement also asserts the n = 0 case."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The double gcd product and the product of (⌊n/k⌋!)^k are rendered exactly, and the natural-number quotient is exact for this (integer-valued) sequence."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "For integer p the condition p ≤ n/3 is equivalent to p ≤ ⌊n/3⌋, so the Nat division faithfully encodes the conjecture."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`Nat.factorization p` is the p-adic order and the quantifiers 0 < n, p prime, k < p match the informal statement exactly."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/129365.lean:conjecture4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The tsum over i of b(⌊n/p^i⌋) is finitely supported (b 0 = 0) and equals the informal sum, with b matching A004125."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/153330.lean:a": {
+  "classes": [
+   "junk-value-trap",
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The docstring says the value is `none` when a Collatz trajectory fails to terminate, but the definition returns an ℤ value computed from `sInf ∅ = 0` in that case."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/53067.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The infimum of indices n > 2 with a(n) prime faithfully renders \"the next prime index after the second term\", and a(2)=23 is indeed the prime second term."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/55487.lean:conjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement explicitly assumes a(n) ≠ 0 and (p n).Prime so the sInf searches are non-empty, but these hypotheses are absent from the formal statement."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/70518.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "sInf {n | 28341 < n ∧ ¬Squarefree (a n)} correctly expresses the next index beyond 28341 with non-squarefree value."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/71532.lean:conjecture1": {
+  "classes": [
+   "other",
+   "wrong-constant-or-bound",
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal asks whether a(n) > 0 for all n > 2, but the formal asserts the eventual bound a(n) > √n (the content of the other conjecture)."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/71532.lean:conjecture2": {
+  "classes": [
+   "other"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal asks whether a(n) > √n eventually, whereas the formal asserts an asymptotic equivalence a(n) ~ C·log(n)² (a different, in fact conflicting, claim)."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/86766.lean:conjecture1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "sInf {m | 1 < m ∧ a(10^m) ≠ 0} matches \"smallest m > 1 with a(10^m) nonzero\"."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.parts.i": {
+  "classes": [
+   "wrong-type-or-domain",
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The o(1) exponent is formalized with a natural number s ≥ 1 giving only the bound C·n^3 rather than with arbitrary real ε > 0 giving n^{2+ε}."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "∃ C, product ≤ C·n² for each k ≥ 1 faithfully renders ∏ B_2(m) ≪_k n²."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.variants.higher_full_parts": {
+  "classes": [
+   "wrong-constant-or-bound",
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The ε > 0 quantifier is dropped, so brRatioUnbounded only asks that product/n be unbounded (exponent 1) instead of product/n^{1+ε} for every ε > 0."
+ },
+ "fcpr:a3c8c01f4f3e76c3a01ed7c2d4dfafa0bc59655f:FormalConjectures/ErdosProblems/367.lean:erdos_367.variants.k_le_two": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "∀ k ≤ 2, quadraticBound k correctly states the trivial n² bound for k ≤ 2."
+ },
+ "fcpr:7143f3cdfd7543b347037096aa43c7591ecfa549:FormalConjectures/Wikipedia/SidorenkoConjecture.lean:IsSpider234": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The conditions (10-vertex tree, a degree-3 vertex, three leaves at distances 2,3,4) do not pin down the (2,3,4)-spider, since e.g. a tree with a branch carrying an extra leaf at distance 1 satisfies them."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:HasUniqueExtensionOfForall": {
+  "classes": [
+   "missing-hypothesis",
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "Quantifying over all a b c without requiring them distinct (and with the Diophantine-triple condition asserted as a conjunct rather than hypothesized) makes the statement claim every triple is a Diophantine triple, which is plainly false."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/167918.lean:conjecture1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The ∀M ∃n≥M form faithfully encodes \"infinitely many n with S(a n) = 2·S n\", and the sInf junk value cannot spuriously satisfy the equation."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/167918.lean:conjecture2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "∃C ∀n>0, S(a n)/S n ≤ C is the correct boundedness assertion, and the ℕ-division is exact since S n ∣ S (a n)."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "The ℕ-valued extraction of the numerator of the rational recurrence sequence matches the intended integer sequence (conjecturally integral), so the docstring wording is only stylistic."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:conjecture1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "den = 1 ∧ 0 < aQ n for n ≥ 1 correctly says each term (from offset 1) is a positive integer."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/176477.lean:conjecture2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Odd (a n) ↔ ∃ m ≥ 1, n = 2^m is exactly \"a(n) odd iff n = 2, 4, 8, …\"."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/17666.lean:conjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The hypothesis 0 < n, explicitly required by the informal text (since a(0)=1 is practical while 0 is not), is absent, making the formal claim false at n = 0."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture1": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "`legendreSym p 7` is the symbol (7|p), whereas the informal condition (p/7)=1 is the symbol (p|7), which differ for p ≡ 3 mod 4 and here wrongly excludes primes like 11 = 2²+7·1²."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture2": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The hypothesis uses (7|p) = −1 (`legendreSym p 7`) instead of the informal (p|7) = −1, selecting a different set of primes (e.g. it wrongly includes p = 11)."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/179537.lean:conjecture4": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The right-hand side uses `legendreSym p 7` = (7|p) rather than the informal (p/7) = (p|7), which differ for p ≡ 3 mod 4 and change the congruence modulo p²."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The sum of cubed ballot differences over k ≤ ⌊n/2⌋ divided by C(n,⌊n/2⌋) = S(1,n) matches S(3,n)/S(1,n), with all summands nonnegative so toNat is harmless."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:b": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "b n = a (2n−1) is rendered directly, and the ℕ-subtraction only misbehaves at n = 0, which the conjecture excludes."
+ },
+ "fcpr:1bb238f2be65a7d796fb29a15f1c89f764062515:FormalConjectures/OEIS/3162.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The supercongruence b(np^k) ≡ b(np^{k−1}) mod p^{3k} with n,k > 0 and p ≥ 5 prime is transcribed exactly."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/101779.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The predicate's term i*k + (i-1) for 1 ≤ i ≤ n reproduces k, 2k+1, …, nk+n-1 and Nat.sInf of the empty set is 0, matching the \"or 0\" clause."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/102371.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The recursion a(n'+2) = a(n'+1) ^^^ (a(n'+1) + (n'+2)) with a 1 = 1 is exactly the stated recurrence (the extra a 0 = 0 is outside the sequence's range)."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/102722.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The sum of Int.fract (n/k) over Finset.Icc 1 n followed by Int.floor and toNat faithfully renders ⌊Σ_{k=1}^n {n/k}⌋ (the sum is nonnegative, and k ≥ 1 avoids division by zero)."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/103151.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "Counting odd primes p ≤ n with 2p < 2n+1 and 2n+1-2p prime (guarded so ℕ-subtraction is safe) exactly counts decompositions 2n+1 = 2p+q with p, q odd primes."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/357513.lean:a357513_supercongruence": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The hypotheses p prime, p ≥ 3, p ≠ 7 and conclusion a(p-1) ≡ 0 mod p^4 mirror the informal statement, and the numerator-based a has denominator coprime to p so the congruence is the intended one."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:HasCentreOfSymmetry": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "Invariance of K under the point reflection x ↦ 2c - x is exactly the stated centre of symmetry."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:IsParallelogramAtOrigin": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "K is the convex hull of 0, a, b, a+b for linearly independent a, b, exactly as stated."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:isParallelogramAtOrigin_of_volume_lpSum_eq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The quantified statement (planar convex body, centre of symmetry, 0 ∈ K, p > 1 with Hölder conjugate q, equality implies parallelogram at origin) matches Conjecture 5, with the answer marker standing for its unknown truth value."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:lpSum": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The halfspace-intersection definition is the one the docstring explicitly declares, and it has support function (h_K^p + h_L^p)^{1/p} on the bodies used below."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:supportFunction": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The iSup of ⟪x,u⟫ over x ∈ K is the support function as stated."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:volume_lpSum_eq_of_isParallelogramAtOrigin": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "Equality |K ⊕_p -K| = rsConstant q · |K| is asserted for parallelograms with a vertex at the origin with p > 1 and q its Hölder conjugate, exactly the sharpness claim."
+ },
+ "fcpr:c9052e8577118ed0ada54462bd4ef1f3beff37d6:FormalConjectures/Arxiv/2607.03582/LpRogersShephard.lean:volume_lpSum_le": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "Convexity, compactness, nonempty interior, central symmetry, 0 ∈ K, p > 1 and 1/p + 1/q = 1 with the Gamma-constant bound reproduce Corollary 29."
+ },
+ "fcpr:0bd22d91e6408fb47c3e31ff54200b0d8f740fa6:FormalConjectures/GreensOpenProblems/72.lean:allowedSetSize_le": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "rationale": "The informal pigeonhole bound holds for all k and N, but the formal statement adds the unneeded hypothesis k ≤ N."
+ },
+ "fcpr:d98f14ed02e28348f57f7b8c99a4aff196645769:FormalConjectures/Arxiv/2604.08040/SubgroupCounts.lean:cyc": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Counting the subtype of cyclic subgroups via Fintype.card faithfully renders cyc(G)."
+ },
+ "fcpr:9da3e55d154988682b32673138fc00b273dae237:FormalConjectures/Paper/WeaklyFirstCountable.lean:cardinalMk_le_continuum_of_weaklyFirstCountable_of_countableSouslinNumber": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement quantifies over Tychonoff (T35) weakly first-countable spaces with countable Souslin number and asserts #X ≤ 𝔠, matching the informal question."
+ },
+ "fcpr:9da3e55d154988682b32673138fc00b273dae237:FormalConjectures/Paper/WeaklyFirstCountable.lean:hasCountableSouslinNumber_of_separable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Separable space hypothesis and countable-Souslin-number conclusion match the informal claim exactly."
+ },
+ "fcpr:5891cecfb93d01cb29c6cfb61a6be25bcaf4595f:FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean:alon_tarsi_short_cycle_cover": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement asserts for every bridgeless finite graph the existence of a cycle cover with total length ≤ (7/5)|E(G)|, as in the conjecture."
+ },
+ "fcpr:5891cecfb93d01cb29c6cfb61a6be25bcaf4595f:FormalConjectures/Arxiv/2607.06396/AlonTarsi.lean:totalLength": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Summing walk lengths over the multiset of cycles is exactly the total length ∑_C |E(C)|."
+ },
+ "fcpr:9af1d7101d82b0c6ff5e6aab4151ca3786de15b1:FormalConjectures/ErdosProblems/80.lean:erdos_80.variants.log": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The Vinogradov relation f_c(n) ≫ log n is rendered correctly as existence of C > 0 with C log n ≤ f c n eventually, mirroring the main statement's conventions."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_3_3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Existence of a 3-element generating set together with no 2-element generating set is exactly \"rank 3, not 2-generated\"."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_4_3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Existence of a 3-element generating set plus failure of every 2-element set to generate faithfully states rank(Γ_{4⊕3}) = 3."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:conjecture_1.variants.rank_4_4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Existence of a 3-element generating set plus failure of every 2-element set to generate faithfully states rank(Γ_{4⊕4}) = 3."
+ },
+ "fcpr:f642feb43e24a2d816d2709c2aac76f2c0cb62fd:FormalConjectures/Arxiv/2605.12342/Conjecture1.lean:signDiffHom": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The product of sign∘fst with the inverse of sign∘snd into the commutative group ℤˣ is exactly (σ₁,σ₂) ↦ sgn σ₁ · (sgn σ₂)⁻¹."
+ },
+ "fcpr:bcd237a4c0be8708eb30b57e992a711f00f9dbb1:FormalConjectures/Paper/BranchingVAS.lean:reachability_decidable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "ComputablePred of the predicate on pairs (bvas, target) for each dimension d faithfully expresses decidability of BVAS reachability."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:integralDiophantine4Tuple": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The set is exactly the integral Diophantine tuples of cardinality 4, matching the informal description."
+ },
+ "fcpr:59aee0f057656fcd35f6b3e92921be941778cbe2:FormalConjectures/Wikipedia/DiophantineTuple.lean:regularExtension": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formula a+b+c+2abc+2√((ab+1)(ac+1)(bc+1)) is exactly the standard d₊ regular extension, and Nat.sqrt is exact on the intended perfect-square inputs."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:Orthogonal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Injectivity of the superimposed pair map is exactly the condition that each ordered pair occurs at most once."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:latinSquareNearTransversal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The statement universally quantifies over all Latin squares of order n and asserts existence of a near-transversal, as in Conjecture 5.1."
+ },
+ "fcpr:10b707fe98b0ff56cda8edf9942d2358f6f5186d:FormalConjectures/Paper/LatinSquare.lean:oddOrderLatinSquareTransversal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The oddness of the order is correctly used as a hypothesis before quantifying over Latin squares and asserting a transversal exists."
+ },
+ "fcpr:9535458bd7f8431aecc77dae8ba211b97cdcf9d3:FormalConjectures/Wikipedia/SteinerSystem.lean:large_steiner_systems": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The witness structure encodes exactly n > k > t > 5, t < 10, n < 200 together with an S(t,k,n) system."
+ },
+ "fcpr:a2a45c07539a519aa264f7780a8cd2a1a5f46e3e:FormalConjectures/ErdosProblems/506.lean:erdos_506": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The IsLeast formulation with ¬Collinear, ¬Cospherical and the value C(n-1,2)+1-⌊(n-1)/2⌋ (achieved by antipodal points on a circle plus its centre) matches the informal problem and its known answer for n > 393."
+ },
+ "fcpr:b5acb0ff13e38084105b7fe020ba0d59c1925bc5:FormalConjectures/ErdosProblems/539.lean:erdos_539.variants.limit": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Tendsto (log h(n)/log n) atTop (𝓝 (1/2)) is exactly the asserted limit, with h = cofactorThreshold as defined."
+ },
+ "fcpr:4010c1f1b811be0b0f95c9cf8bc084d72cea2a88:FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_9.lean:problem_10_9": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "¬∃ ξ, IsZNumber ξ with the positivity-including definition faithfully states that no Z-number exists."
+ },
+ "fcpr:4010c1f1b811be0b0f95c9cf8bc084d72cea2a88:FormalConjectures/Wikipedia/Mahler32.lean:mahler_conjecture": {
+  "classes": [
+   "missing-hypothesis",
+   "definitional-mismatch"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "Z-numbers are positive reals, but the statement only assumes x ≠ 0 (and IsZNumber omits positivity), so it also asserts nonexistence for negative x."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/100478.lean:a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The recursion a(i+5) = π(a(i+4)+…+a(i)) with five initial 1's matches the pentanacci-π sequence under the stated index shift."
+ },
+ "fcpr:d7032450c559849f2a345f80582688c76b25ffcb:FormalConjectures/OEIS/100800.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "f n = n + (Nat.digits 10 n).sum is exactly n plus its digit sum."
+ },
+ "fcpr:1cef8c46441b5facf49c6eb3be4f8538b477fedd:FormalConjectures/ErdosProblems/660.lean:erdos_660": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The ε–N formalization of the (1-o(1))n/2 lower bound over convex-independent, full-dimensional vertex sets in ℝ³ matches the informal statement exactly."
+ },
+ "fcpr:1cef8c46441b5facf49c6eb3be4f8538b477fedd:FormalConjectures/ErdosProblems/660.lean:erdos_660.variants.altman_planar": {
+  "classes": [
+   "junk-value-trap",
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The bound `n / 2 ≤ distinctDistances P` is natural-number division, so it asserts only ⌊n/2⌋ rather than the real quantity n/2 required for odd n (contrast the explicit (n:ℝ)/2 in the main statement)."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The subpolynomial bound f(N) ≤ N^{o(1)} is faithfully rendered as ∀ε>0, f = O(N^ε) with f as defined."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.erdos_sarkozy_lower": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "log N ≪ f(N) is correctly expressed as `Real.log N =O[atTop] f N`."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.erdos_sarkozy_upper": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The bound f(N) ≪ N^{3/4} log N matches the big-O statement with exponent 3/4 and factor log N."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.konyagin_lower": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal big-O statement log log N·(log N)² =O[atTop] f N reproduces the informal lower bound literally."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.konyagin_upper": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "N^{11/15+o(1)} is standardly formalized as ∀ε>0, f = O(N^{11/15+ε})."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:erdos_1109.variants.polylog": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "f(N) ≤ (log N)^{O(1)} is faithfully rendered as ∃C>0 with f = O((log N)^C)."
+ },
+ "fcpr:354ee1566b94762408e949df0674746733419d72:FormalConjectures/ErdosProblems/1109.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The sSup over cardinalities of subsets of Icc 1 N with squarefree sumset is nonempty and bounded, so it is the intended maximum."
+ },
+ "fcpr:f40ecd9b3b79a7aa1a64b7d2f3b2623d4a6c3081:FormalConjectures/ErdosProblems/267.lean:erdos_267": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The quantification over a strictly increasing n with rational ratio bound c > 1 and the irrationality of ∑ 1/F_{n_k} (Nat.fib matching F_1=F_2=1) faithfully captures the informal question."
+ },
+ "fcpr:f40ecd9b3b79a7aa1a64b7d2f3b2623d4a6c3081:FormalConjectures/ErdosProblems/489.lean:GapSumSq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Nat.count (· ∈ B) x is exactly the number of indices i with b i < x, so the sum is the intended squared-gap sum over b_i < x."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:Admissible": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Injectivity plus at least two distinct squared distances is equivalent to the informal condition (squaring is injective on nonnegative distances)."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.k4_free": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement correctly asserts, for each ε>0 and all large n, the existence of a K4-free graph with more than n²/4 edges in which every set joined to two vertices of a triangle has size at most (2√3−3+ε)n, matching the informal construction."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement says every graph with >n²/4 edges contains a triangle with ≥(1/6−ε)n vertices adjacent to two of its vertices, which is exactly the lower bound h(n) ≥ (1/6−o(1))n (the missing disjointness of Y from T is absorbed by the o(1))."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034.variants.upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The existence of a graph with >n²/4 edges where every triangle has at most (2−√(5/2)+ε)n vertices joined to two of its vertices faithfully renders h(n) ≤ (2−(5/2)^{1/2}+o(1))n."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Density zero of A is expressed via count A n / n → 0 and the preimage {x | s x ∈ A} likewise, matching the conjecture with the project's open-answer marker."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.empty_preimage": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The existential over sets A with positive natural density and empty preimage under s faithfully states Erdős's result."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.pollack_pomerance_thompson_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The hypothesis ε→0 with |A∩[1,n]| ≤ n^{1/2+ε(n)} and conclusion that {x : s x ∈ A} has density 0 matches the stated consequence of Pollack–Pomerance–Thompson."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.pollack_primes": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The set {x | Prime (s x)} is exactly s⁻¹(primes) and its density is asserted to be 0, as informally stated."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.positive_density": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The statement gives a set A of density 0 whose image s '' A has positive density, exactly the informal claim."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.troupe_sum_of_two_squares": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The set {x | ∃ a b, s x = a²+b²} is s⁻¹(sums of two squares) and its density 0 is asserted, matching Troupe's result."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:erdos_955.variants.troupe_unusually_many_prime_factors": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "The set of integers with ω(m) > (1+ε)log log m is a standard rendering of 'unusually many prime factors', and its s-preimage is claimed to have density 0 for every ε>0."
+ },
+ "fcpr:b610bcbf09b06b3ae9662b8d94ea0274443fd0cf:FormalConjectures/ErdosProblems/955.lean:s": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "σ(n) − n in ℕ equals the sum of proper divisors for all n ≥ 1 and truncated subtraction causes no divergence at n = 0."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/600.lean:Erdos600Prop": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The predicate states exactly that any n-vertex graph with ≥ e edges all of whose edges lie in a triangle has an edge in at least r triangles, using trianglesContaining as the set of 3-cliques containing the edge."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:AttainableGap": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition existentially quantifies over admissible n-point configurations with the given multiplicity gap, exactly as the docstring states."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:distanceValues": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The set of squared distances is used instead of distances, but squaring is a bijection on nonnegative reals so the induced set of distinct distance values (and all downstream counts) is unchanged."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:frequency": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Counting index pairs i < j with squared distance equal to d is the same as counting unordered pairs realizing the corresponding distance."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:multiplicityGap": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The sup of truncated differences frequency d - runnerUpFrequency d matches the docstring's described construction verbatim."
+ },
+ "fcpr:c594af4ba42f58465253b8550545e0132959a78c:FormalConjectures/ErdosProblems/959.lean:runnerUpFrequency": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Taking Finset.sup of frequency over the distance values with d erased is exactly the largest multiplicity among other distances, returning 0 when none exist."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:IsDegenerate": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The condition that every nonempty finite vertex set has a member with at most r neighbours inside it is precisely the stated degeneracy condition."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:erdos_146": {
+  "classes": [
+   "missing-hypothesis",
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The vertex type V of H carries no finiteness assumption, so infinite bipartite r-degenerate graphs H (never embeddable in a finite G, giving extremalNumber n H = n(n-1)/2) refute the universal statement trivially, making the `answer(False) ↔ ...` claim provable for a reason unrelated to the Erdős problem."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/146.lean:erdos_146.variants.two_degenerate_counterexample": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "low",
+  "rationale": "The docstring asserts the bound holds \"infinitely often\" (∃ᶠ) while the formal statement uses ∀ᶠ (for all sufficiently large n)."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:FamilyFree": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`∀ H ∈ F, H.Free G` is exactly the statement that G contains no member of the family as a subgraph."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:erdos_180": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formalization states, for every nonempty finite family, existence of a member H and constant C with ex(n;H) ≤ C·ex(n;F) eventually, matching the Erdős–Simonovits compactness question with answer False."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/180.lean:erdos_180.variants.counterexample": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The existence of a nonempty family of connected bipartite non-acyclic graphs failing the domination bound is exactly the described counterexample."
+ },
+ "fcpr:5e96abdea75319cf391f03a129488b0a7498c4dd:FormalConjectures/ErdosProblems/183.lean:ForcesMonochromaticTriangle": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Every k-colouring of Sym2 (Fin n) yielding three distinct vertices whose three edges share a colour is exactly a forced monochromatic triangle."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/905.lean:erdos_905": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The edge-count hypothesis, the existential over edges, and the triangle count via `trianglesContaining` all match the informal statement."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/958.lean:erdos_958": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Distance set, halved ordered-pair multiplicities, the equality with Icc 1 (n-1), and the line/circle alternatives faithfully render the iff whose falsity is asserted by answer(False)."
+ },
+ "fcpr:c5d5376211daa6e0744a73d1e3c9e994c87f58ec:FormalConjectures/ErdosProblems/990.lean:rootArgCount": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`roots.countP` counts with multiplicity and `normArg` shifts Complex.arg into [0, 2π), exactly as described."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/447.lean:maxUnionFree": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "sSup over cardinalities of union-free families of subsets of Fin n is the largest such size (the set is nonempty and bounded), matching the docstring."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/567.lean:Q3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Vertices are 3-bit vectors `Fin 3 → Bool` adjacent exactly when they differ in one coordinate, giving the 8-vertex, 12-edge cube."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/666.lean:erdos_666": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization matches: for each ε>0, eventually every subgraph of Q n with at least ε·n·2^{n-1} edges contains a copy of C₆, asserted to be False."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.parts.i": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Requiring m + k ≤ m' for all cycle lengths m < m' is equivalent to all consecutive gaps being ≥ k, so the ∀k ∃G form captures \"min gap arbitrarily large\"."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Same faithful rendering as part (i) with the added arbitrarily large girth condition g ≤ G.girth."
+ },
+ "fcpr:a7daf4f79d12490e88adee51e51ce0fac3b24bd7:FormalConjectures/ErdosProblems/751.lean:erdos_751.variants.bondy_vince": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The conclusion ∃ m < m' ≤ m+2 in cycleLengths is exactly \"two cycles with lengths differing by 1 or 2\", and Fintype/DecidableRel are only needed to define minDegree."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1047.lean:erdos_1047.variants.pommerenke": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "\"a sufficiently close to c\" should be ∃δ>0, ∀a with |a−c|<δ, but the formal statement only asserts ∀δ>0, ∃a with |a−c|<δ having the properties."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The two-sided bound L(m)^{-1-ε} < eps m < L(m)^{-1+ε} eventually in m for every ε>0 is exactly ε_m = L(m)^{-1+o(1)} with eps and L correctly defined."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The statement is precisely the lower bound ε_m > L(m)^{-1+o(1)} in eventual-ε form."
+ },
+ "fcpr:d12501a22ce3446f2877d5d4ce07be83824674b3:FormalConjectures/WrittenOnTheWallII/GraphConjecture65.lean:conjecture65": {
+  "classes": [
+   "wrong-connective",
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "rationale": "The docstring poses the question and states \"The answer is no\" (with an explicit counterexample graph), yet the formal statement asserts the inequality for every connected graph rather than negating it or marking the answer as False."
+ },
+ "fcpr:4dd29ad036546eeb02ba9659287da5415b52b6a3:FormalConjectures/Mathoverflow/434111.lean:S": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Since `prime' 0 = Nat.nth Nat.Prime 0 = 2 = p₁`, summing `prime' k` over `Finset.range n` is exactly p₁+⋯+pₙ."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`IsLeast` over the set of edge counts of graphs of dimension 4 with an answer marker faithfully asks for the smallest number of edges."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_five": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The least edge count among graphs of dimension 5 being 15 is stated exactly."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_five_extremal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "K₆ and the complete multipartite graph with parts 1,3,3 are correctly given dimension 5 and 15 edges, matching the informal claim of the extremal examples."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_four": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The least edge count among graphs of dimension 4 being 9 is stated exactly."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1007.lean:erdos_1007.variants.dimension_four_extremal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Uniqueness of K₃,₃ is stated with the standard no-isolated-vertex normalization, which is needed since isolated vertices trivially change nothing about dimension or edge count."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1022.lean:SparseImpliesPropertyB": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition matches: family of finite sets of size ≥ t, fewer than c·|X| members inside each nonempty X, conclusion property B (2-coloring with no monochromatic member)."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1023.lean:F": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The supremum of cardinalities of union-free subfamilies of the powerset of {1,…,n} correctly renders F(n), and the set is nonempty and bounded so sSup is not a junk value."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1028.lean:erdos_1028.variants.erdos_spencer": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "H(n) ≫ n^{3/2} is correctly rendered as n^{3/2} = O(H n) at atTop."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1028.lean:erdos_1028.variants.upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The theorem, named upper_bound, states exactly the H(n) ≪ n^{3/2} half of the quoted double bound."
+ },
+ "fcpr:d84b4526a3216805f21a76456e93d47badb13a00:FormalConjectures/ErdosProblems/1034.lean:erdos_1034": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The o(1) is correctly rendered as ∀ε>0 eventually in n, with the triangle and the set of vertices joined to at least two of its vertices, and answer(False) reflecting the negative resolution."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.lt_one": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement asserts eps m < 1 with the harmless well-definedness restriction m ≥ 1 (needed since eps 0 ≥ 1 via the modulus n = 1), matching the informal claim ε_m < 1."
+ },
+ "fcpr:1743add1b050bbae87257794a29f68ad2d7d6df8:FormalConjectures/ErdosProblems/1190.lean:erdos_1190.variants.upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The ∀ε>0, eventually-in-m formulation of eps m < L m ^ (−√3/2 + ε) is the standard rendering of the informal upper bound L(m)^{−√3/2+o(1)}."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The answer(False) ↔ ∃C, ∃ᶠ n, ∃ H with n − C ≤ #cliqueSizes faithfully renders the question of a 3-uniform hypergraph with n − O(1) distinct clique sizes (the ℕ-subtraction is harmless along atTop)."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.gao": {
+  "classes": [
+   "missing-hypothesis",
+   "junk-value-trap"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The informal bound holds for large n, but the formal ∀ n includes n = 0 (where cliqueSizes = {0} has ncard 1 while the truncated n − f n is 0), making the statement outright false."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.moon_moser": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The real-valued bound #graphCliqueSizes ≤ n − log₂ n + C for some constant C over all graphs correctly expresses Moon–Moser's optimality statement."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/775.lean:erdos_775.variants.spencer": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "∃C, ∀n, ∃G with n − log₂ n − C ≤ #graphCliqueSizes G is a faithful rendering of Spencer's construction achieving n − log₂ n + O(1) clique sizes."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/785.lean:aStar": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Finset.sup id over the elements of A in [1,x] gives the maximum and yields ⊥ = 0 when the set is empty, exactly as described."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/785.lean:counting": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The cardinality of the filtered Icc 1 x is exactly |A ∩ [1,x]|."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement correctly negates (answer False) the claim that every 3-uniform hypergraph on 3n vertices with ≥ n³+1 edges has 4 vertices spanning 3 edges or 5 vertices spanning 7 edges."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.balogh": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The implication ContainsSubgraph H 5 7 → ContainsSubgraph H 4 3 for 3-uniform H is exactly Balogh's observation."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.frankl_furedi": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The eventual existence of K₄⁻-free (¬ContainsSubgraph H 4 3) 3-uniform hypergraphs with at least (2/7 − ε)·C(n,3) edges faithfully expresses the Frankl–Füredi density 2/7 construction."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/794.lean:erdos_794.variants.harris": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "harrisHypergraph is the 27 transversal triples of the blocks {0,1,2},{3,4,5},{6,7,8} plus {0,1,2}, giving 28 edges and no 4-set with 3 edges nor 5-set with 7, matching the described counterexample."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/862.lean:numMaximalSidonSets": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Counting subsets of {1,…,N} that satisfy `IsMaximalSidonSetIn … N` via a powerset filter faithfully renders A₁(N)."
+ },
+ "fcpr:a068a0b37e7092784c4d06f8f9ac42bc6b130e8b:FormalConjectures/ErdosProblems/867.lean:erdos_867.variants.freud": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The existence of a uniform constant C with consecutive-sum-free subsets of [1,N] of size ≥ (19/36)N − C is the standard rendering of a construction of density ≥ 19/36."
+ },
+ "fcpr:2f810aebf5c2b584c63ed455bf3507605467ceeb:FormalConjectures/ErdosProblems/263.lean:IsIrrationalitySequence": {
+  "classes": [
+   "missing-hypothesis",
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal definition requires the sequence aₙ to be strictly increasing, but the formal predicate only demands positivity, omitting monotonicity."
+ },
+ "fcpr:2f810aebf5c2b584c63ed455bf3507605467ceeb:FormalConjectures/ErdosProblems/263.lean:erdos_263.parts.ii": {
+  "classes": [
+   "wrong-answer-marker",
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "low",
+  "rationale": "The statement asserts answer(False) for a definition lacking the monotonicity requirement, whereas the informal text says the corrected (increasing) version of the question is open."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/164.lean:erdos_164": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement correctly asserts that the primes maximise ∑ 1/(n log n) over primitive sets of integers ≥ 2, with answer(True) as proved by Lichtman."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/290.lean:harmonicDen": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`Rat.den` of the rational sum over Icc a b is exactly the lowest-terms denominator of ∑_{a≤n≤b} 1/n."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/314.lean:epsilon": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "epsilon n = harmonicSum n (mMin n) − 1 matches the overshoot of the minimal block sum reaching 1."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/314.lean:mMin": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "sInf {m | 1 ≤ harmonicSum n m} is precisely the least m with ∑_{n≤k≤m} 1/k ≥ 1."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/333.lean:erdos_333": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formalization states exactly that every density-zero A admits B with A ⊆ B+B and |B ∩ [1,N]| = o(√N), marked answer(False)."
+ },
+ "fcpr:0cfdea64bb89881ce06f41c303e2009ec6c66ea5:FormalConjectures/ErdosProblems/93.lean:erdos_93": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Natural-number division gives ⌊card/2⌋ and the convex-independence plus ≥3 vertices hypotheses match a convex polygon."
+ },
+ "fcpr:82f42e0062159334fc6c8c18f5790c10c5650637:FormalConjectures/ErdosProblems/497.lean:erdos_497": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The ∃ o = o(1) with antichainCount n = 2^((1+o n)·C(n,⌊n/2⌋)) is the standard rendering of Kleitman's 2^{(1+o(1))C(n,⌊n/2⌋)}."
+ },
+ "fcpr:82f42e0062159334fc6c8c18f5790c10c5650637:FormalConjectures/ErdosProblems/618.lean:erdos_618": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "h2 is defined as the minimal number of added edges yielding a triangle-free diameter-2 supergraph, and the theorem states max degree o(n^{1/2}) ⇒ h2 = o(n²) with answer(True)."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/241.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The definition correctly takes the max cardinality of subsets of {1,…,N} whose r-element multiset sums determine the multiset (only trivial coincidences), matching the generalized informal statement."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/295.lean:k": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The witness in `exists_k` indexes `k.succ` terms, so `Nat.find` returns one less than the smallest number of unit fractions, an off-by-one relative to the informal k."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/416.lean:V": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Counting n in [1, ⌊x⌋₊] that are totient values faithfully renders V(x), the count of n ≤ x with φ(m)=n solvable."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/600.lean:trianglesContaining": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The helper correctly collects the 3-cliques containing the endpoints of the edge uv, which is the intended notion of triangles containing an edge used in e(n,r) (docstring is the overall problem statement)."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/755.lean:anySizeEquilateralTriangleCount": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "It counts 3-element subsets of P that are equilateral of some positive side length, exactly as described."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/755.lean:unitEquilateralTriangleCount": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "It counts 3-element subsets of P with all pairwise distances 1, i.e. unit equilateral triangles."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/82.lean:IsRegularInduced": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The predicate says S is induced and its coercion is k-regular for some k, which is exactly 'regular induced subgraph'."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/85.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "sInf of the set of k such that every graph on Fin n with minDegree ≥ k contains a copy of C₄ matches the informal least such threshold."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/872.lean:legalMoves": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "It filters the unclaimed pool for elements whose insertion into the claimed set keeps it primitive, as described."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/961.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Erdos961Prop quantifies over all blocks [m, m+n) with m ≥ k+1 containing a non-(k+1)-smooth integer and f takes the least such n, matching the informal minimal n."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/962.lean:k": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Nat.findGreatest's cap at n is harmless since the property fails for k > n (m+1 ≤ k could not have a prime factor > k), so it gives the maximal such k."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/19.lean:S": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The filter over all pairs by IsCorner A x y d reproduces exactly the three membership conditions defining S_d(A)."
+ },
+ "fcpr:9849b4eb5de6928bae4627aa09f42531334ecfb8:FormalConjectures/ErdosProblems/1110.lean:Representable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The Finset of elements of Gamma p q with the divisibility-antichain condition summing to n faithfully renders \"sum of a finite divisibility antichain of terms p^k q^l\"."
+ },
+ "fcpr:9849b4eb5de6928bae4627aa09f42531334ecfb8:FormalConjectures/ErdosProblems/1110.lean:erdos_1110": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The hypotheses p>q≥2, coprimality and ¬(p=3∧q=2) (equivalent to {p,q}≠{2,3} under q<p) with Set.Infinite of coprime non-representable n match the asked question."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/115.lean:erdos_115": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The ε/eventually-in-n formulation correctly unwinds the (1/2+o(1))n² bound over polynomials of degree n with connected sublevel set."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/214.lean:HasRedCopies": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "For every unit-distance-avoiding class S and every n-point configuration K there is a congruent copy inside the other colour class Sᶜ, as the docstring intends."
+ },
+ "fcpr:064daf7ed8fa6f206fb84647f3a6dc916492e60a:FormalConjectures/ErdosProblems/337.lean:erdos_337.variants.h_fold": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The variant correctly generalises the negative answer of erdos_337 (answer False) by asserting, for each h≥2, existence of a sparse additive basis whose hA/A ratio does not tend to infinity."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Arxiv/2602.05192/FirstProof6.lean:IsEpsilonLight": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "G.induce S |>.spanningCoe is exactly the graph on V with only the edges inside S, so PosSemidef (ε•L − L_S) matches the definition of ε-light."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1054.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Nat.find on the existential over m yields the least m for which n is the sum of the k smallest divisors (Nat.nth enumerates divisors increasingly) for some k≥1, with 0 as fallback."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1055.lean:p": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Nat.find (exists_p r) gives the least prime of class r, and IsOfClass encodes the base case and the \"all factors in class ≤ r−1 with equality for one\" recursion."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/1146.lean:IsEssentialComponent": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "The formal statement quantifies over all B with 0<d_s(B)<1 and compares schnirelmannDensity ((A∪{0})+(B∪{0})) with d_s(B), exactly as described."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/156.lean:minMaximalSidonSet": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The sInf of cardinalities of maximal Sidon subsets of Icc 1 N is the size of the smallest such set (the set is nonempty, so no sInf junk value)."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/16.lean:density_zero": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "Nat.count S x / x tending to 0 is precisely natural density zero."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/ErdosProblems/16.lean:positive_lower_density": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "rationale": "0 < liminf (count S n / n) in EReal is exactly positive lower density."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/206.lean:IsUnderapprox": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition conjoins positivity of all denominators with the strict inequality egyptianSum S < x exactly as described."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/206.lean:egyptianSum": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The sum ∑_{m∈S} 1/m over a Finset ℕ cast to ℝ matches the informal definition."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/209.lean:IsLine": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Being the affine span of two distinct points is equivalent to having a one-dimensional direction (and hence being nonempty), so the definition captures the informal notion."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/353.lean:erdos_353.variants.isosceles_triangle": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The three-way isosceles disjunction plus unit area of the convex hull of the three points faithfully renders the statement."
+ },
+ "fcpr:ee045733ed45dd6c40352d322ca2268ea8abc3a5:FormalConjectures/ErdosProblems/353.lean:erdos_353.variants.right_angled_triangle": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The disjunction of the three vertex angles being π/2 together with unit-area convex hull matches the informal right-angled triangle claim."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/231201.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "PrimeCondition unfolds to ∃ x,y>0 with n = x+y and 2^x+y prime, matching the informal statement with hypothesis n>1."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/232174.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "HasPrimeRepresentation states exactly n = x+y with x,y>0 and both x+ny and x²+ny² prime."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/239957.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement asserts existence of an integer k with 0 < k²+1 < p (positivity automatic) whose class in ZMod p has order p−1, i.e. is a primitive root."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/280831.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "HasSquareCondition gives nonnegative x,y,z,w with n = x²+y²+z²+w² and x⁴+1680y³z a square, as stated."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/281976.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition includes z ≤ w and both IsSquare x and IsSquare (x+24y) over ℕ, matching the informal conjecture."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/287616.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "The formal existential over nonnegative x,y,z with n = x(x+1)/2 + y(3y+1)/2 + z(5z+1)/2 (all divisions exact) matches the docstring's explicit restriction to nonnegative integers."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/303656.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "n = a²+b²+3^c+5^d with naturals is exactly 'sum of two squares, a power of 3 and a power of 5'."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:exists_primitive_of_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal version states the factorization for all terms rather than only non-primitive ones, but primitive terms satisfy it trivially with s = 1, so the content matches."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:isPrimitiveTerm_108": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The statement directly asserts that 108 is a primitive term of the set A, as the docstring says."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:mod_216_of_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "n % 216 = 108 faithfully encodes n ≡ 108 (mod 216) for members of the sequence."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:powerful_of_isPrimitiveTerm": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization states exactly that every primitive term is a powerful number."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:unique_primitive_108": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Uniqueness is expressed as primitivity implying n = 108, with existence covered by the companion theorem, so the meaning is preserved."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Membership of 1 is asserted via the correct defining predicate φ(k²+1) = k·φ(k+1)."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_10": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Membership of 10 is asserted via the correct defining predicate and indeed holds (φ(101)=100=10·φ(11))."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Membership of 2 is asserted via the correct defining predicate."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_4": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Membership of 4 is asserted via the correct defining predicate."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_6": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Membership of 6 is asserted via the correct defining predicate."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_8": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Membership of 8 is asserted via the correct defining predicate and holds (φ(65)=48=8·φ(9))."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:a_of_primes": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The hypotheses that k+1 and k²+1 are prime and the conclusion a k match the informal statement exactly."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/306477.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The auxiliary `IsSumOfBinomials` unfolds to exactly the stated existential over nonnegative w,x,y,z with binomials C(w+2,2)+C(x+3,4)+C(y+5,6)+C(z+7,8), and the hypothesis 0 < n matches n > 0."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/308734.lean:conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`IsSumOfFourSquaresWithPowers` unfolds to the exact existential (2^a·3^b)^2+(2^c·5^d)^2+x^2+y^2 over ℕ, and 1 < n matches n > 1."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/41.lean:noPowerPartitionNumber": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "low",
+  "rationale": "The informal text asserts outright that no partition number is a perfect power, whereas the formal statement turns this into an unknown-truth-value biconditional `answer(sorry) ↔ ∀ k, ¬IsPerfectPower (p k)`."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_209": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`a 209` is precisely membership of 209 in the sequence as defined by the file's predicate `a`."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_65": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`a 65` is precisely membership of 65 in the sequence as defined by the file's predicate `a`."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:a_of_comesFromPrimeQuadruple": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The implication from `ComesFromPrimeQuadruple n` (n = p(p+8) for a prime quadruple) to `a n` matches the informal claim exactly."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/56777.lean:comesFromPrimeQuadruple_of_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The converse implication from sequence membership to coming from a prime quadruple is stated exactly as informally described."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:A": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The set is defined via `a`, i.e. σ(n) = 2·usigma(n) together with the harmless positivity guard 0 < n that only excludes the degenerate n = 0 junk case."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_108": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`a 108` states exactly that 108 satisfies the sequence's defining condition (σ(108)=280=2·140=2·usigma(108))."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_540": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`a 540` states exactly membership of 540 in the sequence (σ(540)=1680=2·840=2·usigma(540))."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_756": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "`a 756` states exactly membership of 756 in the sequence (σ(756)=2240=2·1120=2·usigma(756))."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/63880.lean:a_of_primitive_mul_squarefree": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The hypotheses (m a primitive term via `A.IsPrimitive`, s squarefree, gcd(m,s)=1) and conclusion `a (m*s)` mirror the informal statement."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/67720.lean:prime_add_one_of_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement assumes membership `a k` and `k ≠ 8` and concludes `(k+1).Prime`, exactly as the informal claim states."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/80170.lean:gcdCondition_iff_primePowerCondition": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The equivalence is stated between `GCDCondition k` and `PrimePowerCondition (k + 1)`, shifting the prime-power criterion to the wrong argument instead of `k` itself (as the `2 ≤ k` guard against the `k = 1` junk case indicates)."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/OEIS/81091.lean:conjectureA81091": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Odd primes with exactly three set bits are precisely the primes of the form 2^n + 2^i + 1 with 0 < i < n, so `isPrimeBitsSet 3` captures the intended set and the infinitude claim matches."
+ },
+ "fcpr:81e700d16ada8c5e63339d7a16accb672d3067ae:FormalConjectures/Subsets/FC100SolvedSet1.lean:problems": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "No docstring; the declaration is merely a list of existing declaration names with no mathematical content to misstate."
+ },
+ "fcpr:d2f4ee88c251c5f987e4d7f630501e8ef0d48ce9:FormalConjectures/GreensOpenProblems/66.lean:green_66": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The eventual-in-X existence of a sum of two squares in [X - X^{1/4}/10, X] matches the informal question exactly."
+ },
+ "fcpr:0b434969fc19920d230197c53a5f7313353012ff:FormalConjectures/ErdosProblems/281.lean:erdos_281": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Hypotheses (strictly increasing positive moduli, density 0 for all full residue choices) and the conclusion with `k` chosen uniformly before the residue choice faithfully render the informal question, with answer marker `True` as stated."
+ },
+ "fcpr:0b434969fc19920d230197c53a5f7313353012ff:FormalConjectures/ErdosProblems/419.lean:factorialDivisorRatio": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition is exactly τ((n+1)!)/τ(n!) with τ the divisor count, and the denominator never vanishes."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/34.lean:consecutiveSums": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The docstring describes sums of `π k + 1` (a shifted permutation convention), whereas the definition sums `π i` directly, which is the convention consistent with `IsPermutationOfIcc` mapping onto `Icc 1 n`."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/34.lean:erdos_34": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The o(n²) claim uniform over all permutations is unwound correctly and the answer marker `False` matches Hegyvári's counterexample."
+ },
+ "fcpr:f1de817337f48b29ba237ca1f591ed51d31f2d77:FormalConjectures/ErdosProblems/47.lean:erdos_47": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization matches: for each δ>0 and all sufficiently large N, any A ⊆ {1,…,N} with reciprocal sum exceeding δ log N has a subset of reciprocal sum 1."
+ },
+ "fcpr:c003f3c442d29a34c56412310a8ece525cfa6e69:FormalConjectures/Paper/DeGiorgi.lean:HasPositiveDeriv": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The directional derivative along `EuclideanSpace.single 0 1` is exactly the first partial derivative, asserted positive at every point."
+ },
+ "fcpr:838af5f64d0b21eb62baf951cb76f66ce96f615d:FormalConjectures/ErdosProblems/221.lean:erdos_221": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement asserts existence of a set with counting function O(N/log N) such that all sufficiently large N are of the form 2^k + a, matching the informal question and the affirmative answer marker."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:GamePos": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The structure records exactly the claimed set and unclaimed pool together with the legality invariants that a game position must satisfy, matching the informal description."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:L": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "L n is the game length evaluated at the starting position on {2,...,n}, which is exactly the informal notion (its meaning is only as good as gameLength, which is defined elsewhere)."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:applyMove": {
+  "classes": [
+   "extraneous-hypothesis",
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The docstring insists the function is total (defined even for illegal x, just inserting and erasing x), but the formal version requires the proof argument `hx : x ∈ p.pool` and filters out all divisibility-related elements instead of merely erasing x."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:gameLength": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The docstring describes an explicit minimax unfolding of the finite game tree, but the formal definition is an uninterpreted `sorry` placeholder, exactly what the docstring disclaims."
+ },
+ "fcpr:9742b2b9e523562258bb6783606c33dad69655ba:FormalConjectures/ErdosProblems/872.lean:startPos": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Claimed set empty and pool = Finset.Icc 2 n is precisely the empty starting position on {2,...,n}."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/199.lean:erdos_199": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement says the implication 'no 3-AP in A ⇒ Aᶜ contains an infinite AP' is False, matching Baumgartner's negative answer, with faithful auxiliary definitions."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/224.lean:ObtuseAt": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Negative inner product of (y-x) and (z-x) is exactly obtuseness of the angle at vertex x, i.e. angle yxz."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/224.lean:erdos_224": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Any set of 2^d+1 points in ℝ^d contains three distinct points determining an obtuse angle, faithfully rendered with Finset cardinality and ObtuseAt."
+ },
+ "fcpr:5beb6f5da3a93fd9fe69d946a06deec9b064bb3b:FormalConjectures/ErdosProblems/226.lean:erdos_226": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement asserts (answer True) the existence of an entire, real-on-reals, non-affine function whose real restriction preserves rationality in both directions, matching the informal question."
+ },
+ "fcpr:fbe4917de96511a6553e58144d59814110c47b2e:FormalConjectures/ErdosProblems/154.lean:erdos_154": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The conclusion counts residues among elements of A k (normalised by √(N k)), i.e. Lindström's statement about A itself, rather than the stated distribution of A+A normalised by |A+A|."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1090.lean:erdos_1090": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement gives, for each k ≥ 3, a finite planar set such that every 2-colouring admits a collinear subset of ≥ k points that is the full intersection of its line with A and is monochromatic, matching the informal question's affirmative answer."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1125.lean:erdos_1125": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "The hypothesis 2f(x) ≤ f(x+h)+f(x+2h) for all x and h>0 with conclusion Monotone f matches the informal question (a monotone-decreasing solution would have to be constant, hence still Monotone)."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/1126.lean:erdos_1126": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The a.e.-on-product-measure hypothesis and the a.e.-equal additive function conclusion faithfully render the de Bruijn–Jurkat statement (only the bound variable name is reused)."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/134.lean:erdos_134": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Sufficiently large n, max degree < n^{1/2-ε}, triangle-free supergraph of diameter ≤ 2, and at most δn² added edges are all faithfully encoded."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/178.lean:erdos_178": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The strictly increasing enumerations, ±1-valued f, and bound C depending only on d (with 0-based indices i<d) match the informal statement."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/493.lean:erdos_493": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The existence of k and a threshold N with every n ≥ N expressible as ∏a_i − ∑a_i with a_i ≥ 2 is exactly the informal question's affirmative form."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/532.lean:erdos_532": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "An infinite A all of whose nonempty finite subset sums receive one fixed colour is precisely Hindman's statement for 2 colours."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/729.lean:erdos_729": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The infinitely many triples with a+b > n + C log n whose rational denominator has no prime factor above a C-dependent bound K faithfully encode the informal question."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/871.lean:erdos_871": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The statement asserts a counterexample basis of order 2 with representation counts tending to infinity that admits no partition into two bases, matching the disproved question."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/904.lean:erdos_904": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The hypothesis r ∈ Set.Icc 1 (n V) allows r = 1 whereas the informal statement requires r ≥ 2."
+ },
+ "fcpr:4e69891d4cf600e72107fb8a41927fa323465f5d:FormalConjectures/ErdosProblems/923.lean:erdos_923": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The vertex type V is quantified before the existential k, so the threshold f(k) may depend on V (and is vacuously satisfiable for finite V), unlike the uniform f(k) of the informal claim."
+ },
+ "fcpr:f6a227bf9d10a3b1afc15d5176c81c928c223e62:FormalConjectures/ErdosProblems/726.lean:erdos_726": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Since n % p < p always holds, the filter condition p/2 < n % p over primes p ≤ n correctly encodes n ∈ (p/2,p) mod p, and the asymptotic is as stated."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/31.lean:green_31.variants.sidon_01n": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Sidon subsets of (ZMod 2)^n of size at least (2^n)^{0.51} for all large n faithfully renders the question about {0,1}^n with N = 2^n."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/31.lean:green_31.variants.sidon_01n_clz01": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The uniform constant C with |S| ≤ C·(2^n)^{0.5753} for every Sidon subset of (ZMod 2)^n is the stated upper bound N^{0.5753}."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:HasCosetHole": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition faithfully encodes existence of a subspace W and shift v with |W| ≥ L and v+W disjoint from A."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:green_32.variants.finite_field": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The eventual-in-n statement with |A| = ⌊√(2^n)⌋ and a coset hole of size ⌊100√(2^n)⌋ matches the informal finite-field variant (floors only being the standard integer rendering)."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/32.lean:hasCosetHole_empty": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The sanity lemma asserts a coset hole for the empty set, which the trivial subspace witnesses, and the informal text specifies no particular size."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/50.lean:green_50": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formalization matches the spelled-out version (∃C ∀n ∀A nonempty, coset of dimension ≥ n − C log₂(1/α) inside 10•A), the omitted n ≥ 1 being harmless since n = 0 is trivially satisfied."
+ },
+ "fcpr:38254c055fac6a1a4e193fc2735733dbced87f3e:FormalConjectures/GreensOpenProblems/9.lean:green_9_iii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The statement asks for some c > 0 with the maximal 4-AP-free subset size of F_5^n bounded by (5^n)^{1−c}, exactly r_4(F_5^n) ≪ N^{1−c}."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:erdos_1212": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The injective path with ±1 one-coordinate steps, all vertices coprime with both coordinates > 1 and one non-prime, and coordinate sum tending to infinity, faithfully renders the infinite path question."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:horizontal_leg_valid": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Hypotheses (c composite, a ≥ 2, coprimality along the leg) and conclusion Valid (s,c) for a ≤ s ≤ b match the informal lemma exactly."
+ },
+ "fcpr:c4b3807aa36eecf7bf7bb877eda5d9f253ac48c7:FormalConjectures/ErdosProblems/1212.lean:vertical_leg_valid": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Hypotheses (a composite, b ≥ 2, coprimality along the leg) and conclusion Valid (a,s) for b ≤ s ≤ c match the informal vertical-leg lemma."
+ },
+ "fcpr:78981183d1c7973f950bd3807381b40a8b01a27c:FormalConjectures/Paper/ConjugacyClassSizes.lean:trivial_center_of_hasDistinctConjClassSizes": {
+  "classes": [
+   "missing-hypothesis",
+   "extraneous-hypothesis",
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The anti-homogeneity (distinct conjugacy class sizes) hypothesis is replaced by [Subsingleton G], which trivializes the center statement."
+ },
+ "fcpr:f967c8ef57753ed2e944e48c72fca68ae0a61dec:FormalConjectures/ErdosProblems/291.lean:erdos_291.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "With L n = lcm(1..n) and a n = ∑_{k≤n} L n / k, the set of n with gcd(a n, L n) > 1 being infinite is exactly the informal claim."
+ },
+ "fcpr:714aaf5beb083dd071ce09ac8f8e15e4c37ef4bb:FormalConjectures/ErdosProblems/700.lean:erdos_700.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Compositeness is rendered as ¬n.Prime ∧ 1 < n and f(n) > √n as (f n)^2 > n, matching the informal infinitude claim."
+ },
+ "fcpr:714aaf5beb083dd071ce09ac8f8e15e4c37ef4bb:FormalConjectures/ErdosProblems/700.lean:erdos_700.parts.iii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The quantifier order ∀A>0 ∃C>0 ∀ composite n, f(n) ≤ C·n/(log n)^A matches the informal spelled-out bound."
+ },
+ "fcpr:3024982d4a9b1cdc4c4ddd7113186d88a999b63b:FormalConjectures/ErdosProblems/619.lean:erdos_619": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The def negates a conjecture statement that faithfully encodes \"∃c>0 with h₄(G)<(1−c)n for all connected triangle-free G\", matching the informal answer \"no\"."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "log C(x)/log x → 1 is the standard rendering of C(x)=x^{1−o(1)}, with the answer marker left as the open question."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.agp_infinite": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Tendsto C atTop atTop exactly states C(x)→∞."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.agp_lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The eventual bound C x > x^(2/7 : ℝ) matches \"C(x)>x^{2/7} for large x\" with real exponent division."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.harman_lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Exponent 0.33336704 and the eventual-in-atTop form match the informal statement exactly."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.lichtman_lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Exponent 0.3389 with eventual lower bound matches Lichtman's improvement as stated."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.pomerance": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Rearranging log(C x/x)=−(1+o(1))·log x·logloglog x/loglog x gives exactly the stated limit-1 quotient."
+ },
+ "fcpr:c713447c68e16e1fc2eeeeec8e06da15ef8303d5:FormalConjectures/ErdosProblems/1057.lean:erdos_1057.variants.upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "∃c>0 with eventual C x < x·exp(−c·log x·logloglog x/loglog x) matches Erdős's upper bound."
+ },
+ "fcpr:ea3c8625fde4d1e0a516d9b5c6b0397a1e733a13:FormalConjectures/ErdosProblems/1092.lean:f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The sSup over k of \"every m-vertex subgraph becomes r-colourable after deleting ≤ k edges implies χ(G) ≤ r+1\" captures the maximality definition of f_r(m) over all finite graphs."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/ErdosProblems/128.lean:erdos_128": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The vertex-count condition is written 2·|V'|+1 ≥ n (i.e. |V'| ≥ ⌊n/2⌋) instead of 2·|V'| ≥ n, applying the edge hypothesis to one extra size class and thus weakening the implication."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/ErdosProblems/520.lean:erdos_520": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The constant c is taken uniform over all Rademacher multiplicative f, which has the same content since the normalizing √(N log log N) factor is pulled inside the sum harmlessly."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture23.lean:conjecture23": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The inequality ⌊α(G)+distavg(M,V)/2⌋ ≤ b(G) with M the max-degree set and answer(False) matches the informal (false) conjecture and its 19/15/10 counterexample."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture32.lean:conjecture32": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal inequality distavg G A + (1/2)·eccavg M ≤ path G with A the min-degree and M the max-degree vertex sets, together with answer(False) matching the stated counterexample, faithfully renders the informal conjecture."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture33.lean:conjecture33": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "low",
+  "rationale": "The inequality ⌈2·distavg G M⌉ ≤ path G matches the informal statement, but the docstring gives no resolution (unlike Conjecture 32's explicit counterexample), so the marker answer(False) asserts a truth value not supported by the informal text."
+ },
+ "fcpr:e39d2075c02ed0e9c0d4caddfc69ec7d20faacf7:FormalConjectures/WrittenOnTheWallII/GraphConjecture34.lean:conjecture34": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement ⌈distavg G C + distavg G M⌉ ≤ path G with C the center and M the max-degree set, and an unresolved answer(sorry), matches the informal conjecture."
+ },
+ "fcpr:50d3bdc5f24d6b2ddcda97a856c5088be52dd552:FormalConjectures/LittProblems/1.lean:IsSolutionOfAlgebraicODE": {
+  "classes": [
+   "missing-hypothesis",
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "No condition q ≠ 0 is imposed on the chosen denominator, so for g = 0 one may take p = q = 0 (since division by zero yields 0) and the equation f⁽ⁿ⁾·0 = 0 holds for every f, making the definition strictly too permissive."
+ },
+ "fcpr:10efdc97e18a2c87e41719ef1ce39bbf9fda47a2:FormalConjectures/GreensOpenProblems/39.lean:green_39.variant_theta": {
+  "classes": [
+   "wrong-constant-or-bound",
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The docstring says the intended reading is O(p^{1-θ}) translates, but the formal statement uses c = ⌊C·p^θ⌋, exactly the pigeonhole-trivially-false version the note warns against."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:CH.existsWeaklyFirstCountableCompactNotFirstCountable": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "low",
+  "rationale": "The CH hypothesis is rendered correctly, but the invoked definition ExistsWeaklyFirstCountableCompactNotFirstCountable omits the Hausdorff (T2) requirement that [Ar2013]'s convention attaches to \"compact\"."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:existsWeaklyFirstCountableCompactBig": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The required witness is only asked to be weakly first countable and compact with 𝔠 < #X, dropping the Hausdorff condition that the docstring's convention note makes part of \"compact Hausdorff\"."
+ },
+ "fcpr:451d109ab49055a3bdbea7f015c09c1086fe622b:FormalConjectures/Paper/WeaklyFirstCountable.lean:existsWeaklyFirstCountableCompactNotFirstCountable": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "before-weaker",
+  "confidence": "low",
+  "rationale": "The definition used states only weakly first countable + CompactSpace + not first countable, omitting the Hausdorff separation that the informal problem (by its stated convention) requires."
+ },
+ "fcpr:accf2eceb8f8f4bc0272b0ccc95daa96423d1c4e:FormalConjectures/ErdosProblems/1146.lean:IsEssentialComponent": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The implication is inverted: the informal condition is 0 < d_s(B) < 1 → d_s(A+B) > d_s(B), whereas the formal reads d_s(A+B) > b → 0 < b → b < 1."
+ },
+ "fcpr:a47b7e30b78d00d5c852e9927a8d5ec2c24b47bf:FormalConjectures/GreensOpenProblems/49.lean:green_49": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The uniform C quantified before n, A, K correctly encodes K^{O(1)} translates T of a subspace W with |W| ≤ |A| covering A under the doubling hypothesis."
+ },
+ "fcpr:3284e02963504e4955e8898050082d3774a3ff78:FormalConjectures/GreensOpenProblems/47.lean:green_47": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The eventual-in-p bound |A mod p| ≤ (p+1)/2 (exact since large primes are odd), the O(X^{1/2}/log^{100}X) counting bound, and the quadratic-image disjunct all match the informal question."
+ },
+ "fcpr:13de6c419bb3448be874a1a384b078b18e964440:FormalConjectures/ErdosProblems/274.lean:erdos_274": {
+  "classes": [
+   "wrong-quantifier",
+   "wrong-answer-marker"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The informal asks for a covering whose cosets all have pairwise different sizes (conjectured impossible, so answer False), but the formal only requires some pair i ≠ j with different cardinalities and marks the answer True."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:Star5_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "No docstring; the star K_{1,5} defined as completeBipartiteGraph (Fin 1) (Fin 5) indeed has matching number 1, so the asserted value matches the construction."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:house_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "No docstring; the house graph on 5 vertices with the listed edges has maximum matching {0-1, 2-3} of size 2, matching the asserted value."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:petersen_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "No docstring; the given outer cycle, spokes and pentagram edges define the Petersen graph, which has a perfect matching, so matching number 5 is correct."
+ },
+ "fcpr:3ece14fc89c2e1daebd2437cf8abfe18eacca270:FormalConjectures/WrittenOnTheWallII/GraphConjecture100.lean:conjecture100": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "low",
+  "rationale": "The docstring states the second term is the diameter of the complement (`Gᶜ.ediam.toNat`), but the formal statement uses an unrelated quantity `length Gᶜ`."
+ },
+ "fcpr:88daf905bd8c87ea2837849f7fc8118e0e334c36:FormalConjectures/ErdosProblems/950.lean:erdos_950.variants.weaker_pi_implies_f": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The eventual-in-x, all-y hypothesis with explicit constants C, K faithfully renders π(x) < π(y) + O((x−y)/log x) for y < x − (log x)^C, and the conclusion is the stated ≪ log log log n bound."
+ },
+ "fcpr:1c0fbc2774dae15e8a597ba5375d90d04fe97a65:FormalConjectures/WrittenOnTheWallII/GraphConjecture100.lean:conjecture100": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The binding `diamCompl := Gᶜ.ediam.toNat` (the quantity the docstring says should appear) is left unused while the inequality instead uses `length Gᶜ`."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:aeval": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The definition `fun a t ↦ MvPolynomial.aeval a (F t)` is exactly evaluation of the regular function's component polynomials at a point with coordinates in the k-algebra S₁."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:comp_aeval": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The equation `(F.comp G).aeval a = G.aeval (F.aeval a)` with `comp` defined via `bind₁` correctly expresses compatibility of evaluation with composition (only specialized to points in k, which is the natural reading)."
+ },
+ "fcpr:393aa9ab2403a2fb6f00eabf56fe8bf977a38efa:FormalConjectures/Wikipedia/JacobianConjecture.lean:jacobian_conjecture": {
+  "classes": [
+   "wrong-answer-marker",
+   "informal-changed"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The answer marker is filled in as `answer(False)`, asserting that the (open) characteristic-zero Jacobian conjecture is false, justified only by an appended docstring sentence about an `F` that does not occur in the statement (a positive-characteristic counterexample)."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The set of admissible exponents with an absolute constant c > 0 and the IsGreatest/supremum formulation matches the informal description of the largest exponent α."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5.variants.gowers_sl_two": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The statement correctly encodes the O(n^{8/9}) upper bound for product-free subsets of SL(2, ZMod p) with the constant C quantified before p."
+ },
+ "fcpr:9002c58e81d6f5b23c56cbcd88a3ee99c742e474:FormalConjectures/GreensOpenProblems/5.lean:green_5.variants.sl_two": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "MaximalFor IsProductFree with respect to Set.ncard on SL(2, ZMod p) faithfully asks for the largest product-free subsets, with the answer left as a placeholder."
+ },
+ "fcpr:a19e0b78e65ade76ba2961e58123321c1aab2adb:FormalConjectures/ErdosProblems/1138.lean:erdos_1138": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The filter `atTop.comap Prod.fst ⊓ 𝓟 {p | p.2 ∈ Ioo (p.1/2) p.1}` encodes x → ∞ with x/2 < y < x, the maximal gap over primes below x is taken via `primeCounting' ⌈x⌉₊`, and the difference of prime counts is elaborated in ℝ, matching the informal asymptotic."
+ },
+ "fcpr:9cddd0ab157fb101a83eb179a1eaa5ea0cbe3da6:FormalConjectures/GreensOpenProblems/51.lean:green_51": {
+  "classes": [
+   "wrong-referent",
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "low",
+  "rationale": "`2 • A` elaborates through the pointwise `Finset.smulFinset` scalar action (each element doubled, hence `{0}` in `ZMod 2`) rather than the sumset `A + A` intended by `2A`, trivializing the statement to `F = 0`."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/GraphConjecture1.lean:conjecture1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The inequality `n + 1 - 2·m(G) ≤ Ls(G)` for a connected graph is rendered exactly, with the `Nontrivial` instance only excluding the degenerate one-vertex case."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/GraphConjecture6.lean:conjecture6": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement `1 + n(G) - m(G) - α(G) ≤ Ls(G)` under connectivity matches the informal bound verbatim."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:C6_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "No docstring; the sanity check `m C6 = 3` is the correct matching number of the 6-cycle."
+ },
+ "fcpr:a740ffe716b943ab3c3c91149ffd4c01367694c1:FormalConjectures/WrittenOnTheWallII/Test.lean:K4_matching": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "No docstring; the sanity check `m K4 = 2` is the correct matching number of the complete graph on four vertices."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/36.lean:Green36Property": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "The docstring only says this is \"a variant\" of the simultaneous double product property from Green's Problem 36, and the stated condition (each A i + B i has full size and is disjoint from every mixed sum A j + B k with j ≠ k) is a coherent rendering of such a variant with nothing checkably off."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Paper/StrongSensitivityConjecture.lean:SimultaneousDoubleProduct": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "low",
+  "rationale": "The simultaneous double product property requires each diagonal sumset A i + B i to be disjoint from every other product A j + B k (in particular the sets A i + B i are pairwise disjoint), whereas the formal version constrains the mismatched sets A i + B j versus A j + B k only when i ≠ k, which neither implies nor is implied by the intended condition."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Paper/DegreeSequencesTriangleFree.lean:degreeFreq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The Finset set-builder card `#{v | G.degree v = d}` over the (finite) vertex type is exactly the number of vertices of degree d."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/WrittenOnTheWallII/GraphConjecture36.lean:blockSensitivityAt": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The sup over all pairwise-disjoint collections of blocks whose flips change the value of f, measured by cardinality, is exactly local block sensitivity (empty blocks are automatically excluded since flipping ∅ leaves f unchanged)."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Wikipedia/HardyLittlewood.lean:Nat.primeTupleCounting": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "`Nat.count P n.succ` counts p < n+1, i.e. p ≤ n, satisfying the file's admissible-constellation predicate, matching the informal count (the factor 2 in the offsets is the file's own convention in IsPrimeConstellation)."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Paper/StrongSensitivityConjecture.lean:dp": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Filtering Sym2 α by the symmetric predicate `dist u v = diam ∧ u ≠ v` and taking the card counts exactly the unordered pairs of distinct vertices at distance diam(G)."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/GreensOpenProblems/36.lean:SimultaneousDoubleProduct": {
+  "classes": [
+   "wrong-connective",
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "low",
+  "rationale": "The disjointness guard `i ≠ k` omits exactly the essential cases `i = k ≠ j` (i.e. `A i + B j` vs `A j + B i`), so configurations like singletons a₁=0,a₂=1,b₁=0,b₂=1 satisfy the formal condition yet violate the simultaneous double product property."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/Paper/StrongSensitivityConjecture.lean:blockSensitivityAt": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The sup of cardinalities over collections of pairwise disjoint sensitive blocks faithfully renders local block sensitivity (empty blocks are automatically excluded since f(flip x ∅) = f x)."
+ },
+ "fcpr:ee4aaef5655f8aa4a29d59391a822f398891a2b3:FormalConjectures/WrittenOnTheWallII/GraphConjecture36.lean:dp": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Counting Sym2 elements with `dist u v = diam ∧ u ≠ v` correctly counts unordered pairs of distinct vertices at distance equal to the diameter."
+ }
+}

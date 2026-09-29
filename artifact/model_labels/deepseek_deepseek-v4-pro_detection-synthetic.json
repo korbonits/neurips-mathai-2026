@@ -1,0 +1,2904 @@
+{
+ "synth:control:pi_pow_pi_transcendental": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly asserts that π^π is transcendental over ℚ, matching the informal."
+ },
+ "synth:control:erdos_507.variants.lower_kps82": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "unclear",
+  "confidence": "low",
+  "rationale": "The informal is a vague reference to a lower bound result, while the formal states a specific inequality involving lowerBest and α not specified in the informal."
+ },
+ "synth:control:green_38.lower": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The informal is a question about improving a lower bound, while the formal states a proposition about an answer function satisfying certain asymptotic inequalities."
+ },
+ "synth:missing-hypothesis:conjClassSizes_iff_sym_three": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement omits the critical 'ah-group' condition required in the informal conjecture, making the statement stronger (more general)."
+ },
+ "synth:control:erdos_366": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly encodes the yes/no question by stating that the answer is true iff there exists such an n."
+ },
+ "synth:control:green_2_upper_bound_choi": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal states a bound for all sets A, but the formal only claims existence of some A for each size, making it much weaker."
+ },
+ "synth:wrong-connective:green_35.lower": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The formal uses an iff where an implication was intended for the lower bound condition (∀ p, 1 < p ↔ lb p ≤ c p)."
+ },
+ "synth:control:green_12": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly translates the tuple-count lower bound question for all abelian groups and subsets."
+ },
+ "synth:control:erdos_89.variants.grid_upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the O-bound exactly as the informal grid construction claim."
+ },
+ "synth:missing-hypothesis:isValidMod_of_subsingleton": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal asserts IsValidMod A for all A, missing the condition that A has fewer than two elements."
+ },
+ "synth:junk-value-trap:erdos_302.variants.lower_five_eighths": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal uses ε of type ℕ instead of a positive real number, making the bound trivial for ε≥1 and failing to capture the arbitrary epsilon."
+ },
+ "synth:control:erdos_6": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal directly expresses that the set of n with three increasing prime gaps is infinite."
+ },
+ "synth:control:erdos_1142.test_45": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement faithfully invokes the defined property 'Erdos1142Prop 45' for the number 45, which matches the informal description of checking the property for 45."
+ },
+ "synth:control:green_22": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The 'answer(sorry)' placeholder is wrongly placed as a definition of 'ans' rather than marking the sought-after constants, and the statement claims an existential bound with asymptotic comparison to 'GreenSawhneyBound' instead of stating an improvement over it as the informal statement requires."
+ },
+ "synth:control:z_zero": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement 'z 0 = 1' directly formalizes the informal claim that the 0x0 Cayley table has exactly 1 transversal, assuming 'z n' is the number of transversals of an n x n Cayley table."
+ },
+ "synth:control:erdos_214.variants.juhasz_twelve_points": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement says the upper bound is k ≤ 11, meaning 12 copies are impossible, but the formal statement '¬ HasRedCopies 12' references a different concept (red copies) rather than the total number of points k."
+ },
+ "synth:control:four_dim_euler_brick_existence": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The informal statement is a yes/no existence question, but the formalization binds the answer to a universal quantification over sides, which is a quantifier mismatch."
+ },
+ "synth:control:conjecture18": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement uses the independence number α(G), but the formal statement uses 'G.indepNum' (fractional independence number) and also casts it to ℝ prematurely, missing a hypothesis that might equate them or misinterpreting the notation."
+ },
+ "synth:control:problem_4_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly captures the universal conditional question about a finite union of intervals and a weak tiling measure implying bounded density of its support."
+ },
+ "synth:control:erdos_828.variants.lehmer_conjecture": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The informal statement requires n > 1, which is present, but the formalization lacks the hypothesis that n is an integer (though n is implicit) and uses ∣ on ℕ, which is fine, but 'Prime n' might not be equivalent to 'n is prime' in the same sense without Nat.Prime; this is likely non-semantic if 'Prime' is Nat.Prime."
+ },
+ "synth:control:erdos_1026.variants.weighted_erdos_szekeres": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The informal statement says the sum of x_i is 1 and x_i are positive reals, but the formalization uses sum over Fin (k^2) without scaling by 1/(k^2) or ensuring the sum condition is correctly typed, leading to a potential junk value interpretation if the sum is over ℝ but the x_i are positive reals; the sum condition may not imply a valid probability distribution as intended."
+ },
+ "synth:control:erdos_812.parts.i": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement exactly captures the question of existence of a constant c>0 such that the ratio R(n+1)/R(n) ≥ 1+c for all sufficiently large n, with explicit casts to ℝ."
+ },
+ "synth:control:erdos_707": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement asserts the negation is true (it is false that any finite Sidon set can be embedded...), but the formalization states (∀ A, ...) ↔ False, which is logically stronger and misplaces the negation versus the universal quantifier."
+ },
+ "synth:control:one_le_sofaConstant": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement '1 ≤ sofaConstant' directly formalizes the informal claim that the sofa constant is at least 1."
+ },
+ "synth:control:isUnbiased_Z_phaseU": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal lemma exactly states mutual unbiasedness for any unit-modulus ζ, matching the informal statement."
+ },
+ "synth:missing-hypothesis:dean_conjecture.variants.three": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The informal docstring is a mere reference to a known case; the formal theorem is the corresponding formal claim, representing no error."
+ },
+ "synth:control:sidorenko_tree_graphon": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal inequality directly captures Sidorenko's inequality for trees as described."
+ },
+ "synth:wrong-type-or-domain:erdos124.melfi_construction": {
+  "classes": [
+   "wrong-type-or-domain",
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal quantifies ε over ℚ rather than ℝ and omits the condition 2 ≤ d₀, both weakening the statement."
+ },
+ "synth:wrong-answer-marker:erdos_370": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal incorrectly equates answer(False) with the set being infinite, whereas the informal asks about infinite n; the answer marker is reversed."
+ },
+ "synth:control:vizing_conjecture.variants.clark_suen": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The inequality γ(G)γ(H) ≤ 2γ(G□H) is exactly the algebraic rearrangement of the Clark–Suen bound."
+ },
+ "synth:wrong-answer-marker:erdos_315": {
+  "classes": [
+   "wrong-answer-marker",
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal uses answer(False) instead of True and shifts the exponent from i to i+1, so the statement is not equivalent to the known true answer."
+ },
+ "synth:control:wowii103Counterexample_bipartiteSize": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The size equals 10 is accurately formalized."
+ },
+ "synth:control:erdos_252.variants.k_eq_two": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states irrationality of the sum for k=2 as described."
+ },
+ "synth:control:lehmer_ramanujan_tau": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The non-vanishing of τ(n) is correctly formalized."
+ },
+ "synth:control:erdos_3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The open problem is correctly stated with the answer marker sorry."
+ },
+ "synth:control:erdos_12.variants.baier": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The asymptotic bound with coprime condition is faithfully formalized."
+ },
+ "synth:control:infinitely_many_perfect": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement encodes the open problem as an equivalence between a placeholder answer and the infinitude of perfect numbers, preserving the meaning."
+ },
+ "synth:control:disc_mem_worm_covers": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states that the closed ball of radius 0.5 centered at 0 is a worm cover, which matches the informal assertion that a disc of radius 1/2 is a worm cover (center irrelevant by translation)."
+ },
+ "synth:junk-value-trap:sawin_lattice_reduction": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization exactly matches the informal statement, with all hypotheses correctly typed and the inequality faithfully expressed."
+ },
+ "synth:control:erdos_342.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal uses `answer(sorry) ↔` and quantifies over all sequences satisfying `IsUlamSequence`, which presumably uniquely identifies the Ulam sequence, making the statement equivalent to the informal question."
+ },
+ "synth:control:erdos_5.variants.dense": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal `Ici (0 : ℝ) ⊆ closure limitPointSet` correctly formalizes S being everywhere dense in [0,∞) given S is closed, matching the informal equivalence."
+ },
+ "synth:control:problem_10_6_variant_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal exactly states the existence of a strictly increasing, genuinely sublacunary sequence whose fractional parts are dense for every irrational, with no discrepancies."
+ },
+ "synth:control:green_21.variants.fox_kleitman_modular": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal encodes the modular colouring problem with `answer(sorry) ↔` and correctly quantifies over primes, coefficients, and a colouring that avoids monochromatic solutions."
+ },
+ "synth:control:wowii103Counterexample_averageEccentricity": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal directly asserts the average eccentricity equals 30/11, exactly reflecting the informal statement."
+ },
+ "synth:control:homogeneousSpace_exists_inj_tendsto": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal captures the question by stating that every infinite homogeneous compact Hausdorff space contains an injective convergent sequence, matching the informal."
+ },
+ "synth:control:not_reachable_example": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal negation of reachability of the vector exactly matches the informal claim that [0,0] is not reachable."
+ },
+ "synth:wrong-answer-marker:erdos_1214": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses `answer(False)` instead of the standard `answer(sorry)`, thereby incorrectly embedding a specific answer rather than encoding the open problem."
+ },
+ "synth:control:poisson_conjecture.variants.dimension_two": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal is a direct assertion of the Poisson conjecture in dimension 2, faithfully representing the informal mention of the open conjecture."
+ },
+ "synth:wrong-answer-marker:conjecture85": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement says the conjecture's answer is 'no', so the answer marker should be `answer(False)`, but the formal statement uses `answer(True)`."
+ },
+ "synth:control:erdos_100": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization correctly captures the informal question about existence of a constant C>0 and asymptotic bound on diameter with `answer(sorry)` placeholder as no definite answer is claimed."
+ },
+ "synth:junk-value-trap:discrete_isoperimetric_inequality": {
+  "classes": [
+   "missing-hypothesis",
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal requires p in (0,1] and base-1 logarithm is undefined, but the formal only assumes p < 1 and lacks p > 0, making the edgeBoundary condition potentially vacuously true for p ≤ 0 and `Real.logb p m` undefined for p=0."
+ },
+ "synth:control:erdos_867.variants.coppersmith_phillips_lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement accurately captures the existence of a constant C and the asymptotic lower bound (13/24)N - C ≤ |A| as in the informal, with the O(1) expressed via an existential constant."
+ },
+ "synth:missing-hypothesis:erdos_1000.variants.limsup_eq_one": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal assumes $\\liminf \\phi_A(k)/n_k = 0$ and $\\phi_A(k)$ is a sequence of natural numbers based on a set A, but the formalization uses `phiSeq n k` without relating it to a specific set A, thus missing the hypothesis that there exists a sequence A_k with liminf zero."
+ },
+ "synth:control:conjecture141": {
+  "classes": [
+   "wrong-constant-or-bound",
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal uses ⌊girth/2⌋ - 1 + max_v l(v) with floor in ℕ, but the formal uses `(G.girth / 2 : ℤ) - 1` which is integer division with truncation towards zero, altering the result for odd girth due to Int division semantics."
+ },
+ "synth:control:primeFactorSplice_55": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal equation exactly states the informal claim that the second step from 25 yields 55 ↦ 511."
+ },
+ "synth:control:erdos_427.variants.shiu": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement describes Shiu's theorem in full, but the formal directly references `ShiuTheorem` without defining it or matching the quantifier structure, relying entirely on an external definition."
+ },
+ "synth:wrong-type-or-domain:erdos_697.parts.i": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal has α ∈ ℝ with α < β = 1/log 2, but the formal quantifies α over ℕ, completely changing the domain and meaning of the limit."
+ },
+ "synth:extraneous-hypothesis:erdos_67": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal adds an unnecessary hypothesis `h_C : C ≠ 0` that is not present in the informal statement, which only requires C > 0."
+ },
+ "synth:control:erdos_517": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formalization correctly translates the informal question into a statement with an `answer(sorry)` placeholder and captures the infinite frequency condition using set infiniteness."
+ },
+ "synth:junk-value-trap:erdos_302.variants.lower_half": {
+  "classes": [
+   "wrong-type-or-domain",
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal has ε > 0 real, o(1) asymptotic, but the formal uses ε : ℕ and (1/2 - ε)*N ≤ f N where subtraction on ℕ is truncated to 0 for ε*N > N, drastically changing the asymptotic bound."
+ },
+ "synth:missing-hypothesis:erdos_392": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement omits the definition of A as the least t, making it universally quantified over all ℕ → ℕ, which introduces a missing hypothesis and makes the statement stronger."
+ },
+ "synth:control:erdos_257.variants.tsum_top": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly translates the sum over n, using the divisor count and ignoring the harmless zero term for n=0."
+ },
+ "synth:wrong-type-or-domain:erdos_825.variants.necessary_cond": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal constant C > 0 is a real number, but the formal restricts C to ℕ, making the domain narrower and therefore the statement weaker."
+ },
+ "synth:control:theorem2": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal adds a connectedness hypothesis (h_conn : G.Connected) that is not present in the informal statement."
+ },
+ "synth:control:lambert_series_eq_num_divisor_sum": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The identity holds only under a convergence condition (e.g., |t|>1), but the formal asserts it for all rational t without any such hypothesis."
+ },
+ "synth:control:erdos_418.variants.soln": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The set-theoretic formulation correctly expresses that all numbers of the given form are not of the form n − φ(n)."
+ },
+ "synth:missing-hypothesis:erdos_975.variants.lower_bound": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "low",
+  "rationale": "The informal merely mentions a lower bound for Erdos975Sum; the formal assumes only irreducibility and non-zero degree, likely missing additional restrictions from the original result."
+ },
+ "synth:control:ame_8_4_open": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The statement uses answer(sorry) as a placeholder, which is a wrong-answer-marker rather than a proper formalization of the open problem."
+ },
+ "synth:wrong-type-or-domain:mean_value_problem_of_roots_same_norm": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal includes an unused variable K : ℕ, which is an extraneous hypothesis that does not affect the meaning."
+ },
+ "synth:control:zagierDim_first_values": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly lists the first ten values of zagierDim as given in the informal statement."
+ },
+ "synth:control:erdos_1142.test_15": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal faithfully asserts that 15 satisfies the Erdos1142 property."
+ },
+ "synth:control:erdos_1014": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly quantifies over k ≥ 3 and defines the limit of the ratio R(k,l+1)/R(k,l) as 1."
+ },
+ "synth:control:DeGiorgi_seven": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly formalizes that De Giorgi's conjecture holds in dimension 7 by instantiating DeGiorgi_conclusion at 7."
+ },
+ "synth:control:NP_ne_coNP": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly asserts inequality of the sets NP and coNP as in the informal."
+ },
+ "synth:control:inverse_galois_problem.variants.complex_function_field": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement quantifies over all fields K of char 0 and finite groups G, and asserts realizability over RatFunc K, matching the informal."
+ },
+ "synth:control:coe_pellNumber_eq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal gives the explicit Binet formula for Pell numbers, matching the informal description."
+ },
+ "synth:control:green_31.variants.lower_eventually": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The informal asks a research question, while the formal states an existential claim about a bound improvement, not a faithful formalization."
+ },
+ "synth:control:carmichael_iff_squarefree_a": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal equivalence exactly captures the conjecture that composite n with a(n) squarefree are precisely Carmichael numbers."
+ },
+ "synth:control:erdos_422.variants.eventually_const": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The informal is a question, while the formal states an equivalence involving a placeholder answer, not directly formalizing the question."
+ },
+ "synth:control:erdos_1085.variants.lower_d3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal Big-O relation correctly formalizes the asymptotic lower bound Ω."
+ },
+ "synth:control:erdos_594.variants.bot_countably_colorable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states that the empty graph on ℕ has a ℕ-coloring, matching the informal sanity check."
+ },
+ "synth:control:rlog_pi_transcendental": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement exactly says that log π is transcendental over ℚ."
+ },
+ "synth:junk-value-trap:erdos_615.variants.fox_loh_zhao": {
+  "classes": [
+   "junk-value-trap",
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal uses ε as ℕ, causing natural subtraction in the edge bound, which diverges from the intended real ε > 0 and creates a junk-value trap."
+ },
+ "synth:extraneous-hypothesis:mathoverflow_17560.variants.with_5": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement requires x ≠ 0, but the informal claim does not exclude x = 0 (which trivially satisfies the condition with integers 1, 1, 1 and x = 0)."
+ },
+ "synth:control:one_lt_log_thirty_eleven_and_lt_two": {
+  "classes": [
+   "wrong-referent",
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement claims the logarithm of the counterexample's average eccentricity is between one and two, but the formal statement computes the log of 30/11, which is a concrete number unrelated to the described counterexample."
+ },
+ "synth:control:aeval_F_eq": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement says F identifies two distinct points, meaning F(0,0,-1/4) equals F(1,-3/2,13/2) with the points being distinct, but the formal statement only asserts equality of evaluations without requiring the points themselves to be distinct."
+ },
+ "synth:wrong-answer-marker:cube_hamiltonian_arc_decomposition_even": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement is trivially true because `answer(False)` is always `False`, while the informal statement asserts the theorem is true."
+ },
+ "synth:control:minimum_overlap.variants.lower.swierczkowski_1958": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal lower bound is a constant (4 - sqrt(6))/5, while the formal statement only says this constant is less than the liminf of MinOverlapQuotient, which is a different mathematical claim about a bound on the limit rather than the lower bound itself."
+ },
+ "synth:control:erdos_413.variants.bigOmega_largest_barrier_lt_100k": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement `IsGreatest {n : ℕ | n < 10^5 ∧ IsBarrier ... n} 99840` correctly expresses that 99840 is the largest barrier below 10^5."
+ },
+ "synth:wrong-quantifier:erdos_931": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement uses a universal quantifier over k₁, k₂ (implied by the sequence of arguments) with a `Finite` condition, but the informal problem asks an existential question 'Are there only finitely many?'."
+ },
+ "synth:junk-value-trap:weak_hall_conjecture": {
+  "classes": [
+   "junk-value-trap",
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement relaxes the exponent from 1/2 to 1/2 - ε with ε presumably a small positive real number, but the formal statement uses ε : ℕ, and 2⁻¹ - ε for ε ≥ 1 becomes negative or zero, exploiting junk subtraction on ℕ."
+ },
+ "synth:control:exists'": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal statement claims existence of a real A > 1 with a specific floor-of-power property, but the formal statement uses an undefined `IsMills` predicate, leaving the actual condition unspecified."
+ },
+ "synth:wrong-answer-marker:erdos_967": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement reports a negative answer to the question, but the formal statement embeds `answer(True) ↔ ∀ ...` which is inconsistent with the truth value reported."
+ },
+ "synth:control:cuboid_perfect_euler_brick": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly formalizes the implication that if all three Cuboid conjectures hold, no perfect Euler brick exists."
+ },
+ "synth:wrong-answer-marker:erdos_1023": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement describes a solved result answering the asymptotic question, but the formal statement uses `answer(False) ↔ ∃ c ...` which appears to encode an answer without a clear correspondence to the informal truth."
+ },
+ "synth:wrong-type-or-domain:elliott_halberstam": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement requires A > 0 over the reals, but formal_before quantifies A as ℕ, restricting the hypothesis to natural numbers and thus weakening the statement."
+ },
+ "synth:control:erdos_445.variants.heath_brown": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal captures the quantifier 'for all c > 3/4' with the correct strict inequality and uses a filter to express 'for sufficiently large primes', faithfully formalizing the informal historical claim without discernible error."
+ },
+ "synth:control:ame_2_2_exists": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The informal mentions the Bell state witnesses existence; formal_before directly asserts ExistsAME 2 2, faithfully formalizing the existence statement."
+ },
+ "synth:control:flint_hills_series_converges": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal asserts convergence of the series, but formal_before states an equivalence involving an answer(sorry) marker, which adds an extraneous logical component not present in the target statement."
+ },
+ "synth:control:erdos_91.variants.six": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal says there are at least two non-similar examples, which implies existence, whereas formal_before only asserts non-uniqueness (¬ UniqueMinimizer) and misses the required existence assumption."
+ },
+ "synth:control:erdos_1047.variants.referee": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal only gives an example region, but formal_before asserts extra properties about the number of components and non-convexity, making the formal statement stronger than intended."
+ },
+ "synth:control:lbMeasure_unitSquare": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The informal 'Lebesgue measure of the unit square is 1' is directly and correctly expressed as lbMeasure unitSquare = 1."
+ },
+ "synth:control:conjecture.variants.a_40": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal states that a(40) is not known (open problem), but formal_before asserts the negation as a proven theorem, changing the meta-level epistemic claim into a definitive mathematical assertion."
+ },
+ "synth:control:erdos_633": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The equivalence defines the answer set as exactly those triangles for which every decomposition number is square, faithfully capturing the informal characterization of triangles that can only be decomposed into a square number of congruent triangles."
+ },
+ "synth:control:sawin_totally_real_tower": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly encodes the existence of a real bound and infinite set of primes ≡1 mod4, the totally real field of arbitrary large degree with bounded root discriminant, and the splitting condition via maximal ideals, matching the informal statement without error."
+ },
+ "synth:wrong-constant-or-bound:erdos_18b": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal uses ε > 0, but formal_before quantifies ε as 0 ≤ ε, incorrectly including ε=0 and thus requiring a stronger hypothesis than intended."
+ },
+ "synth:wrong-constant-or-bound:rsConstant_two": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal computes the constant for p=2 as π/2 + 2, but formal_before states the equality for rsConstant 3, using a different index (3 instead of 2)."
+ },
+ "synth:wrong-quantifier:erdos_299": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal uses ∀ S, sum ≠ 1 instead of the correct ∃ S, sum = 1 that results from negating the existential claim."
+ },
+ "synth:control:green_41.variants.polynomial_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal states ∃ C such that minCopies ε ≤ ε^{-C}, matching the informal query about ε^{-C} rotations being enough."
+ },
+ "synth:vacuous-or-trivial:erdos_505.small_dim": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The hypothesis n < 0 is impossible for ℕ, making the statement vacuously true while the informal requires n ≤ 3 without that condition."
+ },
+ "synth:control:erdos_699": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The quantifier structure and conditions exactly match the informal problem statement."
+ },
+ "synth:control:rational_distance_problem": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal expresses existence of a point at non-irrational (hence rational) distance from all four corners, matching the informal."
+ },
+ "synth:control:erdos_1055.variants.erdos_limit": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal states that (p r)^{1/r} tends to infinity, directly capturing the conjectured behavior."
+ },
+ "synth:control:bddAbove_range_overlap": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal lemma asserts that the range of Overlap is bounded above, exactly as stated in the informal."
+ },
+ "synth:control:green_60": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization of existence of c>0 with the sumset cardinality lower bound matches the informal problem."
+ },
+ "synth:control:poincare_conjecture.variants.dimension_four": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal simply states that the conjecture holds for dimension 4, faithful to the informal."
+ },
+ "synth:control:erdos_887.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal quantifier structure ∃ K, ∀ C>0, eventually #divisors ≤ K mirrors the informal exactly."
+ },
+ "synth:control:zagier_conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal dimension equality matches the informal conjecture verbatim."
+ },
+ "synth:control:qubitSICFamily_normalized": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The lemma asserts normalization for every vector in the family, exactly the informal statement."
+ },
+ "synth:control:green_39": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement asserts an asymptotic density of 1, while the informal question asks for the existence of a covering 'almost surely', which is a distinct probabilistic notion."
+ },
+ "synth:control:cuboidThree": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "The formal statement simply references 'CuboidThree' with no quantifiers or structure, making it a placeholder that matches the equally minimal informal reference."
+ },
+ "synth:extraneous-hypothesis:abc.variants.lt_constant_mul": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement adds the condition `ε ≠ 0` which is not required by the informal statement (which assumes ε > 0, automatically implying ε ≠ 0)."
+ },
+ "synth:control:erdos_351.variants.X": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement asserts `HasCompleteImage X`, which is an unelaborated constant, while the informal statement provides a detailed constructive definition of a specific strongly complete set."
+ },
+ "synth:control:erdos_74.variants.sqrt": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement asks for a graph that cannot be colored with any finite number of colors, but the formal `G.chromaticNumber = ⊤` is a stronger condition that implies infinite chromatic number but does not technically miss the hypothesis; however, the formal `maxSubgraphEdgeDistToBipartite` invokes an undefined constant, while the informal requires finite subgraphs to be made bipartite by deleting at most √n edges: the formal does not explicitly require the subgraph to be finite, missing the hypothesis that the subgraph is finite."
+ },
+ "synth:extraneous-hypothesis:a_ten_mul_add_two_eq": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement assumes `0 < n`, while the informal statement only requires `n ≥ 0`, so the formal adds the extraneous hypothesis that n is positive."
+ },
+ "synth:control:lbMeasure_rectangle_toSet": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal statement takes the absolute value of the product `|r.width * r.height|`, while the informal product of rectangle dimensions (which are presumably non-negative) should not involve an absolute value."
+ },
+ "synth:junk-value-trap:erdos_533.variants.lrss_lower": {
+  "classes": [
+   "wrong-type-or-domain",
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal parameters $ε$ and $δ$ have type `ℕ` instead of `ℝ` as the informal statement requires, and the conclusion uses natural numbers where real arithmetic is needed, causing a junk-value trap by using `1/12` in `ℕ`."
+ },
+ "synth:control:erdos_1064": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly captures the asymptotic density 1 claim using `HasDensity 1`."
+ },
+ "synth:junk-value-trap:problem_10_5": {
+  "classes": [
+   "wrong-type-or-domain",
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal parameter $ε$ has type `ℕ` instead of a positive real number, and the limit inequality `(1 - ε) ≤ ...` uses natural number subtraction, leading to junk values for `ε ≥ 2`."
+ },
+ "synth:control:rational_7_tuple": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly encodes the existence of a rational Diophantine 7-tuple via `answer(sorry)` and the conjunction of the predicate with `t.card = 7`."
+ },
+ "synth:control:divergence_add": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement faithfully expresses the additivity property of divergence at points of differentiability."
+ },
+ "synth:control:not_isZNumber_one": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly asserts that 1 is not a Z-number, matching the informal claim."
+ },
+ "synth:junk-value-trap:suffix_prefix_avoidance_weaker_bound": {
+  "classes": [
+   "junk-value-trap",
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal bound assumes n>0 to avoid division by zero, but formal lacks this hypothesis, making the statement false for n=0 due to Lean's division junk value."
+ },
+ "synth:wrong-answer-marker:erdos_43.parts.ii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal states the answer is 'no', but the formal uses answer(True) instead of answer(False)."
+ },
+ "synth:wrong-type-or-domain:navier_stokes_existence_and_smoothness_periodic": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "Viscosity nu is a real number in the problem, but formal uses nu : ℕ, restricting to natural numbers."
+ },
+ "synth:control:erdos_30": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal captures the open question with answer(sorry), matching the informal 'Is it true that...' query."
+ },
+ "synth:wrong-answer-marker:erdos_130": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal states the chromatic number can be infinite (true), but formal uses answer(False)."
+ },
+ "synth:control:erdos_288.variants.exists_k_gt_2": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal asks 'for any k>2' (∀), but the formal uses ∃ k>2."
+ },
+ "synth:control:erdos_1203": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the open problem with answer(sorry), faithfully representing the informal 'Prove that...' statement."
+ },
+ "synth:control:erdos_939.variants.examples": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal asserts existence of r≥4 with a nonempty set of examples, matching the informal mention of examples."
+ },
+ "synth:control:erdos_357.variants.weisenberg": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly captures the lower bound with a o(1) function and eventually holds."
+ },
+ "synth:control:infinite_isWallSunSunPrime": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the set of WallSunSun primes is infinite, matching the conjecture."
+ },
+ "synth:control:exists_least": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal asserts the existence of a least Mills number, directly matching the informal statement."
+ },
+ "synth:wrong-answer-marker:erdos_1071.parts.i": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses answer(False) instead of the correct answer(True) that matches the affirmative solution, making the answer marker opposite to the known result."
+ },
+ "synth:control:erdos_946.variants.heathbrown_lower_bound": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal asserts a precise lower bound of x/(log x)^7, but the formal uses big-O notation which only guarantees the bound up to a multiplicative constant."
+ },
+ "synth:control:erdos_600.variants.ruzsa_szemeredi_upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal exactly expresses the little-o statement e(n,r)=o(n²) for all fixed r as given in the informal."
+ },
+ "synth:control:minimum_overlap.variants.lower.scherk_1955": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The informal states a (presumably non-strict) lower bound of 1 - 1/√2, but the formal uses a strict inequality >, which is a slightly stronger claim."
+ },
+ "synth:missing-hypothesis:green_33.sanity_sq_bound": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal omits the required hypothesis A + A = Z/qZ, making the claimed inequality universally quantified over all A and thus trivially false."
+ },
+ "synth:control:erdos_203": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly encodes the existence of m with gcd(m,6)=1 such that 2^k·3^l·m+1 is never prime, matching the informal question exactly."
+ },
+ "synth:control:W_3_28_lower": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal unnecessarily wraps the inequality in an answer placeholder equivalence, deviating from the direct lower-bound statement of the informal."
+ },
+ "synth:control:W_3_10": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal directly states the exact value equality W(3,10)=97 as given in the informal source."
+ },
+ "synth:control:erdos_107": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal wraps the intended equality in an answer placeholder equivalence, which is not the same as the direct statement ∀ n≥3, f n = 2^{n-2}+1."
+ },
+ "synth:control:a_isBigO": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly expresses the big-O bound a(n)=O(log n log log n) from the conjecture."
+ },
+ "synth:control:ame_5_2_exists": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the existence of an AME(5,2) state directly, matching the informal claim."
+ },
+ "synth:control:erdos_623": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal encodes the yes/no question with answer placeholder and a universal statement that exactly captures the informal 'must there exist' query."
+ },
+ "synth:control:infinite_fermat_primes": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization correctly uses an answer placeholder to state the open problem of whether there are infinitely many Fermat primes."
+ },
+ "synth:control:erdos_5.variants.westzynthius": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The existence of a strictly monotone sequence with normalized gaps tending to infinity is the exact formal meaning of ∞ being a limit point of normalized prime gaps."
+ },
+ "synth:control:irrational_algebraic_absolutely_normal": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The equivalence of the placeholder answer to the universal conditional exactly captures the strong normality conjecture."
+ },
+ "synth:control:erdos_398": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The set of n satisfying the Diophantine equation being exactly {4,5,7} faithfully formalizes the statement that Brocard's problem has no other solutions."
+ },
+ "synth:control:erdos_120.variants.finite_set": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement ¬Erdos120For A for every finite real set A directly matches the claim that Erdős 120 is false for finite sets."
+ },
+ "synth:control:exists_weakly_first_countable_not_first_countable": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The existential quantification over a type with a topological space satisfying the two properties correctly formalizes the existence claim."
+ },
+ "synth:junk-value-trap:erdos_22.variants.bollobas_erdos_lower": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal quantifies ε and δ over ℕ instead of over ℝ_{>0}, requiring them to be positive integers rather than arbitrary positive reals as in the informal statement."
+ },
+ "synth:control:Reachable.five_pow_six": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement Reachable (5^6) 29 concerns an unrelated predicate and constant 29, bearing no resemblance to the given arithmetic identity."
+ },
+ "synth:control:erdos_507.equivalent": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The asymptotic equivalence of α to the placeholder answer correctly formalizes the request to estimate α(n) in the informal problem."
+ },
+ "synth:control:eventually_palindrome_56": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "There exists a number of iterations after which 56 yields a base-10 palindrome, exactly capturing the sanity check statement."
+ },
+ "synth:control:erdos_241": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The formal uses f N 3 with an extra argument 3 that is absent from the informal f(N) ~ N^{1/3}, making the statement refer to a different function."
+ },
+ "synth:vacuous-or-trivial:factorial_isPractical": {
+  "classes": [
+   "vacuous-or-trivial",
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The hypothesis n < 0 is impossible for ℕ, making the statement trivially true, while the informal requires n ≥ 1 for n! to be practical."
+ },
+ "synth:control:asymptotic_erdos_szekeres": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement expresses the same big-O error bound by rearranging the equation, faithfully capturing the asymptotic."
+ },
+ "synth:extraneous-hypothesis:erdos_590.variants.finite_cardinal": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal states the result for a blue K_3, while the formal parameterizes the blue order type as an arbitrary positive natural m, generalizing the statement."
+ },
+ "synth:control:erdos_74": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal requires a single graph that works for every f→∞, but the formal swaps the quantifiers making the graph depend on f, which is a weaker claim."
+ },
+ "synth:junk-value-trap:erdos_533.variants.delta_seven_ge_quarter": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal ε and δ are arbitrary positive reals, but the formal quantifies them over ℕ, which cannot capture arbitrarily small positive values and hence weakens the statement."
+ },
+ "synth:control:erdos_323.variants.k_eq_2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the exact asymptotic equivalence with the same constant, matching the informal theorem."
+ },
+ "synth:control:coP_eq_P": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The set comprehension and equality exactly express the statement that the class of complements equals P."
+ },
+ "synth:extraneous-hypothesis:multibrotSet_frontier_measurable": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The informal states the boundary of any Multibrot set is measurable without a positivity condition, but the formal adds a hypothesis 0 < n, restricting the claim."
+ },
+ "synth:control:selfridge_seq_conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal ¬ Monotone fermatFactors directly captures the conjecture that the sequence of prime factor counts is not monotone."
+ },
+ "synth:wrong-answer-marker:erdos_426": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal states the answer is no, but the formal uses answer(True) to mark the opposite answer, creating a mismatch in the answer marker."
+ },
+ "synth:wrong-type-or-domain:elkies_bound": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal asserts a universal bound for real C, while the formal quantifies C over ℚ, unnecessarily restricting the domain and weakening the statement."
+ },
+ "synth:control:cuboidOne": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal simply asserts the proposition CuboidOne, which is exactly the statement of the conjecture as a theorem after its proof."
+ },
+ "synth:control:erdos_933.variants.mahler": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal encodes the n^{1+o(1)} bound correctly using an existentially quantified little-o function, exactly matching the informal inequality."
+ },
+ "synth:control:not_weaklyDivisible_zero": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement says `1`-weakly divisible (`WeaklyDivisible 1 ...`), but the formal statement uses `WeaklyDivisible 0 ...`."
+ },
+ "synth:control:erdos_973": {
+  "classes": [
+   "wrong-quantifier",
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement asks whether there exists C>1 such that for every n there exists a sequence with max|sum| < C^{-n}, but the formal statement uses a universal quantifier over k with an inequality < C^{-n} and has answer(sorry) ↔, which does not ask the yes/no question."
+ },
+ "synth:control:erdos_593.variants.two_colorable_implies_obligatory": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement faithfully translates the informal theorem, with 'answer(sorry) ↔' marking the open problem status."
+ },
+ "synth:junk-value-trap:problem_10_5_moreover": {
+  "classes": [
+   "wrong-type-or-domain",
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal hypothesis requires 0 < ε with ε real, but the formal statement quantifies ε : ℕ, and also omits the finite-dimensionality hypothesis on K that is referenced as 'same hypotheses'."
+ },
+ "synth:missing-hypothesis:ordinalCardinalRamsey3_mono": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement also requires the hypothesis c' ≤ c, but the formal statement only assumes β' ≤ β and omits the cardinal inequality."
+ },
+ "synth:control:DeGiorgi_three": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement applies the DeGiorgi_conclusion predicate to dimension 3, matching the informal claim exactly."
+ },
+ "synth:missing-hypothesis:relative_phaseU_phaseU_of_mul_eq_I": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal hypothesis includes the condition \\(\\overline{\\zeta}\\eta = i\\), which is missing from the formal statement's arguments."
+ },
+ "synth:control:min_modulus": {
+  "classes": [
+   "wrong-constant-or-bound",
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement bounds N < 2^n - 2^{floor(log2 n)}, but the formal statement uses N < minModulus n, where minModulus is defined as 2^n - n; this is a different bound, and the hypothesis 0 < N is extraneous since it is implied by N < minModulus n."
+ },
+ "synth:control:erdos_1044": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement asks to determine the infimum, which is known to be 2, but the formal statement uses `answer(2)` as a marker for the unresolved problem rather than stating the resolved value."
+ },
+ "synth:control:hasGap_concrete": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement asserts a gap of length 4 starting at 1, but the formal statement calls `HasGap` with argument 4 without encoding the starting position 1."
+ },
+ "synth:control:erdos_386.variants.two": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement asks whether the product of consecutive primes can be binomial coefficients infinitely often, but the formal statement asserts the existence of two primes p, q such that the binomial coefficient equals a product of primes indexed from p to q-1, which incorrectly represents consecutive primes as an interval."
+ },
+ "synth:control:erdos_1095.variants.lower_conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly captures the informal conjecture of an exponential lower bound for g(k)."
+ },
+ "synth:junk-value-trap:erdos_862.variants.lower_bound": {
+  "classes": [
+   "wrong-type-or-domain",
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "ε is ℕ, making (0.16 - ε) negative for many ε and so the inequality holds trivially, contradicting the nontrivial asymptotic lower bound."
+ },
+ "synth:control:erdos_337.variants.three_fold": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly expresses the limit of the quotient tending to infinity using `Tendsto`."
+ },
+ "synth:control:a_5": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly gives the value of a at 5, matching the informal description."
+ },
+ "synth:control:erdos_967.variants.two_three_five": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The informal text is a historical remark rather than a proposition, whereas the formal statement is a conjecture biconditional."
+ },
+ "synth:control:a_eq_zero_of_pseudoprime": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly formalizes the conjecture that if 2n+1 is an absolute Euler pseudoprime then a n = 0."
+ },
+ "synth:control:erdos_212": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly asks for a dense subset of ℂ with pairwise rational distances."
+ },
+ "synth:control:erdos_123.variants.powers_2_3": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement expresses d-completeness of the product of powers of 2 and 3, matching the informal claim."
+ },
+ "synth:control:erdos_770.variants.odd_h_unbounded": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "Using ENat.toNat on the image of h can collapse infinite values to 0, potentially breaking the unboundedness condition."
+ },
+ "synth:control:DeGiorgi_one": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement asserts the De Giorgi conclusion for dimension 1, matching the trivial case."
+ },
+ "synth:wrong-type-or-domain:navier_stokes_breakdown_R3": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "Viscosity nu is declared as ℚ instead of ℝ, altering the intended domain of the statement."
+ },
+ "synth:control:snake_small_dimensions": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement lists the known values for dimensions 0–8, matching the informal enumeration."
+ },
+ "synth:control:hasDistinctConjClassSizes_iff": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal biconditional exactly expresses that equal conjugacy class cardinalities imply the classes coincide."
+ },
+ "synth:control:not_congruentNumber_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly translates the informal '1 is not a congruent number' as ¬ congruentNumber 1 with no change in meaning."
+ },
+ "synth:control:erdos_456.parts.iii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement faithfully captures the informal question about infinitely many primes p with p-1 being the unique n for which m_n=p, using the standard answer(...) placeholder."
+ },
+ "synth:control:erdos_364": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The negation of existence of a consecutive triple of powerful numbers is expressed exactly as ¬∃ n, Powerful n ∧ Powerful (n+1) ∧ Powerful (n+2)."
+ },
+ "synth:control:erdos_456.variants.linniks_theorem": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The statement ∃ L:ℝ, (p n) =O(n^L) correctly formalises p_n ≤ n^{O(1)} as there exists a real exponent L making p_n big-O of n^L."
+ },
+ "synth:control:erdos_458": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses k.nth Prime for p_k, but if .nth Prime is zero-indexed this causes an off-by-one error that changes the referenced primes and makes the condition incomparable to the original."
+ },
+ "synth:missing-hypothesis:divergence_of_not_differentiableAt": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement claims divergence is 0 only at points where fderiv has its junk value, but the formal statement unconditionally asserts ∇⬝ v x = 0 for all v and x, missing the hypothesis of non-differentiability."
+ },
+ "synth:wrong-quantifier:green_28": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement asks whether for all such X,Y the uniformity of X+Y implies uniformity of X and Y, but the formal statement uses an existential quantifier over X,Y, completely changing the meaning."
+ },
+ "synth:control:W_3_13": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The equation W 3 13 = 160 directly matches the informal claim with the same constants."
+ },
+ "synth:control:green_21.variants.fox_kleitman_sharp": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Using answer(sorry) as a placeholder for the unknown sharp constant still faithfully expresses that the greatest element of the set exists and is attained, as intended."
+ },
+ "synth:control:poissonConjectureFor_zero": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "PoissonConjectureFor K 0 directly states that the Poisson conjecture holds for field K in dimension 0, matching the informal triviality remark."
+ },
+ "synth:control:erdos_97.variants.three_equidistant": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalisation asserts existence of a nonempty convex independent set with the 3-equidistant property, exactly reflecting Danzer's example."
+ },
+ "synth:wrong-type-or-domain:mathoverflow_17560.variants.all_nats": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal x ranges over reals (or integers) and must be an integer, but the formal restricts x to ℕ, making the conclusion trivial and thus weakening the statement."
+ },
+ "synth:control:erdos_325.variants.wooley": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The informal statement is a bibliographic reference, not a mathematical claim that the formal big-O inequality could formalize."
+ },
+ "synth:control:erdos_125.variants.zero_lower_positive_upper_density": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal biconditional with answer correctly captures the yes/no question about the density property."
+ },
+ "synth:control:erdos_1142.test_7": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement Erdos1142Prop 7 directly matches the informal claim that 7 satisfies the property."
+ },
+ "synth:control:erdos_319.variants.lb": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal existence of a little-o function and the asymptotic lower bound exactly matches the informal statement of the bound."
+ },
+ "synth:control:green_25.variants.upper_ess89": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal existence of a counterexample sequence with the specified growth rate captures the informal 'need not be true' claim."
+ },
+ "synth:control:buchi_problem": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement of the Büchi problem using answer and IsBuchi faithfully reflects the informal problem."
+ },
+ "synth:control:erdos_337.variants.ruzsa_turjanyi": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal limit tending to infinity with A+A and 2N matches the conjecture described in the informal."
+ },
+ "synth:control:problem_10_7": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal universal quantifiers and interval condition correctly formalize the existence of arbitrarily large α with the given property."
+ },
+ "synth:control:erdos_208.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal little-o bound with the log ratio captures the asymptotic inequality asked in the informal."
+ },
+ "synth:control:indices_infinite_iff_fib_primes_infinite": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal equivalence of the two phrasings exactly matches the informal statement."
+ },
+ "synth:control:minimum_overlap.variants.upper.MRS_1956": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal limsup inequality ≤ 2/5 captures the informal upper bound of 2/5."
+ },
+ "synth:control:buchi_false_M1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal negation of IsBuchi 1 directly matches the informal counterexample for M=1."
+ },
+ "synth:extraneous-hypothesis:erdos_282.variants.fibonacci": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal requires x ≠ 0 and 0 < x < 1, but the informal simply says 'any x' without these hypotheses."
+ },
+ "synth:control:erdos_1192.f_r_no_rep": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal uses the curried f_r with r=1 instead of the notation f_1, but faithfully captures the same equation."
+ },
+ "synth:control:distMin_max_degree_vertices": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the same distance equality for the specified set of maximum-degree vertices."
+ },
+ "synth:wrong-answer-marker:erdos_753": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal defines the problem with answer(True) ↔ …, while the informal states the answer is 'no', so the answer marker is misapplied."
+ },
+ "synth:wrong-quantifier:schinzel_conjecture": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal requires all f_i(n) to be prime simultaneously, but the formal only demands existence of some f∈fs with prime value."
+ },
+ "synth:control:W_3_16": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal directly expresses the same equality W(3,16)=238."
+ },
+ "synth:control:erdos_353.variants.cyclic_quadrilateral": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly captures the existence of four distinct cospherical points with convex hull area 1."
+ },
+ "synth:control:upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization of the question uses answer(sorry) ↔ N(b) =O log log b, faithfully representing the open problem."
+ },
+ "synth:control:erdos_218.variants.infinite_equal_prime_gap": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal directly states that the set of n with equal consecutive prime gaps is infinite."
+ },
+ "synth:extraneous-hypothesis:erdos_700.variants.prime_pow": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal includes a redundant hypothesis 0 < a not present in the informal's 'a ≥ 2', making the statement weaker."
+ },
+ "synth:junk-value-trap:erdos_786.parts.i.selfridge": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal requires ε : ℕ, but the informal ε is a positive real number, making the hypothesis impossible and the formal statement vacuous."
+ },
+ "synth:control:ame_12_5_open": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal uses answer(sorry) ↔ ExistsAME 12 5, which is a faithful encoding of the open existence question."
+ },
+ "synth:missing-hypothesis:erdos_987.variants.finite_distinct_points": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement requires an additional assumption 'there are only a finite number of distinct points' to reach the conclusion, but this assumption is absent from the formal statement."
+ },
+ "synth:control:green_32.variants.szemeredi_regime": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement faithfully captures the asymptotic condition \\(\\omega(p) \\sim c \\cdot p\\) and the regime bounds on \\(c\\), making no logical deviation."
+ },
+ "synth:wrong-quantifier:erdos_4.variants.rankin": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal states existence of a constant, whereas the formal asserts the property for every positive constant."
+ },
+ "synth:control:erdos_887.variants.rosenfeld_infinite": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization exactly matches the quantification and the interval condition given in the informal statement."
+ },
+ "synth:missing-hypothesis:DeGiorgi_le_eight": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal restricts to dimension \\(n \\le 8\\), but the formal statement omits this hypothesis."
+ },
+ "synth:control:inscribed_square_problem": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The domain should be a Jordan curve on the plane, but it is formalized as an embedding of the circle into \\(\\mathbb{R}^2\\), which is a different object."
+ },
+ "synth:control:words_naive_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The cardinality bound is correctly stated up to the equivalence of \\(|A|\\cdot|B| \\le q^{2n}\\) and the power expression."
+ },
+ "synth:control:green_15_ap4": {
+  "classes": [
+   "definitional-mismatch"
+  ],
+  "direction": "incomparable",
+  "confidence": "medium",
+  "rationale": "The informal simply answers YES for 4-term progressions, but the formal introduces a Lipschitz function and an AP-free set whose connection is unclear without definitional context."
+ },
+ "synth:wrong-type-or-domain:erdos_967.variants.yip": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weak",
+  "confidence": "medium",
+  "rationale": "The informal uses a real parameter \\(t \\ne 0\\), but the formal only quantifies over rational \\(t\\), which restricts the intended domain."
+ },
+ "synth:control:erdos_385.variants.lb": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The asymptotic formula \\(n+(1-o(1))\\sqrt{n}\\) is correctly expressed using a little-o error term in the formal version."
+ },
+ "synth:wrong-quantifier:exists_rank_ge_thirtytwo": {
+  "classes": [
+   "wrong-quantifier"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal asks about the existence of some curve with rank at least 32, but the formal asserts the property for all elliptic curves over \\(\\mathbb{Q}\\)."
+ },
+ "synth:wrong-type-or-domain:padic_littlewood_conjecture": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The conjecture is stated for a real number \\(\\alpha\\), but the formal quantification is limited to rational \\(\\alpha\\)."
+ },
+ "synth:control:brennan_universalSpectrum": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal uses universalSpectrum instead of B, but that is just a renaming; the statement is faithfully formalized."
+ },
+ "synth:control:algebraicIndependent_e_pi": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the problem as a statement of equivalence with the answer placeholder; no errors."
+ },
+ "synth:extraneous-hypothesis:green_37_bigO": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal does not specify k>0, but the formal adds the hypothesis 0 < k, restricting the domain."
+ },
+ "synth:control:erdos_346.variants.example": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the existence of a sequence with the described properties, matching the informal."
+ },
+ "synth:control:infinite_club_exists": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly frames the open problem as equivalence between the answer placeholder and the existence statement."
+ },
+ "synth:wrong-answer-marker:erdos_22": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal incorrectly uses answer(False) instead of answer(True), contradicting the informal statement that the claim is true."
+ },
+ "synth:control:erdos_44": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly translates the problem into a quantified statement with answer placeholder."
+ },
+ "synth:wrong-answer-marker:erdos_442": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal uses answer(True) but the informal states the result is false, as proved by Tao."
+ },
+ "synth:wrong-answer-marker:f_asymptotic_2": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal uses answer(True) but the question was disproved, so answer should be False."
+ },
+ "synth:control:erdos_25": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly quantifies over sequences and the set, with the natural hypotheses that n_i are positive and strictly increasing."
+ },
+ "synth:wrong-answer-marker:erdos_750.variants.c_gt_quarter": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal incorrectly uses answer(False) while the informal states the result is proved (true)."
+ },
+ "synth:junk-value-trap:erdos_851": {
+  "classes": [
+   "wrong-type-or-domain",
+   "vacuous-or-trivial"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal parameter ε is typed as ℕ with condition ε ∈ Set.Ioo 0 1, which is impossible, making the statement vacuously true while the informal expects a real ε>0."
+ },
+ "synth:control:snake_dim_nine_lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal inequality correctly captures the lower bound on the longest snake length."
+ },
+ "synth:wrong-answer-marker:erdos_639": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal wraps the statement in an answer(False) ↔, contradicting the intended proved theorem."
+ },
+ "synth:control:erdos_889.variants.general": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "v_l is applied to the fixed l instead of the variable n, so the limit is taken over a constant sequence."
+ },
+ "synth:control:green_64.variants.p_sub_one": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly states the open question variant with p-1 and answer(sorry) placeholder."
+ },
+ "synth:control:exists_cover_of_isAcyclic": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal existence statement exactly captures the empty cover case for acyclic bridgeless graphs."
+ },
+ "synth:missing-hypothesis:r_eq_two": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The formal adds the hypothesis 2 ≤ γ not present in the informal stepping-down implication."
+ },
+ "synth:control:seventeen_square_packing_in_square_bound": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal uses an exact side length 4.6756 instead of the strict upper bound < 4.6756."
+ },
+ "synth:control:catalanReciprocalSum_fracPart_inj": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal quantifier over distinct index pairs exactly expresses pairwise distinct fractional parts of the sums."
+ },
+ "synth:wrong-type-or-domain:pillais_conjecture": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal quantifies over real a,b,c instead of the intended positive integers."
+ },
+ "synth:control:green_42.variants.dimension_twenty_four": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal asserts CohnElkiesOptimal for dimension 24, matching the described adaptation."
+ },
+ "synth:extraneous-hypothesis:agoh_giuga.variants._1700_le_digits_length_of_isStrongGiuga": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal uses > 1700 instead of ≥ 1700, yielding a strictly stronger lower bound on digit count."
+ },
+ "synth:control:mahler_conjecture.variants.consequence": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal conditional exactly captures the implication from Mahler's conjecture to Ω(3/2) > 1/2."
+ },
+ "synth:control:infinite_prime_sq_add_one": {
+  "classes": [
+   "vacuous-or-trivial",
+   "wrong-answer-marker"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal statement is a trivially true equivalence (answer(sorry) ↔ set infinite), while the informal is an open question."
+ },
+ "synth:control:erdos_835.variants.johnson": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement faithfully captures the equivalence between the existence of k>2 with chromatic number k+1 and the answer to the problem."
+ },
+ "synth:wrong-answer-marker:erdos_593.variants.graph_case_bipartite_obligatory": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The answer marker is set to False, contradicting the known true theorem that bipartite graphs are obligatory."
+ },
+ "synth:control:erdos_252.variants.k_eq_three": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly claims the irrationality as in the informal."
+ },
+ "synth:control:erdos_1201.variants.epsilon_half": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement appears to correctly express the density claim for ε=1/2, despite the informal being brief about provability."
+ },
+ "synth:control:W_3_5": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement is exactly the numerical equality."
+ },
+ "synth:wrong-type-or-domain:integer_isGoodPair_iff": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal uses ℝ for IsGoodPair arguments but the informal states the characterization for integer t,α, and the domain mismatch constitutes a type error."
+ },
+ "synth:wrong-type-or-domain:erdos_975.variants.quadratic": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly formalizes the existence of a positive constant c with the asymptotic behavior."
+ },
+ "synth:control:isConnectedMap_comp": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal lemma states exactly that composition of connected maps is connected."
+ },
+ "synth:wrong-type-or-domain:erdos_1038.variants.inf_upperBound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly bounds the infimum as described."
+ },
+ "synth:control:erdos_9.variants.infinite": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal theorem states that the set is infinite, matching the informal."
+ },
+ "synth:missing-hypothesis:conjecture316": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement omits the required hypothesis |P| ≥ deg_avg(Gᶜ)."
+ },
+ "synth:control:dim_mzv_weight_one": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement replaces the set \\mathcal{Z}_1 with the span mzvSpanOfWeight 1 and the dimension claim with finrank, faithfully capturing the identical meaning."
+ },
+ "synth:control:conjecture133": {
+  "classes": [
+   "wrong-referent"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement has path(G) on the left-hand side as the lower bound, but the formal statement reverses the bound by placing (rad:ℝ) + ... on the left and path G on the right."
+ },
+ "synth:control:erdos_321.variants.isLittleO": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The formal statement uses answer(sorry) in place of the unknown target g(N), leaving the statement incomplete rather than stating a concrete bound."
+ },
+ "synth:control:erdos_448.variants.hall_tenenbaum_upper_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The asymptotic upper density bound is captured by the big-O notation in Lean, matching the informal intent."
+ },
+ "synth:wrong-type-or-domain:erdos_244.variants.Romanoff": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement assumes C is an integer, but the formal statement uses a real constant C > 1 instead of an integer."
+ },
+ "synth:wrong-answer-marker:erdos_71": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The formal statement wraps the entire claim inside an answer(False) ↔ ... wrapper, which is not present in the informal conjecture."
+ },
+ "synth:wrong-answer-marker:erdos_119.parts.iii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The formal statement uses an answer(False) ↔ ... wrapper that does not appear in the informal problem statement."
+ },
+ "synth:control:KotheConjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement exactly states the sum of two nil left ideals is nil, assuming the ring context is implicit."
+ },
+ "synth:control:fairCoin_apply": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement gives the probability mass 1/2 for each Boolean outcome, matching the fair coin definition."
+ },
+ "synth:control:cube_hamiltonian_arc_decomposition_impossible_m2": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement asserts the impossibility for m=2, directly corresponding to the informal claim for the 2-dimensional cube digraph."
+ },
+ "synth:control:bb84Family_normalized": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement asserts normalization of each vector in the BB84 family, matching the informal statement exactly."
+ },
+ "synth:control:exceptional_ncard_le": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The O(log N) bound on the cardinality of exceptional indices is faithfully expressed using the formal statement."
+ },
+ "synth:wrong-answer-marker:erdos_1148": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal uses `answer(False)` but the informal states the result was proved affirmatively, so the answer marker is incorrect."
+ },
+ "synth:control:erdos_91.variants.five": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly claims the uniqueness result described in the informal."
+ },
+ "synth:control:erdos_410": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal faithfully encodes the yes/no problem with the answer placeholder and the limit statement."
+ },
+ "synth:control:agoh_giuga.variants.equivalence": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal asserts the equivalence of the two conjectures exactly as stated informally."
+ },
+ "synth:control:erdos_188": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal asks for the least element of the set, matching the 'smallest k' informal request."
+ },
+ "synth:control:steiner_system_5_6_12": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal mentions a unique Steiner system, but the formal only asserts existence via `Nonempty`."
+ },
+ "synth:wrong-type-or-domain:pollock_tetrahedral": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal quantifies over `ℝ` instead of the natural numbers required by the conjecture."
+ },
+ "synth:missing-hypothesis:lemma2_a": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal requires a sequence with no three terms equal, but that hypothesis is missing from the formal."
+ },
+ "synth:control:erdos_413.parts.i": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly captures the yes/no question about infinite barriers with the answer placeholder."
+ },
+ "synth:control:tauPlus_six": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states the exact equality given in the sanity check."
+ },
+ "synth:control:tendsto_aReal_asymptotic": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The limit encoding correctly formalizes the asymptotic expansion with o(1/n^5) error term."
+ },
+ "synth:missing-hypothesis:erdos_302.parts.i": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal takes an arbitrary function `f` as a parameter instead of defining it as the specific maximal subset size."
+ },
+ "synth:control:erdos_769.variants.growth_rate": {
+  "classes": [
+   "wrong-quantifier",
+   "missing-hypothesis",
+   "wrong-referent"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal asks about the existence of a limit for a specific function c, but the formal introduces an existential quantifier over all functions, weakening the statement."
+ },
+ "synth:wrong-answer-marker:erdos_1105.parts.ii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal asks whether the equality holds, but the formal marks the answer as False, turning the conjecture into its negation."
+ },
+ "synth:control:exists_quasiperfect": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal directly translates the existence question into a Lean statement with an answer placeholder, faithful to the informal."
+ },
+ "synth:control:promislow_group_is_torsionfree": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal lemma asserts exactly that the Promislow group is torsion-free."
+ },
+ "synth:control:dense_iff_limit_point_set": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal states an equivalence that requires the set to be closed, but omits this hypothesis, making the statement stronger than the informal remark."
+ },
+ "synth:control:erdos_889.variants.V1_eq_1_finite": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states exactly that the set of n with V_1(n)=1 is finite, matching the informal question."
+ },
+ "synth:control:erdos_770.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly translates the question about the liminf being infinite into a Lean statement."
+ },
+ "synth:control:tournament_anti_sidorenko_trees_conjecture_tournamenton": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal captures the universal quantification over all finite trees, existence of orientation, and inequality exactly as described."
+ },
+ "synth:control:erdos_1128.prikryMills": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal states exactly the existence of a coloring on a set of size aleph_1 with no countable monochromatic box."
+ },
+ "synth:missing-hypothesis:beaver_math_olympiad_problem_2_antihydra": {
+  "classes": [
+   "missing-hypothesis",
+   "wrong-quantifier"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal omits the definition of b as the cumulative difference of evens and odds, and quantifies over arbitrary a and b, losing connection to the Antihydra sequence."
+ },
+ "synth:extraneous-hypothesis:hasMaximallyMixedFirstReduction_of_completion": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The informal states that the conclusion follows from the coefficient's squared norm alone, but the formal adds extra hypotheses on the state vector and injectivity, making the statement weaker than intended."
+ },
+ "synth:control:erdos_386": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal correctly captures the existence of a k and infinitely many n with binom(n,k) being a product of consecutive primes."
+ },
+ "synth:control:erdos_484": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement faithfully captures the existence of an absolute constant c>0 with the required property for all k and large N."
+ },
+ "synth:control:erdos_1093.parts.ii": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The formal set includes an extra condition on prime divisors not present in the informal question, making the statement weaker than intended."
+ },
+ "synth:control:erdos_1026.variants.lower_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal assertion that 1/√2 belongs to the set of admissible constants precisely encodes the lower bound c ≥ 1/√2."
+ },
+ "synth:control:erdos_10.variants.grechuk": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal set difference correctly expresses the existence of infinitely many even numbers not representable as a prime plus at most 3 powers of 2."
+ },
+ "synth:control:erdos_1167.variants.infinite_targets_needs_bound": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The negation of the universal implication captures the informal claim that the variant without the κ_α ≤ λ bound is false."
+ },
+ "synth:wrong-type-or-domain:erdos_22.variants.szemeredi_upper": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization correctly quantifies ε, δ, and sufficiently large n and states the edge bound with (1/8+ε)n²."
+ },
+ "synth:wrong-type-or-domain:erdos_361.asymptotic": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The formal statement contains an 'answer(sorry)' placeholder, leaving the intended asymptotic bound unspecified."
+ },
+ "synth:control:error_term_improvement": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The formal introduces an 'answer(sorry)' placeholder that obscures the direct existential claim about δ."
+ },
+ "synth:control:nonempty_cardSet": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The nonemptiness of cardSet n correctly asserts the existence of an N for each n≥3."
+ },
+ "synth:control:erdos_539.variants.isBigO_sq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The big-O statement precisely formalizes h(n) ≪ n^{1/2}."
+ },
+ "synth:control:erdos_400.parts.ii": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "high",
+  "rationale": "The 'answer(sorry)' placeholder makes the formal statement an equivalence rather than a direct formalization of the informal question."
+ },
+ "synth:wrong-connective:erdos_701": {
+  "classes": [
+   "wrong-connective"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "Uses '∨' instead of '∧' in the set comprehension, meaning x ∈ A is a disjunct rather than a conjunct, making the right-hand side larger and the inequality easier to satisfy."
+ },
+ "synth:control:erdos_1106.parts.ii": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Formalization correctly interprets the product index and prime-factor count, matching the intended meaning despite the informal typo p(n) for p(i)."
+ },
+ "synth:missing-hypothesis:erdos_602.variants.unique_index": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "Missing hypothesis that the single set A (default : I) can be made non-monochromatic by some coloring, or that its size is at least two."
+ },
+ "synth:control:erdos_1128.variants.prikryMills_explicit": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Faithfully formalizes the existence of a 2-coloring of ω₁³ with no monochromatic box for any three countably infinite subsets."
+ },
+ "synth:junk-value-trap:erdos_10.variants.gallagher": {
+  "classes": [
+   "wrong-type-or-domain",
+   "junk-value-trap"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "Uses ℕ for ε instead of real, causing truncated subtraction 1 - ε ≤ ... which is vacuously true for ε > 1, weakening the statement."
+ },
+ "synth:control:erdos_1135": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Merely references the existing formal statement of the Collatz conjecture, preserving both meaning and intent."
+ },
+ "synth:control:erdos_214.variants.bounds": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Both formal and informal express the same inequality 4 ≤ k ≤ 7 using an equivalent logical conjunction."
+ },
+ "synth:control:twentyone_le_rank_height_count_asymptotic": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization correctly captures the asymptotic bound via a function f → 0 and the inequality for all H > 1."
+ },
+ "synth:wrong-type-or-domain:dyadic_two_isGoodPair": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The informal statement implicitly quantifies over integer k, but the formalization uses k : ℝ, which makes the claim stronger."
+ },
+ "synth:wrong-answer-marker:conjecture194": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal says the conjecture is false, but the formalization declares answer(True) ↔ …, thereby asserting the conjecture is true."
+ },
+ "synth:control:bondy_conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization faithfully translates all conditions, including the vertex-count bound expressed as P.support.length + 1 ≤ k instead of ≤ k-1."
+ },
+ "synth:control:carchimichealTotientFor_zero": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement concerns Euler’s totient, but the formal statement is about the predicate CarmichaelTotientFor, a completely different object."
+ },
+ "synth:junk-value-trap:erdos_1026.variants.weighted_erdos_szekeres": {
+  "classes": [
+   "junk-value-trap"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement lacks the condition k ≥ 1, causing division by the junk value 1/0 when k = 0 and making the theorem vacuously true in that case despite the hypotheses being contradictory."
+ },
+ "synth:control:eqSystem10_no_solution_d9": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement introduces an answer(sorry) ↔ ... wrapper, turning the intended direct assertion of non-existence into an equivalence with an unspecified answer placeholder."
+ },
+ "synth:missing-hypothesis:theorem1": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-weaker",
+  "confidence": "high",
+  "rationale": "The informal statement requires f = 2 as a hypothesis, but this condition is absent from the formal version, which only assumes connectivity and triangle-freeness."
+ },
+ "synth:control:erdos_205.variants.odd_counterexamples": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses answer(sorry) ↔ ... instead of directly stating the conjecture that the set of odd counterexamples is infinite."
+ },
+ "synth:vacuous-or-trivial:MLC_general_exponent": {
+  "classes": [
+   "vacuous-or-trivial"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement imposes the impossible hypothesis n < 0 for a natural number n, making the implication vacuously true and failing to express the intended claim that the property holds for all n."
+ },
+ "synth:control:hesseFamily_normalized": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement correctly asserts that every vector indexed by Fin 9 in the Hesse family is normalized, faithful to the informal statement."
+ },
+ "synth:control:sum_inter_card_eq_sum_degree_sq": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement exactly matches the informal sum equality, with sums over ordered pairs and squared degrees as reals."
+ },
+ "synth:control:erdos_375": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement asserts an equivalence with an answer placeholder instead of stating the truth value of Erdos375Prop."
+ },
+ "synth:control:erdos_1074.variants.EHSNumbers_infinite": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly asserts that EHSNumbers is infinite, matching the informal statement."
+ },
+ "synth:control:Invariant_subspace_problem_normal_operator": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement asserts the existence of a nontrivial closed invariant subspace for a normal operator on a complex Hilbert space of dimension at least 2, exactly the informal claim."
+ },
+ "synth:missing-hypothesis:vizing_conjecture.variants.dominationNumber_eq_one": {
+  "classes": [
+   "missing-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "high",
+  "rationale": "The formal statement asserts the full product inequality without the hypothesis that γ(H)=1, whereas the informal describes only the special case under that assumption."
+ },
+ "synth:control:banach_mazur_rotation_problem": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement is an equivalence involving an `answer(sorry)` placeholder, not a direct statement of the problem."
+ },
+ "synth:control:rectangles_cover_unit_square": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The formal statement uses `answer(sorry) ↔` structure instead of directly formalizing the yes/no question."
+ },
+ "synth:control:latinSquareOrder11Transversal": {
+  "classes": [
+   "informal-changed"
+  ],
+  "direction": "incomparable",
+  "confidence": "high",
+  "rationale": "The informal statement asserts a meta-fact about knowledge, while the formal statement attempts to formalize the conjecture for order 11 with an answer placeholder."
+ }
+}

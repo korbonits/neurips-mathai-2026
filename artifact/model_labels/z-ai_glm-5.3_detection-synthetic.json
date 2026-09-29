@@ -1,0 +1,314 @@
+{
+ "id": "synth:wrong-type-or-domain:dyadic_two_isGoodPair",
+ "informal": " **The dyadic fiber at α = 2.** For every k, the pair (1/2^k, 2) is good: the sequence ⌊2^n / 2^k⌋ is additively complete because at index n = m + k it equals the exact power 2^m, so its range contains all powers of two, which already form an additively complete set. Uses monotonicity IsAddComplete.mono. ",
+ "formal_before": "theorem dyadic_two_isGoodPair (k : ℝ) : IsGoodPair (1 / 2 ^ k) 2",
+ "synth:control:erdos_1142.test_45": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement asserts exactly that 45 has the Erdős 1142 property, matching the informal test values."
+ },
+ "synth:control:green_22": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formalization encodes the informal goal that eventually N₀ r is bounded by an answer that is asymptotically better than the Green-Sawhney bound, via an unspecified answer function marked with sorry."
+ },
+ "synth:control:z_zero": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly states z 0 = 1, matching the informal vacuous claim of exactly one transversal for the 0×0 Cayley table."
+ },
+ "synth:control:erdos_214.variants.juhasz_twelve_points": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The informal statement that Juhász improved the upper bound to k ≤ 11 is formalized as the absence of red copies for 12 points, which is equivalent."
+ },
+ "synth:control:four_dim_euler_brick_existence": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement is a marked answer equivalence with the existence of a 4-dimensional Euler brick, faithfully capturing the open question."
+ },
+ "synth:control:conjecture18": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement instantiates M as the set of maximum-degree vertices and asserts b(G) ≥ α(G) + ceil(sqrt(dist_max(M))) for connected simple graphs, matching the informal conjecture."
+ },
+ "synth:control:problem_4_1": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formalization marks the answer and asks whether every weak tiling measure of a finite union of intervals has support of bounded density, matching the informal problem."
+ },
+ "synth:control:erdos_828.variants.lehmer_conjecture": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement is exactly the Lehmer conjecture for n > 1 that φ(n) divides n - 1 iff n is prime, marked as an answer."
+ },
+ "synth:junk-value-trap:erdos_1026.variants.weighted_erdos_szekeres": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement asserts for distinct positive reals summing to 1 the existence of a monotonic subsequence with sum at least 1/k, matching the informal conjecture."
+ },
+ "synth:control:erdos_812.parts.i": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formalization asks whether there exists c > 0 such that eventually R(n+1)/R(n) ≥ 1 + c, exactly the informal question."
+ },
+ "synth:control:erdos_707": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formal statement asserts the falsity of embedding any finite Sidon set into a perfect difference set modulo some n, matching the informal claim that this is false."
+ },
+ "synth:control:one_le_sofaConstant": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The formal statement directly asserts 1 ≤ sofaConstant, matching the informal claim witnessed by the unit square."
+ },
+ "synth:missing-hypothesis:erdos_392": {
+  "classes": [
+   "missing-hyp ... wait let me actually analyze each one properly. ",
+   "synth:control:erdos_257.variants.tsum_top",
+   "synth:wrong-type-or-domain:erdos_825.variants.necessary_cond",
+   "synth:control:theorem2",
+   "synth:control:lambert_series_eq_num_divisor_sum",
+   "synth:control:erdos_418.variants.soln",
+   "synth:missing-hyp ... hold on, let me restart and be systematic. ",
+   "synth:control:ame_8_4_open",
+   "synth:wrong-type-or-domain:mean_value_problem_of_roots_same_norm",
+   "synth:control:zagierDim_first_values",
+   "synth:control:erdos_1142.test_15",
+   "synth:control:erdos_1014"
+  ]
+ },
+ "rationale": "",
+ "synth:wrong-type-or-domain:elliott_halberstam": {
+  "classes": [
+   "wrong-type-or-domain"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The informal statement quantifies over real x > 2 while the formalization uses natural-number x and floor of x^θ, weakening the range of x but otherwise matching the structure; A is ℕ rather than real but that's minor."
+ },
+ "synth:control:erdos_445.variants.heath_brown": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Assuming Erdos445Prop c p n encodes the Heath-Brown claim, the formalization states exactly that for all c > 3/4 the property holds eventually in primes p for all n, matching the informal statement."
+ },
+ "synth:control:ame_2_2_exists": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "Assuming ExistsAME 2 2 captures the existence of an AME(2,2) state, the formalization is faithful to the informal claim."
+ },
+ "synth:control:flint_hills_series_converges": {
+  "classes": [
+   "wrong-answer-marker",
+   "wrong-connective"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The statement uses answer(sorry) ↔ Summable ..., making the convergence claim depend on an opaque answer marker rather than directly asserting summability; the 0-indexing shift (n+1) is noted in the informal text and is fine, but the answer-marker connective is questionable."
+ },
+ "synth:control:erdos_91.variants.six": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The informal statement says there are at least two non-similar examples for n = 6, but the formalization asserts ¬ UniqueMinimizer 6, which only says uniqueness fails (at least two), which seems to match; however 'non-similar' may differ from the minimizer-based formalization, making this weaker or potentially mismatched."
+ },
+ "synth:control:erdos_1047.variants.referee": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "low",
+  "rationale": "Assuming componentsIn of the strict sublevel set at the given bound encodes the referee's example, the formalization matches the informal claim."
+ },
+ "synth:control:lbMeasure_unitSquare": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formalization directly states the Lebesgue measure of the unit square is 1, matching the informal claim."
+ },
+ "synth:control:conjecture.variants.a_40": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The informal statement says a(40) is not known (i.e., no valid zeroless power base exists), and the formalization asserts ¬ ∃ b, IsValidZerolessPower 40 b, matching the described open problem."
+ },
+ "synth:control:erdos_633": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "unclear",
+  "confidence": "medium",
+  "rationale": "The formalization uses answer(sorry) in the statement and encodes the property as a characterization in an iff, which may not faithfully capture the open-question nature of the informal statement."
+ },
+ "synth:control:sawin_totally_real_tower": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The formalization correctly fixes Q before F, requires infinite Q of primes ≡ 1 mod 4, unbounded degree with bounded root discriminant, and complete splitting of all q ∈ Q, matching the informal statement."
+ },
+ "synth:wrong-constant-or-bound:erdos_18b": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "The informal statement asks for h(n!) < n^ε for all ε > 0, but the formalization quantifies over ε ≥ 0, allowing ε = 0 which would require h(n!) < 1 eventually — a stronger condition not in the informal statement, though practically it may not matter; also answer(sorry) marker is used."
+ },
+ "synth:wrong-constant-or-bound:rsConstant_two": {
+  "classes": [
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The informal statement says the constant at p = 2 is π/2 + 2, but the formalization states rsConstant 3 = π / 2 + 2, using argument 3 instead of the conjugate 2, referencing the wrong index."
+ },
+ "synth:control:brennan_universalSpectrum": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "Brennan's first statement B(-2)=1 is stated verbatim with no answer marker, consistent with a closed-value control."
+ },
+ "synth:control:algebraicIndependent_e_pi": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The open question is rendered as answer(sorry) iff AlgebraicIndependent ℚ ![e, π], as expected for an open control."
+ },
+ "synth:extraneous-hypothesis:green_37_bigO": {
+  "classes": [
+   "extraneous-hypothesis"
+  ],
+  "direction": "before-stronger",
+  "confidence": "medium",
+  "rationale": "The informal asks to determine a big-O bound for m(N,k) with no side condition, but the formal adds h_k : 0 < k."
+ },
+ "synth:control:erdos_346.variants.example": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The existence of very irregular strongly additive-complete sequences is formalized with strongly complete, hereditarily complete under deleting subsequences, liminf ratio 1, and infinite limsup, matching the informal despite incidental constants."
+ },
+ "synth:control:infinite_club_exists": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The open question whether some abundancy club is infinite is stated as answer(sorry) iff ∃ n>0 with {m | Friendly m n} infinite."
+ },
+ "synth:wrong-answer-marker:erdos_22": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The statement is correctly quantified but answer(False) contradicts the informal attribution that the result is true (Fox–Loh–Zhao)."
+ },
+ "synth:control:erdos_44": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The Sidon-set extension question with density (1−ε)√M and M>N is quantified as expected for an open problem control."
+ },
+ "synth:wrong-answer-marker:erdos_442": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The statement matches the informal implication but answer(True) contradicts Tao's disproof, which requires answer(False)."
+ },
+ "synth:wrong-answer-marker:f_asymptotic_2": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The little-o relation n = o(f 2 n) matches Rödl's f_r(n)=o(n), but answer(True) is wrong for a disproved claim, which should be answer(False)."
+ },
+ "synth:control:erdos_25": {
+  "classes": [
+   "non-semantic"
+  ],
+  "direction": "equivalent",
+  "confidence": "medium",
+  "rationale": "The question whether the logarithmic density of the covering-avoidance set A always exists is stated with answer(sorry), matching the open control."
+ },
+ "synth:wrong-answer-marker:erdos_750.variants.c_gt_quarter": {
+  "classes": [
+   "wrong-answer-marker"
+  ],
+  "direction": "equivalent",
+  "confidence": "high",
+  "rationale": "The chromatic-number/indepedent-set statement matches the ErHa67b result but answer(False) should be answer(True) since Erdős and Hajnal proved it."
+ },
+ "synth:junk-value-trap:erdos_851": {
+  "classes": [
+   "junk-value-trap",
+   "wrong-type-or-domain",
+   "wrong-constant-or-bound"
+  ],
+  "direction": "before-weaker",
+  "confidence": "medium",
+  "rationale": "Taking ε ∈ ℕ with ε < 1 forces ε = 0, so the ε is vacuous junk, and the density bound 1 - ε ≤ d uses natural-number truncation instead of requiring d close to 1; the positive-result marker is also absent."
+ },
+ "thinking_mode": "raw"
+}

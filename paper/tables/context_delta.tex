@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & & detection & \multicolumn{3}{c}{context-augmented} & & \multicolumn{2}{c}{Lean-semantics recall} \\
+\cmidrule(lr){3-3}\cmidrule(lr){4-6}\cmidrule(lr){8-9}
+model & $n$ & F1 & P & R & F1 & $\Delta$F1 & detection & context-augmented \\
+\midrule
+    Claude Haiku 4.5 & 360 & 0.31 & 0.34 & 0.47 & 0.40 & $+0.09$ & 4/57 & 6/57 \\
+    Claude Sonnet 5 & 360 & 0.49 & 0.71 & 0.43 & 0.54 & $+0.05$ & 8/57 & 11/57 \\
+    Claude Opus 5 & 360 & 0.41 & 0.65 & 0.47 & 0.55 & $+0.14$ & 8/57 & 16/57 \\
+    Claude Fable 5 & 360 & 0.56 & 0.55 & 0.55 & 0.55 & $0.00$ & 17/57 & 19/57 \\
+    GPT-5.6 Terra Pro & 360 & 0.46 & 0.49 & 0.53 & 0.51 & $+0.04$ & 15/57 & 18/57 \\
+    Kimi K3 & 360 & 0.49 & 0.45 & 0.50 & 0.47 & $-0.01$ & 14/57 & 17/57 \\
+    Grok 4.6 & 360 & 0.47 & 0.43 & 0.55 & 0.48 & $+0.01$ & 17/57 & 20/57 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & & assisted & \multicolumn{3}{c}{correction only} & & \multicolumn{2}{c}{Lean-semantics recall} \\
+\cmidrule(lr){3-3}\cmidrule(lr){4-6}\cmidrule(lr){8-9}
+model & $n$ & F1 & P & R & F1 & $\Delta$F1 & assisted & correction only \\
+\midrule
+    Claude Haiku 4.5$^{\dagger}$ & 359 & 0.58 & 0.38 & 0.97 & 0.54 & $-0.04$ & 27/57 & 22/57 \\
+    Claude Sonnet 5 & 360 & 0.71 & 0.48 & 0.97 & 0.64 & $-0.07$ & 38/57 & 37/57 \\
+    Claude Opus 5 & 360 & 0.77 & 0.56 & 0.97 & 0.71 & $-0.05$ & 40/57 & 41/57 \\
+    Claude Fable 5 & 360 & 0.79 & 0.59 & 0.95 & 0.73 & $-0.07$ & 41/57 & 35/57 \\
+    GPT-5.6 Terra Pro & 360 & 0.62 & 0.38 & 0.96 & 0.54 & $-0.08$ & 40/57 & 43/57 \\
+    Kimi K3 & 360 & 0.75 & 0.54 & 0.96 & 0.69 & $-0.06$ & 32/57 & 35/57 \\
+    Grok 4.6 & 360 & 0.68 & 0.45 & 0.95 & 0.61 & $-0.07$ & 44/57 & 38/57 \\
+\bottomrule
+\end{tabular}

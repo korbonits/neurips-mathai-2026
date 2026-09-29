@@ -1,0 +1,18 @@
+\begin{tabular}{@{}lp{0.66\textwidth}r@{}}
+\toprule
+error class & meaning & records \\
+\midrule
+    \textbf{wrong-type-or-domain} & wrong carrier: $\mathbb{N}$ vs $\mathbb{Z}$ vs $\mathbb{Q}$ vs $\mathbb{R}$, meaning-changing coercion & 20 \\
+    \textbf{definitional-mismatch} & auxiliary definition does not capture the informal notion & 15 \\
+    missing-hypothesis & informal side condition absent (positivity, distinctness, $n \ge 1$) & 12 \\
+    \textbf{wrong-answer-marker} & \texttt{answer(True/False)} has incorrect polarity or wraps the wrong proposition & 11 \\
+    \textbf{junk-value-trap} & meaning shifts through Lean junk values: $x/0$, $\mathbb{N}$ subtraction, $\inf\emptyset$ & 11 \\
+    wrong-quantifier & $\exists/\forall$ swapped, wrong scope or order & 9 \\
+    other & none of the above; explained in the record's note & 6 \\
+    wrong-connective & $\wedge/\vee/\to/\leftrightarrow$ misuse, misplaced negation & 3 \\
+    vacuous-or-trivial & trivially true or false (empty range, wrong index set) & 2 \\
+    extraneous-hypothesis & formal statement assumes more than the informal one & 2 \\
+    wrong-referent & points at the wrong declaration or constant & 1 \\
+    wrong-constant-or-bound & off-by-one, wrong constant, strict vs non-strict inequality & 1 \\
+\bottomrule
+\end{tabular}
