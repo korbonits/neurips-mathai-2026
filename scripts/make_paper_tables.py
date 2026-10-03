@@ -132,16 +132,32 @@ def table_negatives_classes() -> str:
         f"\\midrule\n{rows}\n\\bottomrule\n\\end{{tabular}}\n")
 
 def table_model_comparison() -> str:
-    rows = []
+    metrics = ("precision", "recall", "f1", "kappa")
+    models = []
     for name in ORDER:
         a, d = load_runs(name, "assisted"), load_runs(name, "detection")
-        if not a and not d:
-            continue
-        partial = any(0 < r["n"] < 360 for r in a + d)
+        if a or d:
+            models.append((name, a, d, any(0 < r["n"] < 360 for r in a + d)))
+    # Best is judged at displayed precision, so ties at two decimals all bold;
+    # incomplete-coverage rows score different populations and are not eligible.
+    best = {}
+    for i in (1, 2):
+        for k in metrics:
+            vals = [round(mean_of(m[i], k), 2) for m in models
+                    if not m[3] and scored(m[i])]
+            best[i, k] = max(vals)
+    rows = []
+    for name, a, d, partial in models:
         mark = r"$^{\dagger}$" if partial else ""
         cells = []
-        for runs in (a, d):
-            cells.extend([coverage(runs)] + [cell(runs, k) for k in ("precision", "recall", "f1", "kappa")])
+        for i, runs in ((1, a), (2, d)):
+            cells.append(coverage(runs))
+            for k in metrics:
+                c = cell(runs, k)
+                v = mean_of(runs, k)
+                if not partial and v is not None and round(v, 2) == best[i, k]:
+                    c = r"\textbf{" + c + "}"
+                cells.append(c)
         rows.append(f"    {esc(DISPLAY[name])}{mark} & " + " & ".join(cells) + r" \\")
     return (
         r"\begin{tabular}{lrrrrrrrrrr}" + "\n" + r"\toprule" + "\n"

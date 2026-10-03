@@ -10,6 +10,7 @@ from make_paper_tables import ARTIFACT, DISPLAY, ORDER
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'paper/figures/collapse.pdf'
+SYNTH_MIN = 340
 
 def main():
     rows = []
@@ -23,10 +24,13 @@ def main():
         if not (a.get('n') and d.get('n')):
             continue
         label = DISPLAY[model] + (' †' if a['n'] < 360 or d['n'] < 360 else '')
-        synth = s['f1'] if s.get('n') == 359 else None
+        # Near-complete synthetic runs are shown hollow, matching the dagger
+        # treatment of incomplete natural runs; GLM's 37/359 is too sparse to plot.
+        shown = s.get('n', 0) >= SYNTH_MIN
+        synth = (s['f1'], s['n'] == 359) if shown else None
         rows.append((model, label, a['f1'], d['f1'], synth))
         plotted.append({'model': model, 'assisted': a, 'detection': d,
-                        'synthetic_shown': s.get('n') == 359})
+                        'synthetic_shown': shown})
     rows.sort(key=lambda x: x[2], reverse=True)
     plt.rcParams.update({'font.family':'DejaVu Serif','font.size':9,'pdf.fonttype':42})
     fig, ax = plt.subplots(figsize=(6.2, 3.6))
@@ -35,7 +39,11 @@ def main():
         ax.plot(a,y,'o',color='#0072B2',ms=5.5,zorder=3)
         ax.plot(d,y,'o',mfc='white',mec='#D55E00',mew=1.4,ms=5.5,zorder=3)
         if s is not None:
-            ax.plot(s,y,'D',color='#009E73',ms=5,zorder=3)
+            f1, complete = s
+            if complete:
+                ax.plot(f1,y,'D',color='#009E73',ms=5,zorder=3)
+            else:
+                ax.plot(f1,y,'D',mfc='white',mec='#009E73',mew=1.3,ms=5,zorder=3)
     ax.set_yticks(range(len(rows)),[r[1] for r in rows],fontsize=8.5)
     ax.invert_yaxis()
     ax.set_xlim(0,1.035)
